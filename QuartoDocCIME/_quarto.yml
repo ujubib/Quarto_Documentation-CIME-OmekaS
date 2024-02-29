@@ -13,7 +13,7 @@ website:
   bread-crumbs: false
   back-to-top-navigation: true
   navbar:
-    logo: img/logo-color.png
+    logo: img/UPPA_logo.png
     search: true
     pinned: false
     left:
