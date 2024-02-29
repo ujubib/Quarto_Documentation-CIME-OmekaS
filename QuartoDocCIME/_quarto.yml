@@ -21,6 +21,14 @@ website:
         text: Accueil
       - href: about.qmd
         text: À propos
+  sidebar:
+    style: "floating"
+    collapse-level: 2
+    contents:
+      - "qui/BibRef.qmd"
+#    tools:
+#      - icon: box-arrow-up-right
+#        href: https://kumbuka.univ-pau.fr
 
 format:
   html:

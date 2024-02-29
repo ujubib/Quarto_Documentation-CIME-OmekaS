@@ -26,6 +26,8 @@ Collecte Informatique des Mémoires Étudiants
 
 ## Qui dépose dans CIME ?
 
+- [Les bibliothécaires référents](qui/BibRef.qmd)
+
 ## Comment déposer dans CIME ?
 
 ## Ressources sur **Omeka S**
