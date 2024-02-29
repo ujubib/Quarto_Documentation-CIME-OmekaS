@@ -4,9 +4,14 @@ project:
 website:
   title: "Documentation de CIME"
   favicon: img/icon-color.png
+  repo-url: https://git.univ-pau.fr/jrabaud001/documentationalma
+  repo-subdir: /QuartoDocCIME/
+  repo-actions: [source, edit, issue]
+  open-graph: true
   reader-mode: true
   page-navigation: true
   bread-crumbs: false
+  back-to-top-navigation: true
   navbar:
     logo: img/logo-color.png
     search: true

@@ -1,6 +1,6 @@
 /* css styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 /* Fontionne pour Chrome et pas Firefox */
 
@@ -45,7 +45,7 @@ li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .
     padding-right: 1.2em;
     border-radius: 16px;
     margin-bottom: 3em !important;
-    border: solid 4px lightskyblue;
+    border: solid 4px #e6007e;
     margin-left: auto;
     margin-right: auto;
 }

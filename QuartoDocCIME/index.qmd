@@ -1,30 +1,33 @@
 ---
 title: Documentation de CIME
 subtitle: version Omeka S
-date: 2024-02-29
 lang: fr
 format:
   html: default
-  pdf: default
 ---
 
-## Bienvenue
+<style>
+  #title-block-header {
+    display: none;
+  }
+</style>
 
-![](img/icon-color.png)
+![](img/icon-color.png){fig-align="center" style="border-radius:18px"}
 
+::: {style="text-align:center;font-size:1.4em;font-family:bellefair;margin-top:-1em;"} 
+Collecte Informatique des Mémoires Étudiants  
+:::
+
+::: {style="padding-top:.2em;padding-left:1.2em;padding-right:1.2em;margin-top:-1em;margin-bottom:3em;color:slategrey;letter-spacing:3px;border-top:1px solid #e6007e;width:fit-content;margin-left:auto;margin-right:auto"}
+(sur un serveur Omeka S)
+:::
 
 ## Que déposer dans CIME ?
 
-
-
 ## Qui dépose dans CIME ?
-
-
 
 ## Comment déposer dans CIME ?
 
-
-
 ## Ressources sur **Omeka S**
 
-
+![](img/tapisserie.gif){fig-align="center" style="border-radius:18px;margin-top:4em;"}
