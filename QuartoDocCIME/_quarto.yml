@@ -24,6 +24,7 @@ website:
 
 format:
   html:
+    tbl-cap-location: top
     mainfont: calibri
     grid:
       sidebar-width: 400px
@@ -41,10 +42,10 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     lightbox: true
-    tbl-cap-location: margin
     comments:
       hypothesis: true
   pdf:
+    tbl-cap-location: top
     documentclass: scrartcl
     toc: true
     toc-depth: 5

@@ -1,0 +1,304 @@
+---
+title: Les bibliothécaires référents
+author: 
+ - Viviane Babeix
+ - Julien Rabaud
+date: 2024-02-29
+lang: fr
+format:
+  html: default
+  pdf: default
+---
+
+## Par Collèges et parcours
+
+::: panel-tabset
+### Collège SSH
+
+| Parcours du Master | Campus | Contact |
+|:-------------------|:------:|:-------:|
+| Etudes anglophones | Pau    | Viviane Babeix         |
+| Etudes hispaniques | Pau    | Christel Barbisan      |
+| Lettres et arts    | Pau    | Agnès Lavoinne         |
+| FLE - Généraliste  | Pau    | Agnès Lavoinne         |
+| FLE - PostGraduate Certificate in Education (PGCE) | Pau | Agnès Lavoinne |
+| Traduction, terminologie, documentation | Pau | Christel Barbisan |
+| Juriste d'affaires | Pau    | Ana do Rosario Vicente |
+| Juriste d'affaires franco-espagnol | Pau | Ana do Rosario Vicente |
+| Droit de la consommation  |   Pau      |   Ana do Rosario Vicente |
+| Droit notarial    | Pau     | Ana do Rosario Vicente |
+| Droit privé général | Pau      | Ana do Rosario Vicente |
+| Procédures et contentieux privés | Pau | Ana do Rosario Vicente |
+| Droit des transitions énergétiques et environnementales | Pau | Ana do Rosario Vicente |
+| Cadre du secteur sanitaire, social et médico-social | Pau | Ana do Rosario Vicente |
+| Droit et action publique locale  | Pau  | Ana do Rosario Vicente |
+| Droit et contentieux des contrats et des libertés | Pau | Ana do Rosario Vicente |
+| Droit de l'exécution des peines et droits de l'homme | Pau | Ana do Rosario Vicente |
+| Police et sécurité intérieure | Pau | Ana do Rosario Vicente |
+| Chargé d'études économiques et de marché | Pau | Lina Goncalves |
+| Europe, International, environnement et développement | Pau | Lina Goncalves |
+| Transitions environnementales, société, territoire | Pau | Sandra Grandcolas |
+| Histoire et anthropologie | Pau | Laurence Palazzi |
+| Arts et Archéologie préventive | Pau | Laurence Palazzi |
+| Valorisation et médiation des patrimoines | Pau | Laurence Palazzi |
+| Applied Social Sciences in Energy and Environmental Transitions (ASSET) – Economic Specialization | Pau | Lina Goncalves |
+| Applied Social Sciences in Energy and Environmental Transitions (ASSET) – Geographic Specialization | Pau | Sandra Grandcolas |
+| Jeunesse, mobilisations et environnement | Pau | Mariluz Toro |
+| Loisirs, tourisme et développement territorial | Pau | Sandra Grandcolas |
+| MEEF : Anglais | Pau | Viviane Babeix |
+| MEEF : Espagnol | Pau | Christel Barbisan |
+| MEEF : Histoire Géographie | Pau | Laurence Palazzi |
+| MEEF : Lettres classiques | Pau | Agnès Lavoinne |
+| MEEF : Lettres modernes| Pau | Agnès Lavoinne |
+| MEEF : Education physique et sportive | | Agnès Martin |
+| STAPS : Expert en préparation physique et mentale et optimisation de la performance | Tarbes | Agnès Martin |  
+
+: Référents pour les parcours du collège SSH {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Collège E2I
+
+|Parcours du Master| Campus| Contact|
+|:---|:---:|:---:|
+|Comptabilité - contrôle - audit | Pau | Lina Goncalves|
+|Contrôle de gestion et audit organisationnel | Pau | Lina Goncalves|
+|Ingénierie de projet| Bidart| Bettina Schmitt-Cordova|
+|Coopérations transfrontalières et interterritoriales | Bayonne | Valérie Garrec|
+|Droit européen des affaires et du numérique | Bayonne | Valérie Garrec|
+|Droit interne et européen des mineurs | Bayonne | Valérie Garrec|
+|Droit européen de l'action publique | Bayonne | Valérie Garrec|
+|Droit pénal européen et international | Bayonne | Valérie Garrec|
+|Management des organisations sanitaires et médico-sociales, bien être et santé | Bayonne | Bettina Schmitt-Cordova|
+|Management des organisations et technologies de l'information | Pau | Lina Goncalves|
+|Certificat d'aptitude à l'administration des entreprises | Pau | Lina Goncalves|
+|Management et administration des entreprises : ENSGTI | Pau | Lina Goncalves|
+|European and international business studies | Bayonne | Bettina Schmitt-Cordova|
+|International trade | Bayonne | Bettina Schmitt-Cordova|
+|Achats et logistique internationale | Bayonne | Bettina Schmitt-Cordova|
+|Management international amérique Latine | Bayonne | Bettina Schmitt-Cordova|
+|Management public des collectivités locales | Pau | Lina Goncalves|
+|Chargé de clientèle banque et assurances | Bayonne | Bettina Schmitt-Cordova|
+
+: Référents pour les parcours du collège E2I {.striped .hover tbl-colwidths="[60,10,30]"}
+
+
+### Collège STEE
+
+|Parcours du Master| Campus| Contact|
+|:---|:---:|:---:|
+|Evaluation, gestion et traitement des pollutions | Pau | Julien Rabaud|
+|Sciences analytiques pour le vivant et l'environnement | Pau | Julien Rabaud|
+|Biologie moléculaire et microbiologie de l'environnement | Pau | Julien Rabaud|
+|Chemical and microbiological Characterization for environmental issues | Pau | Julien Rabaud|
+|Graduate program GREEN - Environmental analytical chemistry and microbiology | Pau | Julien Rabaud|
+|Eco-ingénierie du littoral | Anglet | Florence Breton|
+|Génie électronique et informatique industrielle | Pau | Julien Rabaud|
+|Simulation et optimisation des systèmes énergétiques | Pau | Julien Rabaud|
+|Graduate program GREEN - Mechanics and physics in porous media | Anglet | Florence Breton|
+|Graduate program GREEN - Computations in coastal engineering | Anglet | Florence Breton|
+|Low carbon materials and constructions | Anglet | Florence Breton|
+|Eco-ingénierie (à partir de 2023) | Anglet | Florence Breton|
+|Géologie Géophysique pour les géoénergies (G3) | Pau | Julien Rabaud|
+|Sciences de l'Ingénieur pour les géoénergies (SIG) | Pau | Julien Rabaud|
+|Geoenergineering | Pau | Julien Rabaud|
+|Technologies de l'internet | Pau | Julien Rabaud|
+|Systèmes informatiques pour le génie de la logistique industrielle et des services | Anglet | Florence Breton|
+|Industry 4.0 | Anglet | Florence Breton|
+|Mathématique, modéliation et simulation | Pau | Julien Rabaud|
+|Méthodes stochastiques et informatiques pour la décision | Pau | Julien Rabaud|
+|Mathématiques et Informatique pour le Big Data | Pau | Julien Rabaud|
+|Dynamique des ecosystèmes aquatiques | Anglet | Florence Breton|
+|Qualité des milieux aquatiques | Anglet | Florence Breton|
+|Evolutionary ecology in aquatic environments | Anglet | Florence Breton|
+|Erasmus Mundus - Environmental contamination and toxicology | Anglet | Florence Breton|
+|Ingénierie des matériaux : élaboration, caractérisation et applications | Pau | Julien Rabaud|
+|Chimie et physico-chimie des matériaux | Pau | Julien Rabaud|
+|Matériaux bio-inspirés international | Pau | Julien Rabaud|
+|Graduate program GREEN - Bioinspired - MINE | Pau | Julien Rabaud|
+|2nd degré Mathématiques | Pau | Julien Rabaud|
+|2nd degré Physique-Chimie | Pau | Julien Rabaud|
+
+: Référents pour les parcours du collège STEE {.striped .hover tbl-colwidths="[60,10,30]"}
+
+:::
+
+
+## Par Référents
+
+::: panel-tabset
+### Viviane Babeix
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Etudes anglophones	| Pau |	SSH |
+|MEEF : Anglais 	| Pau |	SSH |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Christel Barbisan
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Etudes hispaniques	| Pau |	SSH |
+|Traduction, terminologie, documentation	| Pau |	SSH |
+|MEEF : Espagnol | Pau |	SSH |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Agnès Lavoinne
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Lettres et arts | Pau |	SSH |
+|FLE - Généraliste | Pau |	SSH |
+|FLE - PostGraduate Certificate in Education (PGCE) | Pau |	SSH |
+|MEEF : Lettres classiques | Pau |	SSH |
+|MEEF : Lettres modernes | Pau |	SSH |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Ana do Rosario Vicente
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Juriste d’affaires | Pau |	SSH |
+|Juriste d’affaires franco-espagnol | Pau |	SSH |
+|Droit de la consommation | Pau |	SSH |
+|Droit notarial | Pau |	SSH |
+|Droit privé général | Pau |	SSH |
+|Procédures et contentieux privés | Pau |	SSH |
+|Droit des transitions énergétiques et environnementales | Pau |	SSH |
+|Cadre du secteur sanitaire, social et médico-social | Pau |	SSH |
+|Droit et action publique locale | Pau |	SSH |
+|Droit et contentieux des contrats et des libertés | Pau |	SSH |
+|Droit de l’exécution des peines et droits de l’homme | Pau |	SSH |
+|Police et sécurité intérieure | Pau |	SSH |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Lina Goncalves
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Chargé d’études économiques et de marché | Pau |	SSH |
+|Europe, International, environnement et développement | Pau |	SSH |
+|Applied Social Sciences in Energy and Environmental Transitions (ASSET) – Economic Specialization | Pau |	SSH |
+|Comptabilité - contrôle - audit | PAU | E2I |
+|Contrôle de gestion et audit organisationnel | PAU | E2I |
+|Management des organisations et technologies de l’information | PAU | E2I |
+|Certificat d’aptitude à l’administration des entreprises | PAU | E2I |
+|Management et administration des entreprises : ENSGTI | PAU | E2I |
+|Management public des collectivités locales | PAU | E2I |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+
+### Sandra Grandcolas
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+| Transitions environnementales, société, territoire | Pau |	SSH |
+| Applied Social Sciences in Energy and Environmental Transitions (ASSET) – Geographic Specialization | Pau |	SSH |
+| Loisirs, tourisme et développement territorial | Pau |	SSH |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Laurence Palazzi
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Histoire et anthropologie | Pau |	SSH |
+|Arts et Archéologie préventive | Pau |	SSH |
+|Valorisation et médiation des patrimoines | Pau |	SSH |
+|MEEF : Histoire Géographie | Pau |	SSH |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Mariluz Toro
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Jeunesse, mobilisations et environnement | Pau |	SSH |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Agnès Martin
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|MEEF : Education physique et sportive| |	SSH |
+|STAPS : Expert en préparation physique et mentale et optimisation de la performance| Tarbes |	SSH |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Bettina Schmitt-Cordova
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+| Ingénierie de projet | Bidart | E2I |
+|Management des organisations sanitaires et médico-sociales, bien être et santé | Bayonne | E2I |
+|European and international business studies | Bayonne | E2I |
+|International trade | Bayonne | E2I |
+|Achats et logistique internationale | Bayonne | E2I |
+|Management international Amérique Latine | Bayonne | E2I |
+|Chargé de clientèle banque et assurances | Bayonne | E2I |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Valérie Garrec
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+| Coopérations transfrontalières et interterritoriales | Bayonne | E2I |
+| Droit européen des affaires et du numérique | Bayonne | E2I |
+| Droit interne et européen des mineurs | Bayonne | E2I |
+| Droit européen de l’action publique | Bayonne | E2I |
+| Droit pénal européen et international | Bayonne | E2I |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Julien Rabaud
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Evaluation, gestion et traitement des pollutions | Pau | STEE |
+|Sciences analytiques pour le vivant et l’environnement | Pau | STEE |
+|Biologie moléculaire et microbiologie de l’environnement | Pau | STEE |
+|Chemical and microbiological Characterization for environmental issues | Pau | STEE |
+|Graduate program GREEN - Environmental analytical chemistry and microbiology | Pau | STEE |
+|Génie électronique et informatique industrielle | Pau | STEE |
+|Simulation et optimisation des systèmes énergétiques | Pau | STEE |
+|Géologie Géophysique pour les géoénergies (G3) | Pau | STEE |
+|Sciences de l’Ingénieur pour les géoénergies (SIG) | Pau | STEE |
+|Geoenergineering | Pau | STEE |
+|Technologies de l’internet | Pau | STEE |
+|Mathématique, modéliation et simulation | Pau | STEE |
+|Méthodes stochastiques et informatiques pour la décision | Pau | STEE |
+|Mathématiques et Informatique pour le Big Data | Pau | STEE |
+|Ingénierie des matériaux : élaboration, caractérisation et applications | Pau | STEE |
+|Chimie et physico-chimie des matériaux | Pau | STEE |
+|Matériaux bio-inspirés international | Pau | STEE |
+|Graduate program GREEN - Bioinspired - MINE | Pau | STEE |
+|2nd degré Mathématiques | Pau | STEE |
+|2nd degré Physique-Chimie | Pau | STEE |
+
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+
+### Florence Breton
+
+| Parcours | Campus | Collège |
+|:---|:---:|:---:|
+|Eco-ingénierie du littoral | Anglet | STEE |
+|Graduate program GREEN - Mechanics and physics in porous media | Anglet | STEE |
+|Graduate program GREEN - Computations in coastal engineering | Anglet | STEE |
+|Low carbon materials and constructions | Anglet | STEE |
+|Eco-ingénierie (à partir de 2023) | Anglet | STEE |
+|Systèmes informatiques pour le génie de la logistique industrielle et des services | Anglet | STEE |
+|Industry 4.0 | Anglet | STEE |
+|Dynamique des ecosystèmes aquatiques | Anglet | STEE |
+|Qualité des milieux aquatiques | Anglet | STEE |
+|Evolutionary ecology in aquatic environments | Anglet | STEE |
+|Erasmus Mundus - Environmental contamination and toxicology | Anglet | STEE |
+
+: Parcours {.striped .hover tbl-colwidths="[60,10,30]"}
+:::
