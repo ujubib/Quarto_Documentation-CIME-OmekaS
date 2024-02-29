@@ -1,0 +1,47 @@
+project:
+  type: website
+
+website:
+  title: "Documentation de CIME"
+  favicon: img/icon-color.png
+  reader-mode: true
+  page-navigation: true
+  bread-crumbs: false
+  navbar:
+    logo: img/logo-color.png
+    search: true
+    pinned: false
+    left:
+      - href: index.qmd
+        text: Accueil
+      - href: about.qmd
+        text: À propos
+
+format:
+  html:
+    mainfont: calibri
+    grid:
+      sidebar-width: 400px
+      body-width: 900px
+      margin-width: 400px
+      gutter-width: 1.5rem
+    theme:
+      light: flatly
+      dark: solar
+    css: styles.css
+    toc: true
+    toc-depth: 5
+    toc-expand: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    lightbox: true
+    tbl-cap-location: margin
+    comments:
+      hypothesis: true
+  pdf:
+    documentclass: scrartcl
+    toc: true
+    toc-depth: 5
+    links-as-notes: true
+

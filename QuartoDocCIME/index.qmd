@@ -1,0 +1,30 @@
+---
+title: Documentation de CIME
+subtitle: version Omeka S
+date: 2024-02-29
+lang: fr
+format:
+  html: default
+  pdf: default
+---
+
+## Bienvenue
+
+![](img/icon-color.png)
+
+
+## Que déposer dans CIME ?
+
+
+
+## Qui dépose dans CIME ?
+
+
+
+## Comment déposer dans CIME ?
+
+
+
+## Ressources sur **Omeka S**
+
+

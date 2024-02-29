@@ -1,0 +1,9 @@
+---
+title: "À propos"
+---
+
+::: {.callout-tip collapse="true"}
+### Ce site est fait avec *Quarto*
+
+<https://quarto.org/docs/websites>.
+:::
