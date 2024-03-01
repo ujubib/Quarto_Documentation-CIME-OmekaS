@@ -18,7 +18,7 @@ format:
 Collecte Informatique des Mémoires Étudiants  
 :::
 
-::: {style="padding-top:.2em;padding-left:1.2em;padding-right:1.2em;margin-top:-1em;margin-bottom:3em;color:slategrey;letter-spacing:3px;border-top:1px solid #e6007e;width:fit-content;margin-left:auto;margin-right:auto"}
+::: {style="padding-top:.4em;padding-left:1.2em;padding-right:1.2em;margin-top:-1em;margin-bottom:3em;font-family:bellefair;color:slategrey;letter-spacing:3px;border-top:1px solid #e6007e;width:fit-content;margin-left:auto;margin-right:auto"}
 (sur un serveur Omeka S)
 :::
 
@@ -28,7 +28,7 @@ Collecte Informatique des Mémoires Étudiants
 
 ## Qui dépose dans CIME ?
 
-- [Les bibliothécaires référents](qui/BibRef.qmd)
+- [Les bibliothécaires référent·e·s](qui/BibRef.qmd)
 
 ## Comment déposer dans CIME ?
 
