@@ -142,7 +142,7 @@ format:
 : Parcours *Viviane Babeix* {.striped .hover tbl-colwidths="[60,10,30]"}
 :::
 
-::: {.callout-warning icon=false collapse="true"}
+::: {.callout-important icon=false collapse="true"}
 ### Christel Barbisan
 
 | Parcours | Campus | Collège |
@@ -174,7 +174,7 @@ format:
 : Parcours *Florence Breton* {.striped .hover tbl-colwidths="[60,10,30]"}
 :::
 
-::: {.callout-warning icon=false collapse="true"}
+::: {.callout-important icon=false collapse="true"}
 ### Ana do Rosario Vicente
 
 | Parcours | Campus | Collège |
@@ -209,7 +209,7 @@ format:
 : Parcours *Valérie Garrec* {.striped .hover tbl-colwidths="[60,10,30]"}
 :::
 
-::: {.callout-warning icon=false collapse="true"}
+::: {.callout-important icon=false collapse="true"}
 ### Lina Goncalves
 
 | Parcours | Campus | Collège |
@@ -239,7 +239,7 @@ format:
 : Parcours *Sandra Grandcolas* {.striped .hover tbl-colwidths="[60,10,30]"}
 :::
 
-::: {.callout-warning icon=false collapse="true"}
+::: {.callout-important icon=false collapse="true"}
 ### Agnès Lavoinne
 
 | Parcours | Campus | Collège |
@@ -264,7 +264,7 @@ format:
 : Parcours *Agnès Martin* {.striped .hover tbl-colwidths="[60,10,30]"}
 :::
 
-::: {.callout-warning icon=false collapse="true"}
+::: {.callout-important icon=false collapse="true"}
 ### Laurence Palazzi
 
 | Parcours | Campus | Collège |
@@ -306,7 +306,7 @@ format:
 : Parcours *Julien Rabaud* {.striped .hover tbl-colwidths="[60,10,30]"}
 :::
 
-::: {.callout-warning icon=false collapse="true"}
+::: {.callout-important icon=false collapse="true"}
 ### Bettina Schmitt-Cordova
 
 | Parcours | Campus | Collège |

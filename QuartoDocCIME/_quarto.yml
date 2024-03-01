@@ -23,6 +23,7 @@ website:
         text: À propos
   sidebar:
     style: "floating"
+    background: FloralWhite
     collapse-level: 2
     contents:
       - section: "Que Déposer ?"
@@ -38,6 +39,7 @@ format:
   html:
     tbl-cap-location: top
     mainfont: calibri
+    backgroundcolor: FloralWhite
     grid:
       sidebar-width: 400px
       body-width: 900px
@@ -61,5 +63,7 @@ format:
     documentclass: scrartcl
     toc: true
     toc-depth: 5
+    lot: true
+    lof: true
     links-as-notes: true
 

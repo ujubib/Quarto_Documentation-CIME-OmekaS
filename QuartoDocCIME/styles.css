@@ -55,3 +55,14 @@ li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .
     text-transform: none !important;
     color: grey;
 }
+
+/* active nav-tab */
+
+.nav-tabs .nav-link.active {
+    background-color: linen;
+    font-weight: 600;
+}
+
+.tab-content {
+    background-color: linen;
+}
