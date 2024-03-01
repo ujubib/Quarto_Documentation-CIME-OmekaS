@@ -1,5 +1,5 @@
 ---
-title: Les bibliothécaires référents
+title: "Les bibliothécaires référent·e·s"
 author: 
  - Viviane Babeix
  - Julien Rabaud
@@ -129,7 +129,7 @@ format:
 {{< bi incognito color=#e6007e size=64px >}} 
 :::
 
-## Par Référents
+## Par Référent·e·s
 
 ::: {.callout-tip icon=false collapse="true"}
 ### Viviane Babeix

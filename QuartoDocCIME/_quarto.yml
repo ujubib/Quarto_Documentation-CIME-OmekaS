@@ -12,13 +12,13 @@ website:
   page-navigation: true
   bread-crumbs: false
   back-to-top-navigation: true
+  page-footer:
+    background: FloralWhite
   navbar:
     logo: img/UPPA_logo.png
     search: true
     pinned: false
     left:
-      - href: index.qmd
-        text: Accueil
       - href: about.qmd
         text: À propos
   sidebar:
@@ -26,7 +26,7 @@ website:
     background: FloralWhite
     collapse-level: 2
     contents:
-      - section: "Que Déposer ?"
+      - section: "Que déposer ?"
         contents: "que/*"
       - section: "Qui dépose ?"
         contents: "qui/*"

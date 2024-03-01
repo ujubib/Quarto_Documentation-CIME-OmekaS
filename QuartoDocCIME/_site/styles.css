@@ -2,10 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
+li.sidebar-item  > .sidebar-item-container > .sidebar-item-text > .menu-text, 
+li.sidebar-item-section  > .sidebar-item-container > .sidebar-item-text > .menu-text {
+    font-size: 1.2em;
+}
+
+
 /* Fontionne pour Chrome et pas Firefox */
 
 li.sidebar-item-section:has(ul) > .sidebar-item-container > .sidebar-item-text > .menu-text {
     font-weight: bold;
+
     color:#008CBA;
 }
 
@@ -15,6 +22,7 @@ li.sidebar-item-section:has(ul) > .sidebar-item-container > .sidebar-item-text >
   
 li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .menu-text {
     font-weight: normal;
+
     color: teal;
 }
 
@@ -24,6 +32,7 @@ li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .
 
 .sidebar-item-text.sidebar-link.active .menu-text {
     font-weight: bold !important;
+    letter-spacing: 2px;
 }
 
 .listing-actions-group {
@@ -65,4 +74,8 @@ li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .
 
 .tab-content {
     background-color: linen;
+}
+
+.callout-body {
+    background-color: linen; 
 }
