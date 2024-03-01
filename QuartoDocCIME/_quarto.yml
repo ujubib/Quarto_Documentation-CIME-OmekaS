@@ -25,7 +25,11 @@ website:
     style: "floating"
     collapse-level: 2
     contents:
-      - "qui/BibRef.qmd"
+      - section: "Que Déposer ?"
+        contents: "que/*"
+      - section: "Qui dépose ?"
+        contents: "qui/*"
+      - section: "Comment déposer ?"
 #    tools:
 #      - icon: box-arrow-up-right
 #        href: https://kumbuka.univ-pau.fr

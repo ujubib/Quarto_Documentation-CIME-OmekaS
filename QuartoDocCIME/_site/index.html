@@ -144,12 +144,44 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Que Déposer ?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./que/copieVotreMémoire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Les mémoires de Master à l’UPPA</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Qui dépose ?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./qui/BibRef.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Les bibliothécaires référents</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Comment déposer ?</span></span>
+  </li>
     </ul>
     </div>
 </nav>
@@ -208,6 +240,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="que-déposer-dans-cime" class="level2">
 <h2 class="anchored" data-anchor-id="que-déposer-dans-cime">Que déposer dans CIME ?</h2>
+<ul>
+<li><a href="./que/copieVotreMémoire.html">Copie de la page <em>Votre Mémoire de Master</em></a> du site web des bibliothèques (<a href="https://bibliotheques.univ-pau.fr/fr/appui-a-la-recherche/votre-memoire-de-master.html">Source</a>)</li>
+</ul>
 </section>
 <section id="qui-dépose-dans-cime" class="level2">
 <h2 class="anchored" data-anchor-id="qui-dépose-dans-cime">Qui dépose dans CIME ?</h2>
@@ -782,7 +817,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

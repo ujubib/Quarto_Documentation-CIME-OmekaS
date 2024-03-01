@@ -24,6 +24,8 @@ Collecte Informatique des Mémoires Étudiants
 
 ## Que déposer dans CIME ?
 
+- [Copie de la page *Votre Mémoire de Master*](que/copieVotreM%C3%A9moire.qmd) du site web des bibliothèques ([Source](https://bibliotheques.univ-pau.fr/fr/appui-a-la-recherche/votre-memoire-de-master.html))
+
 ## Qui dépose dans CIME ?
 
 - [Les bibliothécaires référents](qui/BibRef.qmd)
