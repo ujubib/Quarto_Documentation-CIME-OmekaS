@@ -125,7 +125,7 @@ format:
 
 :::
 
-::: {style="text-align: center;"}
+::: {style="text-align:center;margin-top:3em;margin-bottom:-3rem;"}
 {{< bi incognito color=#e6007e size=64px >}} 
 :::
 
@@ -139,7 +139,7 @@ format:
 |Etudes anglophones	| Pau |	SSH |
 |MEEF : Anglais 	| Pau |	SSH |
 
-: Parcours *Viviane Babeix* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Viviane Babeix* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-important icon=false collapse="true"}
@@ -151,7 +151,7 @@ format:
 |Traduction, terminologie, documentation	| Pau |	SSH |
 |MEEF : Espagnol | Pau |	SSH |
 
-: Parcours *Christel Barbisan* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Christel Barbisan* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
@@ -171,7 +171,7 @@ format:
 |Evolutionary ecology in aquatic environments | Anglet | STEE |
 |Erasmus Mundus - Environmental contamination and toxicology | Anglet | STEE |
 
-: Parcours *Florence Breton* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Florence Breton* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-important icon=false collapse="true"}
@@ -192,7 +192,7 @@ format:
 |Droit de l’exécution des peines et droits de l’homme | Pau |	SSH |
 |Police et sécurité intérieure | Pau |	SSH |
 
-: Parcours *Ana do Rosario Vicente* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Ana do Rosario Vicente* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
@@ -206,7 +206,7 @@ format:
 | Droit européen de l’action publique | Bayonne | E2I |
 | Droit pénal européen et international | Bayonne | E2I |
 
-: Parcours *Valérie Garrec* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Valérie Garrec* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-important icon=false collapse="true"}
@@ -224,7 +224,7 @@ format:
 |Management et administration des entreprises : ENSGTI | PAU | E2I |
 |Management public des collectivités locales | PAU | E2I |
 
-: Parcours *Lina Goncalves* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Lina Goncalves* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
@@ -236,7 +236,7 @@ format:
 | Applied Social Sciences in Energy and Environmental Transitions (ASSET) – Geographic Specialization | Pau |	SSH |
 | Loisirs, tourisme et développement territorial | Pau |	SSH |
 
-: Parcours *Sandra Grandcolas* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Sandra Grandcolas* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-important icon=false collapse="true"}
@@ -250,7 +250,7 @@ format:
 |MEEF : Lettres classiques | Pau |	SSH |
 |MEEF : Lettres modernes | Pau |	SSH |
 
-: Parcours *Agnès Lavoinne* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Agnès Lavoinne* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
@@ -261,7 +261,7 @@ format:
 |MEEF : Education physique et sportive| |	SSH |
 |STAPS : Expert en préparation physique et mentale et optimisation de la performance| Tarbes |	SSH |
 
-: Parcours *Agnès Martin* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Agnès Martin* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-important icon=false collapse="true"}
@@ -274,7 +274,7 @@ format:
 |Valorisation et médiation des patrimoines | Pau |	SSH |
 |MEEF : Histoire Géographie | Pau |	SSH |
 
-: Parcours *Laurence Palazzi* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Laurence Palazzi* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
@@ -303,7 +303,7 @@ format:
 |2nd degré Mathématiques | Pau | STEE |
 |2nd degré Physique-Chimie | Pau | STEE |
 
-: Parcours *Julien Rabaud* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Julien Rabaud* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-important icon=false collapse="true"}
@@ -319,7 +319,7 @@ format:
 |Management international Amérique Latine | Bayonne | E2I |
 |Chargé de clientèle banque et assurances | Bayonne | E2I |
 
-: Parcours *Bettina Schmitt-Cordova* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Bettina Schmitt-Cordova* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
@@ -329,6 +329,6 @@ format:
 |:---|:---:|:---:|
 |Jeunesse, mobilisations et environnement | Pau |	SSH |
 
-: Parcours *Mariluz Toro* {.striped .hover tbl-colwidths="[60,10,30]"}
+: Parcours *Mariluz Toro* {.striped .hover tbl-colwidths="[70,10,20]"}
 :::
 

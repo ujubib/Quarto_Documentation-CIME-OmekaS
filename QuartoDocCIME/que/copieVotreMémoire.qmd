@@ -35,7 +35,7 @@ Votre fichier de mémoire est-il volumineux ? Utilisez [https://filesender.rena
 - L'engagement anti-plagiat est à remettre à votre directeur.trice de recherche.
 - Après le dépôt, votre mémoire est archivé sur CIME
 
-[![Logo CIME](https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/cime%20officiel_65x220.jpg)](https://cime.univ-pau.fr/ "accès à CIME,  plate-forme des mémoires étudiants de l’UPPA")
+[![](https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/cime%20officiel_65x220.jpg)](https://cime.univ-pau.fr/ "accès à CIME,  plate-forme des mémoires étudiants de l’UPPA")
 
 ### Diffusion sous conditions
 
@@ -51,7 +51,7 @@ Si ces conditions ne sont pas remplies, le mémoire sera simplement archivé sur
 
 Si la diffusion est validée, votre mémoire sera accessible en plein texte sur [cime.univ-pau.f](https://cime.univ-pau.fr/ "accès à CIME,  plate-forme des mémoires étudiants de l’UPPA")r. L’accès à ce service est restreint à la communauté universitaire de l’UPPA.
 
-[![Logo DUMAS](https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/DUMAS%20logo_64x253.jpg)](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU "accès à Dumas")
+[![](https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/DUMAS%20logo_64x253.jpg)](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU "accès à Dumas")
 
 ### Valorisation des meilleurs mémoires
 
