@@ -1,0 +1,81 @@
+/* css styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+li.sidebar-item  > .sidebar-item-container > .sidebar-item-text > .menu-text, 
+li.sidebar-item-section  > .sidebar-item-container > .sidebar-item-text > .menu-text {
+    font-size: 1.2em;
+}
+
+
+/* Fontionne pour Chrome et pas Firefox */
+
+li.sidebar-item-section:has(ul) > .sidebar-item-container > .sidebar-item-text > .menu-text {
+    font-weight: bold;
+
+    color:#008CBA;
+}
+
+li.sidebar-item-section:has(ul) > .sidebar-item-container > .sidebar-item-text > .menu-text::before {
+    content: "• ";
+}
+  
+li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .menu-text {
+    font-weight: normal;
+
+    color: teal;
+}
+
+li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .menu-text::before {
+    content: "- ";
+}
+
+.sidebar-item-text.sidebar-link.active .menu-text {
+    font-weight: bold !important;
+    letter-spacing: 2px;
+}
+
+.listing-actions-group {
+    display: none;
+}
+
+.quarto-listing-table th {
+    color: grey;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.quarto-title-block {
+    width: fit-content;
+    /* background-color:mistyrose; */ /* ghostwite snow seashell azure oldlace */
+    padding-top: .8em;
+    padding-bottom: .8em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    border-radius: 16px;
+    margin-bottom: 3em !important;
+    border: solid 4px #e6007e;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quarto-title-meta-heading {
+    margin-top: 1.6em !important;
+    text-transform: none !important;
+    color: grey;
+}
+
+/* active nav-tab */
+
+.nav-tabs .nav-link.active {
+    background-color: linen;
+    font-weight: 600;
+}
+
+.tab-content {
+    background-color: linen;
+}
+
+.callout-body {
+    background-color: linen; 
+}
