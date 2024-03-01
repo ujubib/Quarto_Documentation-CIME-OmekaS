@@ -1,6 +1,9 @@
 project:
   type: website
 
+execute:
+  freeze: auto
+
 website:
   title: "Documentation de CIME"
   favicon: img/icon-color.png
