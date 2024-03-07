@@ -54,7 +54,7 @@ li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .
     padding-right: 1.2em;
     border-radius: 16px;
     margin-bottom: 3em !important;
-    border: solid 4px #e6007e;
+    border: solid 4px #ffdd99;
     margin-left: auto;
     margin-right: auto;
 }

@@ -42,13 +42,13 @@ Sur son ordinateur créer un dossier de type `depotCIME_YYYY-MM-DD`
 : modèles de ressource *Omeka S* pour CIME {.striped .hover tbl-colwidths="[20,80]"}
 
 
-## éditer le fichier dans LibreOffice Calc ou Excel
+## Éditer le fichier dans LibreOffice Calc ou Excel
 
 Propriétés en colonnes, une ligne par mémoire
 
-## ajouter les pdf
+## Ajouter les pdf
 
-Dans le dossier `depotCIME_YYYY-MM-DD`
+Dans votre dossier `depotCIME_YYYY-MM-DD`, avec votre fichier `depotCIME.csv` complété.
 
 ## Créer une archive `.zip` du dossier
 

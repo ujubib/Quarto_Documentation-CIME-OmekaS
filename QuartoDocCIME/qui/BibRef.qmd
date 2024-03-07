@@ -11,7 +11,7 @@ format:
 ---
 
 ::: {style="text-align: center;"}
-{{< bi stars color=#e6007e size=64px >}} 
+{{< bi stars color=#ffdd99 size=64px >}} 
 :::
 
 ## Par Collèges et parcours
@@ -126,7 +126,7 @@ format:
 :::
 
 ::: {style="text-align:center;margin-top:3em;margin-bottom:-3rem;"}
-{{< bi incognito color=#e6007e size=64px >}} 
+{{< bi incognito color=#ffdd99 size=64px >}} 
 :::
 
 ## Par Référent·e·s

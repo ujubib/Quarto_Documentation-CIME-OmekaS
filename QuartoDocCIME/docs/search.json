@@ -87,8 +87,8 @@
     "objectID": "comment/tuto_temp.html#éditer-le-fichier-dans-libreoffice-calc-ou-excel",
     "href": "comment/tuto_temp.html#éditer-le-fichier-dans-libreoffice-calc-ou-excel",
     "title": "Préparer un dépôt CIME",
-    "section": "éditer le fichier dans LibreOffice Calc ou Excel",
-    "text": "éditer le fichier dans LibreOffice Calc ou Excel\nPropriétés en colonnes, une ligne par mémoire",
+    "section": "Éditer le fichier dans LibreOffice Calc ou Excel",
+    "text": "Éditer le fichier dans LibreOffice Calc ou Excel\nPropriétés en colonnes, une ligne par mémoire",
     "crumbs": [
       "À propos",
       "Comment déposer ?",
@@ -99,8 +99,8 @@
     "objectID": "comment/tuto_temp.html#ajouter-les-pdf",
     "href": "comment/tuto_temp.html#ajouter-les-pdf",
     "title": "Préparer un dépôt CIME",
-    "section": "ajouter les pdf",
-    "text": "ajouter les pdf\nDans le dossier depotCIME_YYYY-MM-DD",
+    "section": "Ajouter les pdf",
+    "text": "Ajouter les pdf\nDans votre dossier depotCIME_YYYY-MM-DD, avec votre fichier depotCIME.csv complété.",
     "crumbs": [
       "À propos",
       "Comment déposer ?",
@@ -145,14 +145,7 @@
     "href": "index.html#comment-déposer-dans-cime",
     "title": "Documentation de CIME",
     "section": "Comment déposer dans CIME ?",
-    "text": "Comment déposer dans CIME ?\n\nPréparer un dépôt CIME pour Omeka S"
-  },
-  {
-    "objectID": "index.html#ressources-sur-omeka-s",
-    "href": "index.html#ressources-sur-omeka-s",
-    "title": "Documentation de CIME",
-    "section": "Ressources sur Omeka S",
-    "text": "Ressources sur Omeka S"
+    "text": "Comment déposer dans CIME ?\n\nPréparer un dépôt CIME pour Omeka S\n\n\n\n\n\n\n\nRessources sur Omeka S\n\n\n\n\n\n\nGuide d’import des fichiers dans OmekaS via le module CSV Import\n\nÉmeline Juillard (Université Sorbonne Nouvelle) 6 octobre 2021\n\nFormation doctorale Omeka S. Doctorat. Mettre en valeur sa bibliothèque numérique avec Omeka S - Maximilien Petit, Michel de Moura, Karine Pellerin. 2022, 15p. ⟨hal-04221115⟩"
   },
   {
     "objectID": "que/test.html#section-1",
