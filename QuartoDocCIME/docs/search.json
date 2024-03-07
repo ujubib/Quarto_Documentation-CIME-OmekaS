@@ -48,6 +48,78 @@
     ]
   },
   {
+    "objectID": "comment/tuto_temp.html",
+    "href": "comment/tuto_temp.html",
+    "title": "Préparer un dépôt CIME",
+    "section": "",
+    "text": "Sur son ordinateur créer un dossier de type depotCIME_YYYY-MM-DD",
+    "crumbs": [
+      "À propos",
+      "Comment déposer ?",
+      "Préparer un dépôt CIME"
+    ]
+  },
+  {
+    "objectID": "comment/tuto_temp.html#créer-un-dossier-de-dépôt",
+    "href": "comment/tuto_temp.html#créer-un-dossier-de-dépôt",
+    "title": "Préparer un dépôt CIME",
+    "section": "",
+    "text": "Sur son ordinateur créer un dossier de type depotCIME_YYYY-MM-DD",
+    "crumbs": [
+      "À propos",
+      "Comment déposer ?",
+      "Préparer un dépôt CIME"
+    ]
+  },
+  {
+    "objectID": "comment/tuto_temp.html#dans-ce-dossier-copier-le-fichier-depotcime.csv",
+    "href": "comment/tuto_temp.html#dans-ce-dossier-copier-le-fichier-depotcime.csv",
+    "title": "Préparer un dépôt CIME",
+    "section": "Dans ce dossier, copier le fichier depotCIME.csv",
+    "text": "Dans ce dossier, copier le fichier depotCIME.csv\n\nTélécharger depotCIME.csv\n\n\nModèle de saisie\n\nmodèles de ressource Omeka S pour CIME\n\n\n\n\n\n\nPropriétés/Colonnes\nCommentaires\n\n\n\n\ndcterms:title\ntitre du mémoire\n\n\ndcterms:creator\nauteur du mémoire\n\n\ndcterms:description\nrésumé en français\n\n\ndcterms:abstract\nrésumé en anglais (11)\n\n\ndcterms:subject\nmot-clés (séparés par des virgules). Continuer à nettoyer, fusionner avec la colonne tags)\n\n\ndcterms:source\nurl dumas (brute - ex : https://dumas.ccsd.cnrs.fr/dumas-00498321 )\n\n\ndcterms:publisher\n??? / UPPA - Collège ? / autres tutelles pédagogiques ?\n\n\ndcterms:date\nAnnée de soutenance\n\n\ndcterms:contributor\nResponsables pédagogiques. Nom, Prénom (séparé par des ;) (110 vides)\n\n\ndcterms:rights\nvidé - à déterminer\n\n\ndcterms:format\nvidé - à déterminer (code pdf)\n\n\ndcterms:language\ncode iso 639-2 https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1 ajout de fre à tous les vides (autres valeurs présentes : eng et spa)\n\n\ndcterms:type\nà nettoyer → BUT/Licence/Master\n\n\ndcterms:educationLevel\nDiplôme année / Master 1, Licence 3\n\n\ndcterms:isPartOf\nParcours - mention (à rapprocher de la colonne collection )\n\n\nvivo:majorField\nDiscipline principale (Vocabulaire ?)\n\n\nfichier\nnomExact_dufichier.pdf colonne file",
+    "crumbs": [
+      "À propos",
+      "Comment déposer ?",
+      "Préparer un dépôt CIME"
+    ]
+  },
+  {
+    "objectID": "comment/tuto_temp.html#éditer-le-fichier-dans-libreoffice-calc-ou-excel",
+    "href": "comment/tuto_temp.html#éditer-le-fichier-dans-libreoffice-calc-ou-excel",
+    "title": "Préparer un dépôt CIME",
+    "section": "éditer le fichier dans LibreOffice Calc ou Excel",
+    "text": "éditer le fichier dans LibreOffice Calc ou Excel\nPropriétés en colonnes, une ligne par mémoire",
+    "crumbs": [
+      "À propos",
+      "Comment déposer ?",
+      "Préparer un dépôt CIME"
+    ]
+  },
+  {
+    "objectID": "comment/tuto_temp.html#ajouter-les-pdf",
+    "href": "comment/tuto_temp.html#ajouter-les-pdf",
+    "title": "Préparer un dépôt CIME",
+    "section": "ajouter les pdf",
+    "text": "ajouter les pdf\nDans le dossier depotCIME_YYYY-MM-DD",
+    "crumbs": [
+      "À propos",
+      "Comment déposer ?",
+      "Préparer un dépôt CIME"
+    ]
+  },
+  {
+    "objectID": "comment/tuto_temp.html#créer-une-archive-.zip-du-dossier",
+    "href": "comment/tuto_temp.html#créer-une-archive-.zip-du-dossier",
+    "title": "Préparer un dépôt CIME",
+    "section": "Créer une archive .zip du dossier",
+    "text": "Créer une archive .zip du dossier\nMe l’envoyer par mail ou via FileSender si trop volumineuse.",
+    "crumbs": [
+      "À propos",
+      "Comment déposer ?",
+      "Préparer un dépôt CIME"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "À propos",
@@ -73,7 +145,7 @@
     "href": "index.html#comment-déposer-dans-cime",
     "title": "Documentation de CIME",
     "section": "Comment déposer dans CIME ?",
-    "text": "Comment déposer dans CIME ?"
+    "text": "Comment déposer dans CIME ?\n\nPréparer un dépôt CIME pour Omeka S"
   },
   {
     "objectID": "index.html#ressources-sur-omeka-s",

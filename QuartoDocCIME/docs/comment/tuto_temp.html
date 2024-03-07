@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Julien Rabaud">
 
-<title>Documentation de CIME</title>
+<title>Documentation de CIME - Préparer un dépôt CIME</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./img/icon-color.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../qui/BibRef.html" rel="prev">
+<link href="../img/icon-color.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Documentation de CIME">
-<meta property="og:description" content="version Omeka S">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Documentation de CIME - Préparer un dépôt CIME">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="Documentation de CIME">
 </head>
 
@@ -94,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/UPPA_logo.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/UPPA_logo.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Documentation de CIME</span>
     </a>
   </div>
@@ -108,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">À propos</span></a>
   </li>  
 </ul>
@@ -129,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Documentation de CIME</h1>
+          <h1 class="quarto-secondary-nav-title">Préparer un dépôt CIME</h1>
         </a>     
     </div>
   </nav>
@@ -151,13 +150,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./que/copieVotreMémoire.html" class="sidebar-item-text sidebar-link">
+  <a href="../que/copieVotreMémoire.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Les mémoires de Master à l’UPPA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./que/test.html" class="sidebar-item-text sidebar-link">
+  <a href="../que/test.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Test</span></a>
   </div>
 </li>
@@ -174,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./qui/BibRef.html" class="sidebar-item-text sidebar-link">
+  <a href="../qui/BibRef.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Les bibliothécaires référent·e·s</span></a>
   </div>
 </li>
@@ -191,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./comment/tuto_temp.html" class="sidebar-item-text sidebar-link">
+  <a href="../comment/tuto_temp.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Préparer un dépôt CIME</span></a>
   </div>
 </li>
@@ -207,27 +206,42 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#que-déposer-dans-cime" id="toc-que-déposer-dans-cime" class="nav-link active" data-scroll-target="#que-déposer-dans-cime">Que déposer dans CIME ?</a></li>
-  <li><a href="#qui-dépose-dans-cime" id="toc-qui-dépose-dans-cime" class="nav-link" data-scroll-target="#qui-dépose-dans-cime">Qui dépose dans CIME ?</a></li>
-  <li><a href="#comment-déposer-dans-cime" id="toc-comment-déposer-dans-cime" class="nav-link" data-scroll-target="#comment-déposer-dans-cime">Comment déposer dans CIME ?</a></li>
-  <li><a href="#ressources-sur-omeka-s" id="toc-ressources-sur-omeka-s" class="nav-link" data-scroll-target="#ressources-sur-omeka-s">Ressources sur <strong>Omeka S</strong></a></li>
+  <li><a href="#créer-un-dossier-de-dépôt" id="toc-créer-un-dossier-de-dépôt" class="nav-link active" data-scroll-target="#créer-un-dossier-de-dépôt">Créer un dossier de dépôt</a></li>
+  <li><a href="#dans-ce-dossier-copier-le-fichier-depotcime.csv" id="toc-dans-ce-dossier-copier-le-fichier-depotcime.csv" class="nav-link" data-scroll-target="#dans-ce-dossier-copier-le-fichier-depotcime.csv">Dans ce dossier, copier le fichier <code>depotCIME.csv</code></a>
+  <ul>
+  <li><a href="#modèle-de-saisie" id="toc-modèle-de-saisie" class="nav-link" data-scroll-target="#modèle-de-saisie">Modèle de saisie</a></li>
+  </ul></li>
+  <li><a href="#éditer-le-fichier-dans-libreoffice-calc-ou-excel" id="toc-éditer-le-fichier-dans-libreoffice-calc-ou-excel" class="nav-link" data-scroll-target="#éditer-le-fichier-dans-libreoffice-calc-ou-excel">éditer le fichier dans LibreOffice Calc ou Excel</a></li>
+  <li><a href="#ajouter-les-pdf" id="toc-ajouter-les-pdf" class="nav-link" data-scroll-target="#ajouter-les-pdf">ajouter les pdf</a></li>
+  <li><a href="#créer-une-archive-.zip-du-dossier" id="toc-créer-une-archive-.zip-du-dossier" class="nav-link" data-scroll-target="#créer-une-archive-.zip-du-dossier">Créer une archive <code>.zip</code> du dossier</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/comment/tuto_temp.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/comment/tuto_temp.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="tuto_temp.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Documentation de CIME</h1>
-<p class="subtitle lead">version Omeka S</p>
+<h1 class="title d-none d-lg-block">Préparer un dépôt CIME</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Auteur·rice</div>
+    <div class="quarto-title-meta-contents">
+             <p>Julien Rabaud </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">29 février 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -237,47 +251,113 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style>
-  #title-block-header {
-    display: none;
-  }
-</style>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/icon-color.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/icon-color.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="border-radius:18px"></a></p>
-</figure>
-</div>
-<div style="text-align:center;font-size:1.4em;font-family:bellefair;margin-top:-1em;">
-<p>Collecte Informatique des Mémoires Étudiants</p>
-</div>
-<div style="padding-top:.4em;padding-left:1.2em;padding-right:1.2em;margin-top:-1em;margin-bottom:3em;font-family:bellefair;color:slategrey;letter-spacing:3px;border-top:1px solid #e6007e;width:fit-content;margin-left:auto;margin-right:auto">
-<p>(sur un serveur Omeka S)</p>
-</div>
-<section id="que-déposer-dans-cime" class="level2">
-<h2 class="anchored" data-anchor-id="que-déposer-dans-cime">Que déposer dans CIME ?</h2>
-<ul>
-<li><a href="./que/copieVotreMémoire.html">Copie de la page <em>Votre Mémoire de Master</em></a> du site web des bibliothèques (<a href="https://bibliotheques.univ-pau.fr/fr/appui-a-la-recherche/votre-memoire-de-master.html">Source</a>)</li>
-</ul>
+<section id="créer-un-dossier-de-dépôt" class="level2">
+<h2 class="anchored" data-anchor-id="créer-un-dossier-de-dépôt">Créer un dossier de dépôt</h2>
+<p>Sur son ordinateur créer un dossier de type <code>depotCIME_YYYY-MM-DD</code></p>
 </section>
-<section id="qui-dépose-dans-cime" class="level2">
-<h2 class="anchored" data-anchor-id="qui-dépose-dans-cime">Qui dépose dans CIME ?</h2>
-<ul>
-<li><a href="./qui/BibRef.html">Les bibliothécaires référent·e·s</a></li>
-</ul>
+<section id="dans-ce-dossier-copier-le-fichier-depotcime.csv" class="level2">
+<h2 class="anchored" data-anchor-id="dans-ce-dossier-copier-le-fichier-depotcime.csv">Dans ce dossier, copier le fichier <code>depotCIME.csv</code></h2>
+<button>
+<a href="../depotCIME.csv" download="depotCIME.csv" target="_blank">Télécharger <code>depotCIME.csv</code></a>
+</button>
+<section id="modèle-de-saisie" class="level3">
+<h3 class="anchored" data-anchor-id="modèle-de-saisie">Modèle de saisie</h3>
+<table class="table-striped table-hover table">
+<caption>modèles de ressource <em>Omeka S</em> pour CIME</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Propriétés/Colonnes</th>
+<th>Commentaires</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>dcterms:title</td>
+<td>titre du mémoire</td>
+</tr>
+<tr class="even">
+<td>dcterms:creator</td>
+<td>auteur du mémoire</td>
+</tr>
+<tr class="odd">
+<td>dcterms:description</td>
+<td>résumé en français</td>
+</tr>
+<tr class="even">
+<td>dcterms:abstract</td>
+<td>résumé en anglais (11)</td>
+</tr>
+<tr class="odd">
+<td>dcterms:subject</td>
+<td>mot-clés (séparés par des virgules). Continuer à nettoyer, fusionner avec la colonne <code>tags</code>)</td>
+</tr>
+<tr class="even">
+<td>dcterms:source</td>
+<td>url dumas (brute - ex : <code>https://dumas.ccsd.cnrs.fr/dumas-00498321</code> )</td>
+</tr>
+<tr class="odd">
+<td>dcterms:publisher</td>
+<td>??? / UPPA - Collège ? / autres tutelles pédagogiques ?</td>
+</tr>
+<tr class="even">
+<td>dcterms:date</td>
+<td>Année de soutenance</td>
+</tr>
+<tr class="odd">
+<td>dcterms:contributor</td>
+<td>Responsables pédagogiques. <code>Nom, Prénom</code> (séparé par des <code>;</code>) (110 vides)</td>
+</tr>
+<tr class="even">
+<td>dcterms:rights</td>
+<td>vidé - à déterminer</td>
+</tr>
+<tr class="odd">
+<td>dcterms:format</td>
+<td>vidé - à déterminer (code pdf)</td>
+</tr>
+<tr class="even">
+<td>dcterms:language</td>
+<td>code iso 639-2 https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1 ajout de <code>fre</code> à tous les vides (autres valeurs présentes : <code>eng</code> et <code>spa</code>)</td>
+</tr>
+<tr class="odd">
+<td>dcterms:type</td>
+<td>à nettoyer → BUT/Licence/Master</td>
+</tr>
+<tr class="even">
+<td>dcterms:educationLevel</td>
+<td>Diplôme année / <code>Master 1</code>, <code>Licence 3</code></td>
+</tr>
+<tr class="odd">
+<td>dcterms:isPartOf</td>
+<td>Parcours - mention (à rapprocher de la colonne <code>collection</code> )</td>
+</tr>
+<tr class="even">
+<td>vivo:majorField</td>
+<td>Discipline principale (Vocabulaire ?)</td>
+</tr>
+<tr class="odd">
+<td>fichier</td>
+<td><code>nomExact_dufichier.pdf</code> colonne <code>file</code></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="comment-déposer-dans-cime" class="level2">
-<h2 class="anchored" data-anchor-id="comment-déposer-dans-cime">Comment déposer dans CIME ?</h2>
-<ul>
-<li><a href="./comment/tuto_temp.html">Préparer un dépôt CIME pour <em>Omeka S</em></a></li>
-</ul>
 </section>
-<section id="ressources-sur-omeka-s" class="level2">
-<h2 class="anchored" data-anchor-id="ressources-sur-omeka-s">Ressources sur <strong>Omeka S</strong></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/tapisserie.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/tapisserie.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="border-radius:18px;margin-top:4em;"></a></p>
-</figure>
-</div>
+<section id="éditer-le-fichier-dans-libreoffice-calc-ou-excel" class="level2">
+<h2 class="anchored" data-anchor-id="éditer-le-fichier-dans-libreoffice-calc-ou-excel">éditer le fichier dans LibreOffice Calc ou Excel</h2>
+<p>Propriétés en colonnes, une ligne par mémoire</p>
+</section>
+<section id="ajouter-les-pdf" class="level2">
+<h2 class="anchored" data-anchor-id="ajouter-les-pdf">ajouter les pdf</h2>
+<p>Dans le dossier <code>depotCIME_YYYY-MM-DD</code></p>
+</section>
+<section id="créer-une-archive-.zip-du-dossier" class="level2">
+<h2 class="anchored" data-anchor-id="créer-une-archive-.zip-du-dossier">Créer une archive <code>.zip</code> du dossier</h2>
+<p>Me l’envoyer par mail ou via <a href="https://filesender.renater.fr">FileSender</a> si trop volumineuse.</p>
 
 
 </section>
@@ -834,35 +914,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../qui/BibRef.html" class="pagination-link  aria-label=" les="" bibliothécaires="" référent·e·s"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Les bibliothécaires référent·e·s</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false,"closeEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/comment/tuto_temp.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/comment/tuto_temp.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

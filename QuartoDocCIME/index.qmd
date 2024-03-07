@@ -32,6 +32,8 @@ Collecte Informatique des Mémoires Étudiants
 
 ## Comment déposer dans CIME ?
 
+- [Préparer un dépôt CIME pour *Omeka S*](comment/tuto_temp.qmd)
+
 ## Ressources sur **Omeka S**
 
 ![](img/tapisserie.gif){fig-align="center" style="border-radius:18px;margin-top:4em;"}

@@ -1,0 +1,55 @@
+---
+title: "Préparer un dépôt CIME"
+author: 
+ - Julien Rabaud
+date: 2024-02-29
+lang: fr
+format:
+  html: default
+  pdf: default
+---
+
+## Créer un dossier de dépôt
+
+Sur son ordinateur créer un dossier de type `depotCIME_YYYY-MM-DD`
+
+## Dans ce dossier, copier le fichier `depotCIME.csv`
+
+<button>[Télécharger `depotCIME.csv`](../depotCIME.csv){download="depotCIME.csv" target="_blank"}</button>
+
+### Modèle de saisie
+
+| Propriétés/Colonnes | Commentaires |
+|---|---|
+| dcterms:title	| titre du mémoire |
+| dcterms:creator	| auteur du mémoire |
+| dcterms:description	| résumé en français |
+| dcterms:abstract | résumé en anglais (11) |
+| dcterms:subject	| mot-clés (séparés par des virgules). Continuer à nettoyer, fusionner avec la colonne `tags`)|
+| dcterms:source | url dumas (brute - ex : `https://dumas.ccsd.cnrs.fr/dumas-00498321` ) |
+| dcterms:publisher	|  ??? / UPPA - Collège ? / autres tutelles pédagogiques ? |
+| dcterms:date | Année de soutenance |
+| dcterms:contributor	| Responsables pédagogiques. `Nom, Prénom` (séparé par des `;`) (110 vides)|
+| dcterms:rights	| vidé - à déterminer|
+| dcterms:format	| vidé - à déterminer (code pdf)|
+| dcterms:language	| code iso 639-2 https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1 ajout de `fre` à tous les vides (autres valeurs présentes : `eng` et `spa`)|
+| dcterms:type	| à nettoyer → BUT/Licence/Master |
+| dcterms:educationLevel | Diplôme année / `Master 1`, `Licence 3` |
+| dcterms:isPartOf | Parcours - mention (à rapprocher de la colonne `collection` ) |
+| vivo:majorField | Discipline principale (Vocabulaire ?) |
+| fichier | `nomExact_dufichier.pdf` colonne `file`|
+
+: modèles de ressource *Omeka S* pour CIME {.striped .hover tbl-colwidths="[20,80]"}
+
+
+## éditer le fichier dans LibreOffice Calc ou Excel
+
+Propriétés en colonnes, une ligne par mémoire
+
+## ajouter les pdf
+
+Dans le dossier `depotCIME_YYYY-MM-DD`
+
+## Créer une archive `.zip` du dossier
+
+Me l'envoyer par mail ou via [FileSender](https://filesender.renater.fr) si trop volumineuse.

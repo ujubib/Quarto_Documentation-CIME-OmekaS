@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources: 
+    - ".csv"
 
 execute:
   freeze: auto
@@ -35,6 +37,7 @@ website:
       - section: "Qui dépose ?"
         contents: "qui/*"
       - section: "Comment déposer ?"
+        contents: "comment/*"
 #    tools:
 #      - icon: box-arrow-up-right
 #        href: https://kumbuka.univ-pau.fr
