@@ -2,6 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
+button {
+    border: 3px solid #ffc34d;
+    border-radius: 6px;
+    background-color: antiquewhite;
+    padding:.5em;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+button>a {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color:darkblue
+}
+
 li.sidebar-item  > .sidebar-item-container > .sidebar-item-text > .menu-text, 
 li.sidebar-item-section  > .sidebar-item-container > .sidebar-item-text > .menu-text {
     font-size: 1.2em;
@@ -79,3 +97,4 @@ li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .
 .callout-body {
     background-color: linen; 
 }
+

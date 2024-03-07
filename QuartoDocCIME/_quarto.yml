@@ -67,7 +67,7 @@ format:
       hypothesis: true
   pdf:
     tbl-cap-location: top
-    documentclass: scrartcl
+    documentclass: scrreprt
     toc: true
     toc-depth: 5
     lot: true

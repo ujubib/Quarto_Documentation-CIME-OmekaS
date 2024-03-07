@@ -17,7 +17,7 @@ format:
 ## Par Collèges et parcours
 
 ::: panel-tabset
-### Collège SSH
+### Collège SSH (35)
 
 | Parcours du Master | Campus | Contact |
 |:-------------------|:------:|:-------:|
@@ -59,7 +59,7 @@ format:
 
 : Référents pour les parcours du collège SSH {.striped .hover tbl-colwidths="[60,10,30]"}
 
-### Collège E2I
+### Collège E2I (18)
 
 |Parcours du Master| Campus| Contact|
 |:---|:---:|:---:|
@@ -85,7 +85,7 @@ format:
 : Référents pour les parcours du collège E2I {.striped .hover tbl-colwidths="[60,10,30]"}
 
 
-### Collège STEE
+### Collège STEE (31)
 
 |Parcours du Master| Campus| Contact|
 |:---|:---:|:---:|
@@ -132,7 +132,7 @@ format:
 ## Par Référent·e·s
 
 ::: {.callout-tip icon=false collapse="true"}
-### Viviane Babeix
+### Viviane Babeix (2)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -143,7 +143,7 @@ format:
 :::
 
 ::: {.callout-important icon=false collapse="true"}
-### Christel Barbisan
+### Christel Barbisan (3)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -155,7 +155,7 @@ format:
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
-### Florence Breton
+### Florence Breton (11)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -175,7 +175,7 @@ format:
 :::
 
 ::: {.callout-important icon=false collapse="true"}
-### Ana do Rosario Vicente
+### Ana do Rosario Vicente (12)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -196,7 +196,7 @@ format:
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
-### Valérie Garrec
+### Valérie Garrec (5)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -210,7 +210,7 @@ format:
 :::
 
 ::: {.callout-important icon=false collapse="true"}
-### Lina Goncalves
+### Lina Goncalves (9)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -228,7 +228,7 @@ format:
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
-### Sandra Grandcolas
+### Sandra Grandcolas (3)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -240,7 +240,7 @@ format:
 :::
 
 ::: {.callout-important icon=false collapse="true"}
-### Agnès Lavoinne
+### Agnès Lavoinne (5)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -254,7 +254,7 @@ format:
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
-### Agnès Martin
+### Agnès Martin (2)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -265,7 +265,7 @@ format:
 :::
 
 ::: {.callout-important icon=false collapse="true"}
-### Laurence Palazzi
+### Laurence Palazzi (4)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -278,7 +278,7 @@ format:
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
-### Julien Rabaud
+### Julien Rabaud (20)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -307,7 +307,7 @@ format:
 :::
 
 ::: {.callout-important icon=false collapse="true"}
-### Bettina Schmitt-Cordova
+### Bettina Schmitt-Cordova (7)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
@@ -323,7 +323,7 @@ format:
 :::
 
 ::: {.callout-tip icon=false collapse="true"}
-### Mariluz Toro
+### Mariluz Toro (1)
 
 | Parcours | Campus | Collège |
 |:---|:---:|:---:|
