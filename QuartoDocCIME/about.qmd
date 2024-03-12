@@ -1,9 +1,41 @@
 ---
 title: "À propos"
+format:
+  html: default
+  pdf: default
+jupyter: python3
 ---
 
-::: {.callout-tip collapse="true"}
+## Quarto
+
+::: {.callout-note collapse="true"}
 ### Ce site est fait avec *Quarto*
 
 <https://quarto.org/docs/websites>.
+:::
+
+## Exemples de code python (jupyter)
+
+::: {.callout-tip collapse="true"}
+### L'exemple du site Quarto
+
+For a demonstration of a line plot on a polar axis, see @fig-polar.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
 :::

@@ -66,13 +66,10 @@ li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .
 .quarto-title-block {
     width: fit-content;
     /* background-color:mistyrose; */ /* ghostwite snow seashell azure oldlace */
-    padding-top: .8em;
-    padding-bottom: .8em;
-    padding-left: 1.2em;
-    padding-right: 1.2em;
+    padding: .8em 1.2em;
     border-radius: 16px;
     margin-bottom: 3em !important;
-    border: solid 4px #ffdd99;
+    border: solid 4px khaki;
     margin-left: auto;
     margin-right: auto;
 }

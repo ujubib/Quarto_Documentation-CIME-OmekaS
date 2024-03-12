@@ -44,6 +44,7 @@ website:
 
 format:
   html:
+    code-fold: true
     tbl-cap-location: top
     mainfont: calibri
     backgroundcolor: FloralWhite

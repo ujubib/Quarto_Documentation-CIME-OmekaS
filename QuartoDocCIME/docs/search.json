@@ -49,7 +49,21 @@
     "href": "about.html",
     "title": "À propos",
     "section": "",
-    "text": "Ce site est fait avec Quarto\n\n\n\n\n\nhttps://quarto.org/docs/websites.\n\n\n\n\n\n\n Back to top"
+    "text": "Ce site est fait avec Quarto\n\n\n\n\n\nhttps://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html#quarto",
+    "href": "about.html#quarto",
+    "title": "À propos",
+    "section": "",
+    "text": "Ce site est fait avec Quarto\n\n\n\n\n\nhttps://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html#exemples-de-code-python-jupyter",
+    "href": "about.html#exemples-de-code-python-jupyter",
+    "title": "À propos",
+    "section": "Exemples de code python (jupyter)",
+    "text": "Exemples de code python (jupyter)\n\n\n\n\n\n\nL’exemple du site Quarto\n\n\n\n\n\nFor a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
   },
   {
     "objectID": "comment/préparerDépôtCime.html",
