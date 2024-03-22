@@ -44,6 +44,7 @@ website:
 
 format:
   html:
+    code-tools: true
     code-fold: true
     tbl-cap-location: top
     mainfont: calibri
@@ -56,9 +57,12 @@ format:
     theme:
       light: flatly
       dark: solar
+    filters:
+     - nutshell
     css: styles.css
     toc: true
     toc-depth: 5
+    toc-title: Sommaire
     toc-expand: true
     smooth-scroll: true
     link-external-icon: true
@@ -71,7 +75,13 @@ format:
     documentclass: scrreprt
     toc: true
     toc-depth: 5
+    toc-title: Sommaire
     lot: true
     lof: true
     links-as-notes: true
+  docx:
+    toc: true
+    toc-depth: 5
+    toc-title: Sommaire
+    notes-after-punctuation: false
 

@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -45,6 +79,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell.js"></script>
+<script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell_options.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -198,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
-    <h2 id="toc-title">Sur cette page</h2>
+    <h2 id="toc-title">Sommaire</h2>
    
   <ul>
   <li><a href="#dépôt-obligatoire-et-diffusion-sous-conditions" id="toc-dépôt-obligatoire-et-diffusion-sous-conditions" class="nav-link active" data-scroll-target="#dépôt-obligatoire-et-diffusion-sous-conditions">Dépôt obligatoire et diffusion sous conditions</a>
@@ -211,14 +247,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#valorisation-des-meilleurs-mémoires" id="toc-valorisation-des-meilleurs-mémoires" class="nav-link" data-scroll-target="#valorisation-des-meilleurs-mémoires">Valorisation des meilleurs mémoires</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/que/copieVotreMémoire.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/que/copieVotreMémoire.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="copieVotreMémoire.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/que/copieVotreMémoire.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/que/copieVotreMémoire.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="copieVotreMémoire.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="copieVotreMémoire.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Les mémoires de Master à l’UPPA</h1>
+<div class="quarto-title-block"><div><h1 class="title d-none d-lg-block">Les mémoires de Master à l’UPPA</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Copie de la page web des bibliothèques</p>
 </div>
 
@@ -270,7 +306,7 @@ ul.task-list li input[type="checkbox"] {
 <li>L’engagement anti-plagiat est à remettre à votre directeur.trice de recherche.</li>
 <li>Après le dépôt, votre mémoire est archivé sur CIME</li>
 </ul>
-<p><a href="https://cime.univ-pau.fr/" title="accès à CIME, plate-forme des mémoires étudiants de l’UPPA"><img src="https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/cime%20officiel_65x220.jpg" class="img-fluid"></a></p>
+<p><a href="https://cime.univ-pau.fr/" title="accès à CIME, plate-forme des mémoires étudiants de l’UPPA"><img src="..\img/cime.png" class="img-fluid"></a></p>
 </section>
 </section>
 <section id="diffusion-sous-conditions" class="level3">
@@ -283,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>Si ces conditions ne sont pas remplies, le mémoire sera simplement archivé sur la plateforme locale CIME. Il ne sera pas consultable en ligne.</p>
 <p>Si la diffusion est validée, votre mémoire sera accessible en plein texte sur&nbsp;<a href="https://cime.univ-pau.fr/" title="accès à CIME, plate-forme des mémoires étudiants de l’UPPA">cime.univ-pau.f</a>r. L’accès à ce service est restreint à la communauté universitaire de l’UPPA.</p>
-<p><a href="https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU" title="accès à Dumas"><img src="https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/DUMAS%20logo_64x253.jpg" class="img-fluid"></a></p>
+<p><a href="https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU" title="accès à Dumas"><img src="..\img/dumas.png" class="img-fluid"></a></p>
 </section>
 <section id="valorisation-des-meilleurs-mémoires" class="level3">
 <h3 class="anchored" data-anchor-id="valorisation-des-meilleurs-mémoires">Valorisation des meilleurs mémoires</h3>
@@ -291,6 +327,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Cette diffusion est soumise aux mêmes conditions que pour CIME.<br>
 Les mémoires présents sur DUMAS sont accessibles à tous et en plein texte.</p>
 
+
+<!-- -->
 
 </section>
 </section>
@@ -519,6 +557,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -855,7 +944,70 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text">Les bibliothécaires référent·e·s</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Code source</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Les mémoires de Master à l'UPPA</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> Copie de la page web des bibliothèques</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"> - Viviane Babeix</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"> - Delphine Sinic</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2023-09-21</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> fr</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  html: default</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf: default</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  docx: default</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="co">[</span><span class="ot">Source</span><span class="co">](https://bibliotheques.univ-pau.fr/fr/appui-a-la-recherche/votre-memoire-de-master.html)</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dépôt obligatoire et diffusion sous conditions</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dépôt obligatoire avant soutenance</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Le dépôt des mémoires de master au SCD avant soutenance est obligatoire. Il concerne les master 1 et 2, recherche ou professionnel.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Une feuille de style au format Word 2019</span><span class="co">](https://bibliotheques.univ-pau.fr/_resource/Images/Documents/Services/Memoires_feuille_de_style_UPPA.docx?download=true "feuille de style des mémoires de l'UPPA docx")</span>&nbsp;et&nbsp;<span class="co">[</span><span class="ot">une feuille de style au format LibreOffice 7.0</span><span class="co">](https://bibliotheques.univ-pau.fr/_resource/Images/Documents/Services/Memoires_feuille_de_style_UPPA.odt?download=true "feuille de style des mémoires de l'UPPA odt")</span>, communes à tous les masters de l'UPPA, sont disponibles, ainsi qu'<span class="co">[</span><span class="ot">un engagement anti-plagiat</span><span class="co">](https://bibliotheques.univ-pau.fr/_resource/Images/Documents/Services/Formulaire_engagement_anti_plagiat%202023.pdf?download=true "engagement anti-plagiat")</span>.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Voici un document utile sur le droit des auteurs et la protection des données personnelles :&nbsp;<span class="co">[</span><span class="ot">le Respect du droit des auteurs et protection des données personnelles</span><span class="co">](https://bibliotheques.univ-pau.fr/_resource/01%20Fichiers%20pdf/Appui%20%C3%A0%20la%20recherche/Respect%20du%20droit%20des%20auteurs%20et%20protection%20des%20donn%C3%A9es%20personnelles.pdf?download=true "Respect du droit des auteurs et protection des données personnelles")</span>.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Comment déposer mon mémoire&nbsp;?</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Envoyez votre mémoire par courriel à votre bibliothécaire référent : <span class="co">[</span><span class="ot">liste des bibliothécaires référents au format pdf</span><span class="co">](https://bibliotheques.univ-pau.fr/_resource/01%20Fichiers%20pdf/Appui%20%C3%A0%20la%20recherche/Liste%20r%C3%A9f%C3%A9rents%20m%C3%A9moires%20sept%202023.pdf?download=true "liste des bibliothécaires référents au format pdf")</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Le dépôt du mémoire doit se faire au format pdf uniquement.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Votre fichier de mémoire est-il volumineux ? Utilisez&nbsp;<span class="co">[</span><span class="ot">https://filesender.renater.fr</span><span class="co">](https://filesender.renater.fr/ "https://filesender.renater.fr")</span>&nbsp;pour l’héberger et générer un lien temporaire. Ce lien est à reporter dans votre courriel adressé à votre bibliothécaire référent pour valider votre dépôt.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>L'engagement anti-plagiat est à remettre à votre directeur.trice de recherche.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Après le dépôt, votre mémoire est archivé sur CIME</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](/img/cime.png)</span><span class="co">](https://cime.univ-pau.fr/ "accès à CIME,  plate-forme des mémoires étudiants de l’UPPA")</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">### Diffusion sous conditions</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Contrairement au dépôt, la diffusion du mémoire n’est pas systématique, mais soumise à conditions :</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>1) L'étudiant doit donner son autorisation et le jury de soutenance son avis favorable au travers du&nbsp;<span class="co">[</span><span class="ot">contrat de diffusion</span><span class="co">]</span>(https://bibliotheques.univ-pau.fr/_attachment/votre-memoire-de-master-article/contrat_diffusion_memoire_2021.pdf?download=true "Contrat de diffusion (PDF - 160 Ko)").</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>2) L’étudiant doit impérativement venir à la soutenance avec deux exemplaires du&nbsp;<span class="co">[</span><span class="ot">contrat de diffusion</span><span class="co">](https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/contrat_diffusion_memoire_2021.pdf?download=true)</span>&nbsp;préalablement lu et signé, même s’il n’autorise pas la diffusion de son travail. Une fois la soutenance passée, il doit adresser le contrat de diffusion au format papier, rempli et signé en deux exemplaires originaux, à son bibliothécaire référent.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>3) Il doit respecter le droit d’auteur et les données à caractère personnel. Cela suppose d’obtenir des autorisations, notamment en cas de reproduction et de diffusion de leur image ou de leur voix via un <span class="co">[</span><span class="ot">formulaire d'autorisation</span><span class="co">](https://bibliotheques.univ-pau.fr/_resource/01%20Fichiers%20pdf/Appui%20%C3%A0%20la%20recherche/formulaire-droit-image-voix.docx?download=true)</span>.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Si ces conditions ne sont pas remplies, le mémoire sera simplement archivé sur la plateforme locale CIME. Il ne sera pas consultable en ligne.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Si la diffusion est validée, votre mémoire sera accessible en plein texte sur&nbsp;<span class="co">[</span><span class="ot">cime.univ-pau.f</span><span class="co">](https://cime.univ-pau.fr/ "accès à CIME,  plate-forme des mémoires étudiants de l’UPPA")</span>r. L’accès à ce service est restreint à la communauté universitaire de l’UPPA.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](/img/dumas.png)</span><span class="co">](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU "accès à Dumas")</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">### Valorisation des meilleurs mémoires</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Par ailleurs, les meilleurs mémoires peuvent être diffusés sur le portail national&nbsp;<span class="co">[</span><span class="ot">DUMAS</span><span class="co">]</span>(https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU "Accès à DUMAS (Dépôt Universitaire de Mémoires Après Soutenance)")&nbsp;(collection de l’Université de Pau et des Pays de l'Adour).</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Cette diffusion est soumise aux mêmes conditions que pour CIME.  </span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Les mémoires présents sur DUMAS sont accessibles à tous et en plein texte.</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 
 

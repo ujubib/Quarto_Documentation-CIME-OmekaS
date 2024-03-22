@@ -20,6 +20,28 @@ button>a {
     color:darkblue
 }
 
+#title-block-header .quarto-title-block>div>button {
+    position: absolute;
+    right: -8rem;
+    top:-2rem;
+}
+
+h1 {
+    color:teal;
+    font-variant: small-caps;
+}
+
+.subtitle {
+    color: darkolivegreen;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.quarto-title-meta-contents {
+    color: darkcyan;
+    
+}
+
 li.sidebar-item  > .sidebar-item-container > .sidebar-item-text > .menu-text, 
 li.sidebar-item-section  > .sidebar-item-container > .sidebar-item-text > .menu-text {
     font-size: 1.2em;
@@ -63,16 +85,18 @@ li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .
     font-style: italic;
 }
 
-.quarto-title-block {
+header.quarto-title-block {
     width: fit-content;
     /* background-color:mistyrose; */ /* ghostwite snow seashell azure oldlace */
     padding: .8em 1.2em;
-    border-radius: 16px;
     margin-bottom: 3em !important;
-    border: solid 4px khaki;
+    border: none;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
+
+
 
 .quarto-title-meta-heading {
     margin-top: 1.6em !important;
