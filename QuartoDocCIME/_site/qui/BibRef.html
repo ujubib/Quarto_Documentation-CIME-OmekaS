@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,7 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../que/test.html" rel="prev">
+<link href="../comment/préparerDépôtCime.html" rel="next">
+<link href="../que/copieVotreMémoire.html" rel="prev">
 <link href="../img/icon-color.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -45,6 +80,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell.js"></script>
+<script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell_options.js"></script>
 <link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -80,6 +117,15 @@ ul.task-list li input[type="checkbox"] {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../site_libs/datatables-binding-0.32/datatables.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -155,12 +201,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Les mémoires de Master à l’UPPA</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../que/test.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Test</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -181,8 +221,27 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Comment déposer ?</span></span>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Comment déposer ?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../comment/préparerDépôtCime.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Préparer un dépôt en lot sur CIME</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../comment/ProcédureIndiv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comment déposer un mémoire dans CIME</span></a>
+  </div>
+</li>
+      </ul>
   </li>
     </ul>
     </div>
@@ -191,13 +250,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
-    <h2 id="toc-title">Sur cette page</h2>
+    <h2 id="toc-title">Sommaire</h2>
    
   <ul>
   <li><a href="#par-collèges-et-parcours" id="toc-par-collèges-et-parcours" class="nav-link active" data-scroll-target="#par-collèges-et-parcours">Par Collèges et parcours</a></li>
   <li><a href="#par-référentes" id="toc-par-référentes" class="nav-link" data-scroll-target="#par-référentes">Par Référent·e·s</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/qui/BibRef.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/qui/BibRef.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="BibRef.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/qui/BibRef.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/qui/BibRef.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="BibRef.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -235,14 +294,88 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div style="text-align: center;">
-<p><i class="bi-stars " style="font-size: 64px;color: #e6007e;" role="img" aria-hidden="true"></i></p>
+<p><i class="bi-stars " style="font-size: 64px;color: #ffdd99;" role="img" aria-hidden="true"></i></p>
 </div>
 <section id="par-collèges-et-parcours" class="level2">
 <h2 class="anchored" data-anchor-id="par-collèges-et-parcours">Par Collèges et parcours</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Collège SSH</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Collège E2I</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Collège STEE</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Collège SSH (35)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Collège E2I (19)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Collège STEE (31)</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Charger les bibliothèques nécessaires</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.3.3</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'DT' was built under R version 4.3.3</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Charger le fichier CSV</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>file_path <span class="ot">&lt;-</span> <span class="st">"../Masters.csv"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read_csv2</span>(file_path) <span class="co"># Utiliser read_csv2 pour les fichiers avec séparateur ";"</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Using "','" as decimal and "'.'" as grouping mark. Use `read_delim()` for more control.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 82 Columns: 5
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ";"
+chr (5): Collège, Mention, Parcours, Campus, Contact
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrer les données où la colonne "Collège" est "SSH"</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>filtered_data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Collège <span class="sc">==</span> <span class="st">"SSH"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Parcours, Campus, Contact)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Afficher les données filtrées sous forme de tableau interactif</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">datatable</span>(</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  filtered_data,</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">list</span>(<span class="at">pageLength =</span> <span class="dv">10</span>, <span class="at">autoWidth =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">rownames =</span> <span class="cn">FALSE</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-b0b080f07786fd19ec2b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b0b080f07786fd19ec2b">{"x":{"filter":"none","vertical":false,"data":[["Études anglophones","Études hispaniques","Lettres et arts","FLE - Généraliste","FLE - PostGraduate Certificate in Education (PGCE)","Traduction, terminologie, documentation","Juriste d’affaires","Juriste d’affaires franco-espagnol","Droit de la consommation","Droit notarial","Droit privé général","Procédures et contentieux privés","Droit des transitions énergétiques et environnementales","Cadre du secteur sanitaire, social et médico-social","Droit et action publique locale","Droit et contentieux des contrats et des libertés","Droit de l’exécution des peines et droits de l’homme","Police et sécurité intérieure","Chargé d’études économiques et de marché","Europe, International, environnement et développement","Transitions environnementales, société, territoire","Histoire et anthropologie","Arts et Archéologie préventive","Valorisation et médiation des patrimoines","Applied Social Sciences in Energy and Environmental Transitions (ASSET) – Economic Specialization","Applied Social Sciences in Energy and Environmental Transitions (ASSET) – Geographic Specialization","Jeunesse, mobilisations et environnement","Loisirs, tourisme et développement territorial","MEEF : Anglais","MEEF : Espagnol","MEEF : Histoire Géographie","MEEF : Lettres classiques","MEEF : Lettres modernes","MEEF : Education physique et sportive","STAPS : Expert en préparation physique et mentale et optimisation de la performance"],["Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau","Pau",null,"Tarbes"],["Viviane Babeix","Christel Barbisan","Agnès Lavoinne","Agnès Lavoinne","Agnès Lavoinne","Christel Barbisan","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Ana do Rosario Vicente","Lina Goncalves","Lina Goncalves","Sandra Grandcolas","Laurence Palazzi","Laurence Palazzi","Laurence Palazzi","Lina Goncalves","Sandra Grandcolas","Mariluz Toro","Sandra Grandcolas","Viviane Babeix","Christel Barbisan","Laurence Palazzi","Agnès Lavoinne","Agnès Lavoinne","Agnès Martin","Agnès Martin"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Parcours<\/th>\n      <th>Campus<\/th>\n      <th>Contact<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"columnDefs":[{"name":"Parcours","targets":0},{"name":"Campus","targets":1},{"name":"Contact","targets":2}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <table class="table-striped table-hover table">
 <caption>Référents pour les parcours du collège SSH</caption>
 <colgroup>
@@ -465,7 +598,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td style="text-align: left;">Ingénierie de projet</td>
 <td style="text-align: center;">Bidart</td>
-<td style="text-align: center;">Bettina Schmitt-Cordova</td>
+<td style="text-align: center;">Mikel Urrutia</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Coopérations transfrontalières et interterritoriales</td>
@@ -495,7 +628,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td style="text-align: left;">Management des organisations sanitaires et médico-sociales, bien être et santé</td>
 <td style="text-align: center;">Bayonne</td>
-<td style="text-align: center;">Bettina Schmitt-Cordova</td>
+<td style="text-align: center;">Mikel Urrutia</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Management des organisations et technologies de l’information</td>
@@ -515,22 +648,22 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td style="text-align: left;">European and international business studies</td>
 <td style="text-align: center;">Bayonne</td>
-<td style="text-align: center;">Bettina Schmitt-Cordova</td>
+<td style="text-align: center;">Mikel Urrutia</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">International trade</td>
 <td style="text-align: center;">Bayonne</td>
-<td style="text-align: center;">Bettina Schmitt-Cordova</td>
+<td style="text-align: center;">Mikel Urrutia</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Achats et logistique internationale</td>
 <td style="text-align: center;">Bayonne</td>
-<td style="text-align: center;">Bettina Schmitt-Cordova</td>
+<td style="text-align: center;">Mikel Urrutia</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Management international amérique Latine</td>
+<td style="text-align: left;">Management international Amérique latine</td>
 <td style="text-align: center;">Bayonne</td>
-<td style="text-align: center;">Bettina Schmitt-Cordova</td>
+<td style="text-align: center;">Mikel Urrutia</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Management public des collectivités locales</td>
@@ -538,9 +671,14 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;">Lina Goncalves</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Chargé de clientèle banque et assurances</td>
+<td style="text-align: left;">Management et innovation en collectivités locales</td>
+<td style="text-align: center;">Pau</td>
+<td style="text-align: center;">Lina Goncalves</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conseiller spécialisé banque et assurances</td>
 <td style="text-align: center;">Bayonne</td>
-<td style="text-align: center;">Bettina Schmitt-Cordova</td>
+<td style="text-align: center;">Mikel Urrutia</td>
 </tr>
 </tbody>
 </table>
@@ -722,7 +860,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div style="text-align:center;margin-top:3em;margin-bottom:-3rem;">
-<p><i class="bi-incognito " style="font-size: 64px;color: #e6007e;" role="img" aria-hidden="true"></i></p>
+<p><i class="bi-incognito " style="font-size: 64px;color: #ffdd99;" role="img" aria-hidden="true"></i></p>
 </div>
 </section>
 <section id="par-référentes" class="level2">
@@ -733,7 +871,7 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Viviane Babeix
+Viviane Babeix (2)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -775,7 +913,7 @@ Viviane Babeix
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Christel Barbisan
+Christel Barbisan (3)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -822,7 +960,7 @@ Christel Barbisan
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Florence Breton
+Florence Breton (11)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -909,7 +1047,7 @@ Florence Breton
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Ana do Rosario Vicente
+Ana do Rosario Vicente (12)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1001,7 +1139,7 @@ Ana do Rosario Vicente
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Valérie Garrec
+Valérie Garrec (5)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1058,7 +1196,7 @@ Valérie Garrec
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lina Goncalves
+Lina Goncalves (10)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1124,6 +1262,11 @@ Lina Goncalves
 <td style="text-align: center;">PAU</td>
 <td style="text-align: center;">E2I</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">Management et innovation en collectivités locales</td>
+<td style="text-align: center;">PAU</td>
+<td style="text-align: center;">E2I</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1135,7 +1278,7 @@ Lina Goncalves
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Sandra Grandcolas
+Sandra Grandcolas (3)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1182,7 +1325,7 @@ Sandra Grandcolas
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Agnès Lavoinne
+Agnès Lavoinne (5)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1239,7 +1382,7 @@ Agnès Lavoinne
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Agnès Martin
+Agnès Martin (2)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1281,7 +1424,7 @@ Agnès Martin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Laurence Palazzi
+Laurence Palazzi (4)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1333,7 +1476,7 @@ Laurence Palazzi
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Julien Rabaud
+Julien Rabaud (20)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1465,14 +1608,14 @@ Julien Rabaud
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Bettina Schmitt-Cordova
+Mikel Urrutia (7)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <table class="table-striped table-hover table">
-<caption>Parcours <em>Bettina Schmitt-Cordova</em></caption>
+<caption>Parcours <em>Mikel Urrutia</em></caption>
 <colgroup>
 <col style="width: 70%">
 <col style="width: 10%">
@@ -1532,7 +1675,7 @@ Bettina Schmitt-Cordova
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Mariluz Toro
+Mariluz Toro (1)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -2121,11 +2264,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../que/test.html" class="pagination-link  aria-label=" test"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Test</span>
+      <a href="../que/copieVotreMémoire.html" class="pagination-link  aria-label=" les="" mémoires="" de="" master="" à="" l&#39;uppa"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Les mémoires de Master à l’UPPA</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../comment/préparerDépôtCime.html" class="pagination-link" aria-label="Préparer un dépôt en lot sur CIME">
+        <span class="nav-page-text">Préparer un dépôt en lot sur CIME</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

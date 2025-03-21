@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
   resources: 
     - ".csv"
 
@@ -44,7 +44,7 @@ website:
 
 format:
   html:
-    code-tools: true
+    code-tools: false
     code-fold: true
     tbl-cap-location: top
     mainfont: calibri
@@ -72,12 +72,12 @@ format:
       hypothesis: true
   pdf:
     tbl-cap-location: top
-    documentclass: scrreprt
+    documentclass: scrartcl
     toc: true
     toc-depth: 5
     toc-title: Sommaire
-    lot: true
-    lof: true
+    lot: false
+    lof: false
     links-as-notes: true
   docx:
     toc: true

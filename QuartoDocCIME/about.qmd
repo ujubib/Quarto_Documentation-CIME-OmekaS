@@ -4,7 +4,6 @@ lang: fr
 format:
   html: default
   pdf: default
-  docx: default
 jupyter: python3
 ---
 

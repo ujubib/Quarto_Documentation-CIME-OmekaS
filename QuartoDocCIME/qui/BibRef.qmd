@@ -7,7 +7,6 @@ date: 2024-02-29
 lang: fr
 format:
   html: default
-  pdf: default
   docx: default
 ---
 
@@ -20,8 +19,31 @@ format:
 ::: panel-tabset
 ### Collège SSH (35)
 
+```{r, echo: false}
+# Charger les bibliothèques nécessaires
+library(readr)
+library(dplyr)
+library(DT)
+
+# Charger le fichier CSV
+file_path <- "../Masters.csv"
+data <- read_csv2(file_path) # Utiliser read_csv2 pour les fichiers avec séparateur ";"
+
+# Filtrer les données où la colonne "Collège" est "SSH"
+filtered_data <- data %>%
+  filter(Collège == "SSH") %>%
+  select(Parcours, Campus, Contact)
+
+# Afficher les données filtrées sous forme de tableau interactif
+datatable(
+  filtered_data,
+  options = list(pageLength = 10, autoWidth = TRUE),
+  rownames = FALSE
+)
+```
+
 | Parcours du Master                                                                                  | Campus |        Contact         |
-|:------------------------------------|:---------------:|:---------------:|
+|:----------------------------------|:-----------------:|:-----------------:|
 | Etudes anglophones                                                                                  |  Pau   |     Viviane Babeix     |
 | Etudes hispaniques                                                                                  |  Pau   |   Christel Barbisan    |
 | Lettres et arts                                                                                     |  Pau   |     Agnès Lavoinne     |
@@ -60,28 +82,29 @@ format:
 
 : Référents pour les parcours du collège SSH {.striped .hover tbl-colwidths="\[60,10,30\]"}
 
-### Collège E2I (18)
+### Collège E2I (19)
 
-| Parcours du Master                                                             | Campus  |         Contact         |
+| Parcours du Master                                                             | Campus  |    Contact     |
 |:--------------------|:------------------------:|:------------------------:|
-| Comptabilité - contrôle - audit                                                |   Pau   |     Lina Goncalves      |
-| Contrôle de gestion et audit organisationnel                                   |   Pau   |     Lina Goncalves      |
-| Ingénierie de projet                                                           | Bidart  | Bettina Schmitt-Cordova |
-| Coopérations transfrontalières et interterritoriales                           | Bayonne |     Valérie Garrec      |
-| Droit européen des affaires et du numérique                                    | Bayonne |     Valérie Garrec      |
-| Droit interne et européen des mineurs                                          | Bayonne |     Valérie Garrec      |
-| Droit européen de l'action publique                                            | Bayonne |     Valérie Garrec      |
-| Droit pénal européen et international                                          | Bayonne |     Valérie Garrec      |
-| Management des organisations sanitaires et médico-sociales, bien être et santé | Bayonne | Bettina Schmitt-Cordova |
-| Management des organisations et technologies de l'information                  |   Pau   |     Lina Goncalves      |
-| Certificat d'aptitude à l'administration des entreprises                       |   Pau   |     Lina Goncalves      |
-| Management et administration des entreprises : ENSGTI                          |   Pau   |     Lina Goncalves      |
-| European and international business studies                                    | Bayonne | Bettina Schmitt-Cordova |
-| International trade                                                            | Bayonne | Bettina Schmitt-Cordova |
-| Achats et logistique internationale                                            | Bayonne | Bettina Schmitt-Cordova |
-| Management international amérique Latine                                       | Bayonne | Bettina Schmitt-Cordova |
-| Management public des collectivités locales                                    |   Pau   |     Lina Goncalves      |
-| Chargé de clientèle banque et assurances                                       | Bayonne | Bettina Schmitt-Cordova |
+| Comptabilité - contrôle - audit                                                |   Pau   | Lina Goncalves |
+| Contrôle de gestion et audit organisationnel                                   |   Pau   | Lina Goncalves |
+| Ingénierie de projet                                                           | Bidart  | Mikel Urrutia  |
+| Coopérations transfrontalières et interterritoriales                           | Bayonne | Valérie Garrec |
+| Droit européen des affaires et du numérique                                    | Bayonne | Valérie Garrec |
+| Droit interne et européen des mineurs                                          | Bayonne | Valérie Garrec |
+| Droit européen de l'action publique                                            | Bayonne | Valérie Garrec |
+| Droit pénal européen et international                                          | Bayonne | Valérie Garrec |
+| Management des organisations sanitaires et médico-sociales, bien être et santé | Bayonne | Mikel Urrutia  |
+| Management des organisations et technologies de l'information                  |   Pau   | Lina Goncalves |
+| Certificat d'aptitude à l'administration des entreprises                       |   Pau   | Lina Goncalves |
+| Management et administration des entreprises : ENSGTI                          |   Pau   | Lina Goncalves |
+| European and international business studies                                    | Bayonne | Mikel Urrutia  |
+| International trade                                                            | Bayonne | Mikel Urrutia  |
+| Achats et logistique internationale                                            | Bayonne | Mikel Urrutia  |
+| Management international Amérique latine                                       | Bayonne | Mikel Urrutia  |
+| Management public des collectivités locales                                    |   Pau   | Lina Goncalves |
+| Management et innovation en collectivités locales                              |   Pau   | Lina Goncalves |
+| Conseiller spécialisé banque et assurances                                     | Bayonne | Mikel Urrutia  |
 
 : Référents pour les parcours du collège E2I {.striped .hover tbl-colwidths="\[60,10,30\]"}
 
@@ -209,7 +232,7 @@ format:
 :::
 
 ::: {.callout-important icon="false" collapse="true"}
-### Lina Goncalves (9)
+### Lina Goncalves (10)
 
 | Parcours                                                                                          | Campus | Collège |
 |:--------------------|:------------------------:|:------------------------:|
@@ -222,6 +245,7 @@ format:
 | Certificat d’aptitude à l’administration des entreprises                                          |  PAU   |   E2I   |
 | Management et administration des entreprises : ENSGTI                                             |  PAU   |   E2I   |
 | Management public des collectivités locales                                                       |  PAU   |   E2I   |
+| Management et innovation en collectivités locales                                                 |  PAU   |   E2I   |
 
 : Parcours *Lina Goncalves* {.striped .hover tbl-colwidths="\[70,10,20\]"}
 :::
@@ -306,7 +330,7 @@ format:
 :::
 
 ::: {.callout-important icon="false" collapse="true"}
-### Bettina Schmitt-Cordova (7)
+### Mikel Urrutia (7)
 
 | Parcours                                                                       | Campus  | Collège |
 |:--------------------|:------------------------:|:------------------------:|
@@ -318,7 +342,7 @@ format:
 | Management international Amérique Latine                                       | Bayonne |   E2I   |
 | Chargé de clientèle banque et assurances                                       | Bayonne |   E2I   |
 
-: Parcours *Bettina Schmitt-Cordova* {.striped .hover tbl-colwidths="\[70,10,20\]"}
+: Parcours *Mikel Urrutia* {.striped .hover tbl-colwidths="\[70,10,20\]"}
 :::
 
 ::: {.callout-tip icon="false" collapse="true"}

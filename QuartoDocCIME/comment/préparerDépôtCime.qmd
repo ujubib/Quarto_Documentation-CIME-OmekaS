@@ -1,8 +1,8 @@
 ---
-title: "Préparer un dépôt CIME"
+title: "Préparer un dépôt en lot sur CIME"
 author: 
  - Julien Rabaud
-date: 2024-03-06
+date: 2025-03-19
 lang: fr
 format:
   html: default
@@ -12,7 +12,7 @@ format:
 
 ## Créer un dossier de dépôt
 
-Sur son ordinateur créer un dossier de type `depotCIME_YYYY-MM-DD`
+Sur son ordinateur créer un dossier de type `depotCIME_VotreNom`
 
 ## Dans ce dossier, copier le fichier `depotCIME.csv`
 
@@ -20,37 +20,53 @@ Sur son ordinateur créer un dossier de type `depotCIME_YYYY-MM-DD`
 <button>[Télécharger `depotCIME.csv`](../depotCIME.csv){download="depotCIME.csv" target="_blank"}</button>
 :::
 
+::: {.callout-tip collapse="true"}
 ### Modèle de saisie
 
-| Propriétés/Colonnes    | Commentaires                                                                                                                                       |
-|------------------------------------|------------------------------------|
-| dcterms:title          | titre du mémoire                                                                                                                                   |
-| dcterms:creator        | auteur du mémoire                                                                                                                                  |
-| dcterms:description    | résumé en français                                                                                                                                 |
-| dcterms:abstract       | résumé en anglais (11)                                                                                                                             |
-| dcterms:subject        | mot-clés (séparés par des virgules). Continuer à nettoyer, fusionner avec la colonne `tags`)                                                       |
-| dcterms:source         | url dumas (brute - ex : `https://dumas.ccsd.cnrs.fr/dumas-00498321` )                                                                              |
-| dcterms:publisher      | ??? / UPPA - Collège ? / autres tutelles pédagogiques ?                                                                                            |
-| dcterms:date           | Année de soutenance                                                                                                                                |
-| dcterms:contributor    | Responsables pédagogiques. `Nom, Prénom` (séparé par des `;`) (110 vides)                                                                          |
-| dcterms:rights         | vidé - à déterminer                                                                                                                                |
-| dcterms:format         | vidé - à déterminer (code pdf)                                                                                                                     |
-| dcterms:language       | code iso 639-2 https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1 ajout de `fre` à tous les vides (autres valeurs présentes : `eng` et `spa`) |
-| dcterms:type           | à nettoyer → BUT/Licence/Master                                                                                                                    |
-| dcterms:educationLevel | Diplôme année / `Master 1`, `Licence 3`                                                                                                            |
-| dcterms:isPartOf       | Parcours - mention (à rapprocher de la colonne `collection` )                                                                                      |
-| vivo:majorField        | Discipline principale (Vocabulaire ?)                                                                                                              |
-| fichier                | `nomExact_dufichier.pdf` colonne `file`                                                                                                            |
+| Propriétés/Colonnes    | Commentaires                                                         |
+|------------------------|----------------------------------------------------------------------|
+| dcterms:title          | titre du mémoire                                                     |
+| dcterms:creator        | auteur du mémoire                                                    |
+| dcterms:description    | résumé en français                                                   |
+| dcterms:abstract       | résumé en anglais                                                    |
+| dcterms:subject        | mot-clés (`Mot 1;Mot 2`)                                             |
+| dcterms:hasVersion     | url dumas (`https://dumas.ccsd.cnrs.fr/dumas-00498321`)              |
+| dcterms:publisher      | Tutelles (`UPPA;Labo;INSPE;...`)                                     |
+| dcterms:date           | Année de soutenance                                                  |
+| dcterms:contributor    | Responsables pédagogiques (`Nom, Prénom;Nom, Prénom`)                |
+| dcterms:rights         | à déterminer                                                         |
+| dcterms:format         | application/pdf                                                      |
+| dcterms:language       | code iso 639-2 (`fre`, `eng`, `spa` ...)                             |
+| dcterms:type           | BUT/Licence/Master                                                   |
+| dcterms:educationLevel | Diplôme année (`Master 1`, `Licence 3`)                              |
+| vivo:degreeCandidacy   | Mention du Master                                                    |
+| dcterms:isPartOf       | Nom de la collection du parcours                                     |
+| vivo:majorField        | Discipline principale                                                |
+| fichier                | `nomExact_dufichier.pdf`                                             |
 
-: modèles de ressource *Omeka S* pour CIME {.striped .hover tbl-colwidths="\[20,80\]"}
+: modèles de ressource *Omeka S* pour les dépôts CIME {.striped .hover tbl-colwidths="\[30,70\]"}
+:::
 
-## Éditer le fichier dans LibreOffice Calc ou Excel
+## Éditer le fichier dans *LibreOffice Calc* (pas Excel)
 
-Propriétés en colonnes, une ligne par mémoire
+Propriétés en colonnes, une ligne par mémoire.
+
+::: {.callout-caution collapse="false"}
+### Colonnes multi-valuées (sujets, responsables pédagogiques, tutelles)
+
+Séparer les valeurs par un point-virgule <kbd>;</kbd>
+:::
 
 ## Ajouter les pdf
 
-Dans votre dossier `depotCIME_YYYY-MM-DD`, avec votre fichier `depotCIME.csv` complété.
+Dans votre dossier `depotCIME_VotreNom`, avec votre fichier `depotCIME.csv` complété.
+
+::: {.callout-caution collapse="false"}
+### Noms des fichiers pdf
+
+-   Ne doivent pas contenir d'espace ou de caractères de ponctuations (`.` `,` `:` `;` `!`...)
+-   Peuvent contenir des tirets `-` ou des underscores `_`
+:::
 
 ## Créer une archive `.zip` du dossier
 

@@ -6,16 +6,18 @@ format:
   html: default
 ---
 
+```{=html}
 <style>
   #title-block-header {
     display: none;
   }
 </style>
+```
 
 ![](img/icon-color.png){fig-align="center" style="border-radius:18px"}
 
-::: {style="text-align:center;font-size:1.4em;font-family:bellefair;margin-top:-1em;"} 
-Collecte Informatique des Mémoires Étudiants  
+::: {style="text-align:center;font-size:1.4em;font-family:bellefair;margin-top:-1em;"}
+Collecte Informatique des Mémoires Étudiants
 :::
 
 ::: {style="padding-top:.4em;padding-left:1.2em;padding-right:1.2em;margin-top:-1em;margin-bottom:3em;font-family:bellefair;color:slategrey;letter-spacing:3px;border-top:1px solid #e6007e;width:fit-content;margin-left:auto;margin-right:auto"}
@@ -24,26 +26,25 @@ Collecte Informatique des Mémoires Étudiants
 
 ## Que déposer dans CIME ?
 
-- [Copie de la page *Votre Mémoire de Master*](que/copieVotreM%C3%A9moire.qmd) du site web des bibliothèques ([Source](https://bibliotheques.univ-pau.fr/fr/appui-a-la-recherche/votre-memoire-de-master.html))
+-   [Copie de la page *Votre Mémoire de Master*](que/copieVotreM%C3%A9moire.qmd) du site web des bibliothèques ([Source](https://bibliotheques.univ-pau.fr/fr/appui-a-la-recherche/votre-memoire-de-master.html))
 
 ## Qui dépose dans CIME ?
 
-- [Les bibliothécaires référent·e·s](qui/BibRef.qmd)
+-   [Les bibliothécaires référent·e·s](qui/BibRef.qmd)
 
 ## Comment déposer dans CIME ?
 
-- [Préparer un dépôt CIME pour *Omeka S*](comment/pr%C3%A9parerD%C3%A9p%C3%B4tCime.qmd)
+-   [Préparer un dépôt CIME pour *Omeka S*](comment/pr%C3%A9parerD%C3%A9p%C3%B4tCime.qmd)
 
+------------------------------------------------------------------------
 
-***
-
-::: {.callout-caution  collapse="true" style="margin-top:2em"}
+::: {.callout-caution collapse="true" style="margin-top:2em"}
 ### Ressources sur **Omeka S**
 
-- [Guide d’import des fichiers dans OmekaS via le module CSV Import](https://uju-export.netlify.app/html/guide%20import%20fichier%20sorbonne)  
-  Émeline Juillard (Université Sorbonne Nouvelle) - Octobre 2021
+-   [Guide d’import des fichiers dans OmekaS via le module CSV Import](https://uju-export.netlify.app/html/guide%20import%20fichier%20sorbonne)\
+    Émeline Juillard (Université Sorbonne Nouvelle) - Octobre 2021
 
-- [Formation doctorale Omeka S](https://hal.science/hal-04221115). *Doctorat. Mettre en valeur sa bibliothèque numérique avec Omeka S* - Maximilien Petit, Michel de Moura, Karine Pellerin. 2022, 15p. ⟨hal-04221115⟩
+-   [Formation doctorale Omeka S](https://hal.science/hal-04221115). *Doctorat. Mettre en valeur sa bibliothèque numérique avec Omeka S* - Maximilien Petit, Michel de Moura, Karine Pellerin. 2022, 15p. ⟨hal-04221115⟩
 :::
 
 ![](img/tapisserie.gif){fig-align="center" style="border-radius:18px;margin-top:2em;"}

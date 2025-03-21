@@ -1,0 +1,142 @@
+---
+title: "Comment déposer un mémoire dans CIME"
+author: Viviane Babeix
+date: 2025-03-20
+lang: fr
+abstract: >
+  Ce tutoriel permet de voir comment déposer un mémoire à l'unité, un par un.
+  
+  Il est possible de déposer par lot (à partir de 4 ou 5 mémoires par exemple)\ : voir [la page dédiée](pr%C3%A9parerD%C3%A9p%C3%B4tCime.qmd).
+
+  Se connecter sur <https://kumbuka.univ-pau.fr/login> avec ses identifiants.
+format:
+  html: default
+  pdf: default
+  docx: default
+---
+
+## Pour ajouter un mémoire
+
+Cliquer sur `Contenus`, puis sur `Ajouter un nouveau contenu`.
+
+![](/img/media/image1.png)
+
+### 1) Dans l'onglet `Valeurs`
+
+![](/img/media/image2.png)
+
+Remplir les champs suivants :
+
+![](/img/media/image3.png){group="valeurs"}
+
+![](/img/media/image4.png){group="valeurs"}
+
+![](/img/media/image5.png){group="valeurs"}
+
+![](/img/media/image6.png){group="valeurs"}
+
+::: {.callout-tip collapse="true"}
+#### Saisie des Noms
+
+**Les noms de l'auteur et du responsable pédagogique** doivent s'écrire dans l'ordre `Nom, Prénom` avec une majuscule en début de nom et en début de prénom. Ne mettre qu'un nom par champ, et cliquer sur `ajouter une valeur` pour chaque nouveau nom.
+:::
+
+::: {.callout-tip collapse="true"}
+#### Champ `Dumas`
+
+mettre l'url brute de la notice Dumas\ :
+
+![](/img/media/image11.png)
+:::
+
+::: {.callout-tip collapse="true"}
+#### Champ `Tutelles`
+
+Indiquer `UPPA-SSH` ou `UPPA-STEE` ou `UPPA-E2I`, puis cliquer sur `ajouter une valeur` si nécessaire pour un laboratoire (ALTER, TREE ...).
+:::
+
+::: {.callout-tip collapse="true"}
+#### Champ `Langue`
+
+**Le codage de la langue** est le même que pour WinIbw (iso 639-2)\ : `eng` = anglais, `fre` = français, etc.
+:::
+
+::: {.callout-tip collapse="true"}
+#### Champ `Mention`
+
+L'intitulé de la mention doit être formulé comme dans la [hiérarchie](https://omeka-s.univ-pau.fr/s/cime/page/welcome) - cf. par exemple les [Masters du Collège SSH](https://omeka-s.univ-pau.fr/s/cime/page/ssh)\ :
+
+![](/img/media/image7.png)
+:::
+
+::: {.callout-tip collapse="true"}
+#### Champ `Parcours`
+
+Il faut ajouter le lien vers la collection du parcours.
+
+Cliquer sur le bouton `Collection` : il ouvre un volet à droite avec la liste de toutes les collections. Sélectionner la collection souhaitée, puis cliquer en bas de page sur `choisir une ressource`.
+
+![](/img/media/image8.png){group="parcours"}
+
+![](/img/media/image9.png){group="parcours"}
+
+![](/img/media/image10.png){group="parcours"}
+:::
+
+
+
+### 2)  Dans l'onglet `Médias`
+
+Insérer le fichier PDF du mémoire.
+
+![](/img/media/image12.png)
+
+À droite de l'écran, cliquer sur `Charger` afin de sélectionner le fichier du mémoire\ :
+
+![](/img/media/image13.png)
+
+![](/img/media/image14.png)
+
+### 3)  Dans l'onglet `Collections`
+
+Insérer la collection du parcours concerné\ :
+
+![](/img/media/image15.png)
+
+- **1^ère^ possibilité**\ : dans le champ `Filtrer les collections`, indiquer le nom de la collection, puis choisir le parcours.
+
+- **2^ème^ possibilité**\ : cliquer sur son nom puis sur la mention souhaitée.
+
+![](/img/media/image16.png)
+
+### 4) Finalisation du dépôt
+
+Enfin, cliquer sur « ajouter » en haut à droite de l'écran.
+
+![](/img/media/image17.png)
+
+### 5) Modification du contenu
+
+Il est possible de `Modifier ce contenu`, puis d'`Enregistrer` les modifications, en haut, à droite de l'écran.
+
+![](/img/media/image18.png)
+
+![](/img/media/image19.png)
+
+## Pour retrouver ses mémoires
+
+### 1^ère^ méthode
+
+- Aller dans `Collections` (*Panneau de gauche*).
+
+- Puis sélectionner sa collection.
+
+- Enfin, `Afficher les contenus` en haut, à droite de l'écran.
+
+### 2^ème^ méthode
+
+- Aller dans `Contenus` (*Panneau de gauche*).
+
+- Puis `Recherche avancée`.
+
+- Enfin `Rechercher par propriétaire`.
