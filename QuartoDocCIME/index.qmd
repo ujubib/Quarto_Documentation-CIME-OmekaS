@@ -34,7 +34,8 @@ Collecte Informatique des Mémoires Étudiants
 
 ## Comment déposer dans CIME ?
 
--   [Préparer un dépôt CIME pour *Omeka S*](comment/pr%C3%A9parerD%C3%A9p%C3%B4tCime.qmd)
+-   [Préparer un dépôt en lot sur CIME](comment/pr%C3%A9parerD%C3%A9p%C3%B4tCime.qmd)
+-   [Comment déposer un mémoire dans CIME](comment\ProcédureIndiv.qmd)
 
 ------------------------------------------------------------------------
 

@@ -3,17 +3,21 @@ title: "Comment déposer un mémoire dans CIME"
 author: Viviane Babeix
 date: 2025-03-20
 lang: fr
-abstract: >
-  Ce tutoriel permet de voir comment déposer un mémoire à l'unité, un par un.
-  
-  Il est possible de déposer par lot (à partir de 4 ou 5 mémoires par exemple)\ : voir [la page dédiée](pr%C3%A9parerD%C3%A9p%C3%B4tCime.qmd).
-
-  Se connecter sur <https://kumbuka.univ-pau.fr/login> avec ses identifiants.
 format:
   html: default
   pdf: default
   docx: default
 ---
+
+::: {.callout-tip collapse="false"}
+### Présentation
+
+Ce tutoriel permet de voir comment déposer un mémoire à l'unité, un par un.
+  
+Il est possible de déposer par lot (à partir de 4 ou 5 mémoires par exemple)\ : voir [la page dédiée](pr%C3%A9parerD%C3%A9p%C3%B4tCime.qmd).
+
+Se connecter sur <https://kumbuka.univ-pau.fr/login> avec ses identifiants.
+:::
 
 ## Pour ajouter un mémoire
 
