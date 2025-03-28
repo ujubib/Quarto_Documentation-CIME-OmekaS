@@ -1,0 +1,30 @@
+---
+title: Personnaliser son profil utilisateur
+date: 2025-03-28
+author: Julien Rabaud
+lang: fr
+---
+
+## Choisir les colonnes à afficher pour les *Contenus*
+
+1. Dans le *Tableu de bord* d'Omeka, Cliquer sur `Utlisateurs` :
+
+    ![Accéder au panneau de gestion des utilisateurs](/img/omeka-s.univ-pau.fr-2025-03-28%2009.05.00.png){group="utilisateur"}
+
+1. En face de son adresse adresse mail, cliquer sur le bouton d'édition (crayon)
+
+    ![Accéder aux paramètres de son profil utilisateur](/img/omeka-s.univ-pau.fr-2025-03-28%2009.08.48.png){group="utilisateur"}
+
+1. Dans l'onglet `Paramètres utilisateur`, vous pouvez modifier les colonnes affichées lorsque vous parcourez les `Contenus` :
+
+    - Par exemple supprimer la colonne `Classe de ressource` qui sera toujours `Texte` pour les dépôts de mémoire.
+
+        ![Supprimer la colonne `Classe de ressource`](/img/omeka-s.univ-pau.fr-2025-03-28%2009.23.41.png){group="utilisateur"}
+
+    - Et ajouter des colonnes basée sur les propriétés de vos dépôts : 
+        1. Cliquer sur `Ajouter une colonne` et sélectionner `Valeur` dans le menu déroulant
+  
+            ![Ajouter une colonne qui affichera la *Valeur* d'une *Propriété* de vos *Contenus*](/img/omeka-s.univ-pau.fr-2025-03-28%2009.47.40.png){group="utilisateur"}
+
+2. Quand vous avez modifiez vos Paramètres utilisateur, cliquez sur `Enregistrer` en haut à droite de la page
+  

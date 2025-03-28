@@ -83,11 +83,13 @@ selectedContact !== "Aucun" ? html`
 <table class="table-striped table-hover table">
   <caption>Parcours pour ${selectedContact}</caption>
   <colgroup>
+    <col style="width: 20%">
     <col style="width: 40%">
-    <col style="width: 60%">
+    <col style="width: 40%">
   </colgroup>
   <thead>
     <tr class="header">
+      <th style="text-align: left;">Collège</th>
       <th style="text-align: left;">Mention</th>
       <th style="text-align: left;">Parcours</th>
     </tr>
@@ -95,6 +97,7 @@ selectedContact !== "Aucun" ? html`
   <tbody>
     ${data.filter(row => row.Contact === selectedContact).map(row => html`
       <tr>
+        <td style="text-align: left;">${row.Collège}</td>
         <td style="text-align: left;">${row.Mention}</td>
         <td style="text-align: left;">${row.Parcours}</td>
       </tr>

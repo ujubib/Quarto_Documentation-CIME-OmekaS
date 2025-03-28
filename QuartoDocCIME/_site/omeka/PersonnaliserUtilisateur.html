@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Julien Rabaud">
+<meta name="dcterms.date" content="2025-03-28">
 
-<title>Documentation de CIME - Préparer un dépôt en lot sur CIME</title>
+<title>Documentation de CIME - Personnaliser son profil utilisateur</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../comment/ProcédureIndiv.html" rel="next">
-<link href="../qui/BibRef.html" rel="prev">
+<link href="../comment/ProcédureIndiv.html" rel="prev">
 <link href="../img/icon-color.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -47,6 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell.js"></script>
 <script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell_options.js"></script>
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,17 +64,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Pas de résultats",
-    "search-matching-documents-text": "documents trouvés",
-    "search-copy-link-title": "Copier le lien vers la recherche",
-    "search-hide-matches-text": "Cacher les correspondances additionnelles",
-    "search-more-match-text": "correspondance de plus dans ce document",
-    "search-more-matches-text": "correspondances de plus dans ce document",
-    "search-clear-button-title": "Effacer",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Annuler",
-    "search-submit-button-title": "Envoyer",
-    "search-label": "Recherche"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -84,8 +87,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Documentation de CIME - Préparer un dépôt en lot sur CIME">
-<meta property="og:description" content="">
+<meta property="og:title" content="Documentation de CIME - Personnaliser son profil utilisateur">
 <meta property="og:site_name" content="Documentation de CIME">
 </head>
 
@@ -103,8 +105,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Documentation de CIME</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -116,8 +118,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Basculer en mode lecteur">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -127,11 +129,11 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Préparer un dépôt en lot sur CIME</h1>
+        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Personnaliser son profil utilisateur</h1>
         </a>     
     </div>
   </nav>
@@ -146,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
  <span class="menu-text">Que déposer ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -163,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
  <span class="menu-text">Qui dépose ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -180,14 +182,14 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Comment déposer ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../comment/préparerDépôtCime.html" class="sidebar-item-text sidebar-link active">
+  <a href="../comment/préparerDépôtCime.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Préparer un dépôt en lot sur CIME</span></a>
   </div>
 </li>
@@ -203,14 +205,14 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Omeka S</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../omeka/PersonnaliserUtilisateur.html" class="sidebar-item-text sidebar-link">
+  <a href="../omeka/PersonnaliserUtilisateur.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Personnaliser son profil utilisateur</span></a>
   </div>
 </li>
@@ -226,20 +228,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sommaire</h2>
    
   <ul>
-  <li><a href="#créer-un-dossier-de-dépôt" id="toc-créer-un-dossier-de-dépôt" class="nav-link active" data-scroll-target="#créer-un-dossier-de-dépôt">Créer un dossier de dépôt</a></li>
-  <li><a href="#dans-ce-dossier-copier-le-fichier-depotcime.csv" id="toc-dans-ce-dossier-copier-le-fichier-depotcime.csv" class="nav-link" data-scroll-target="#dans-ce-dossier-copier-le-fichier-depotcime.csv">Dans ce dossier, copier le fichier <code>depotCIME.csv</code></a></li>
-  <li><a href="#éditer-le-fichier-dans-libreoffice-calc-pas-excel" id="toc-éditer-le-fichier-dans-libreoffice-calc-pas-excel" class="nav-link" data-scroll-target="#éditer-le-fichier-dans-libreoffice-calc-pas-excel">Éditer le fichier dans <em>LibreOffice Calc</em> (pas Excel)</a></li>
-  <li><a href="#ajouter-les-pdf" id="toc-ajouter-les-pdf" class="nav-link" data-scroll-target="#ajouter-les-pdf">Ajouter les pdf</a></li>
-  <li><a href="#créer-une-archive-.zip-du-dossier" id="toc-créer-une-archive-.zip-du-dossier" class="nav-link" data-scroll-target="#créer-une-archive-.zip-du-dossier">Créer une archive <code>.zip</code> du dossier</a></li>
+  <li><a href="#choisir-les-colonnes-à-afficher-pour-les-contenus" id="toc-choisir-les-colonnes-à-afficher-pour-les-contenus" class="nav-link active" data-scroll-target="#choisir-les-colonnes-à-afficher-pour-les-contenus">Choisir les colonnes à afficher pour les <em>Contenus</em></a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="préparerDépôtCime.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="préparerDépôtCime.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="PersonnaliserUtilisateur.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="PersonnaliserUtilisateur.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Préparer un dépôt en lot sur CIME</h1>
+<h1 class="title d-none d-lg-block">Personnaliser son profil utilisateur</h1>
 </div>
 
 
@@ -247,16 +245,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Auteur·rice</div>
+    <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
              <p>Julien Rabaud </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">19 mars 2025</p>
+      <p class="date">March 28, 2025</p>
     </div>
   </div>
   
@@ -268,171 +266,56 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="créer-un-dossier-de-dépôt" class="level2">
-<h2 class="anchored" data-anchor-id="créer-un-dossier-de-dépôt">Créer un dossier de dépôt</h2>
-<p>Sur son ordinateur créer un dossier de type <code>depotCIME_VotreNom</code></p>
-</section>
-<section id="dans-ce-dossier-copier-le-fichier-depotcime.csv" class="level2">
-<h2 class="anchored" data-anchor-id="dans-ce-dossier-copier-le-fichier-depotcime.csv">Dans ce dossier, copier le fichier <code>depotCIME.csv</code></h2>
-<div id="boutonTemplate" style="text-align:center">
-<button>
-<a href="../depotCIME.csv" download="depotCIME.csv" target="_blank">Télécharger <code>depotCIME.csv</code></a>
-</button>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Modèle de saisie
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<table class="table-striped table-hover table">
-<caption>modèles de ressource <em>Omeka S</em> pour les dépôts CIME</caption>
-<colgroup>
-<col style="width: 30%">
-<col style="width: 70%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Propriétés/Colonnes</th>
-<th>Commentaires</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>dcterms:title</td>
-<td>titre du mémoire</td>
-</tr>
-<tr class="even">
-<td>dcterms:creator</td>
-<td>auteur du mémoire</td>
-</tr>
-<tr class="odd">
-<td>dcterms:description</td>
-<td>résumé en français</td>
-</tr>
-<tr class="even">
-<td>dcterms:abstract</td>
-<td>résumé en anglais</td>
-</tr>
-<tr class="odd">
-<td>dcterms:subject</td>
-<td>mot-clés (<code>Mot 1;Mot 2</code>)</td>
-</tr>
-<tr class="even">
-<td>dcterms:hasVersion</td>
-<td>url dumas (<code>https://dumas.ccsd.cnrs.fr/dumas-00498321</code>)</td>
-</tr>
-<tr class="odd">
-<td>dcterms:publisher</td>
-<td>Tutelles (<code>UPPA;Labo;INSPE;...</code>)</td>
-</tr>
-<tr class="even">
-<td>dcterms:date</td>
-<td>Année de soutenance</td>
-</tr>
-<tr class="odd">
-<td>dcterms:contributor</td>
-<td>Responsables pédagogiques (<code>Nom, Prénom;Nom, Prénom</code>)</td>
-</tr>
-<tr class="even">
-<td>dcterms:rights</td>
-<td>à déterminer</td>
-</tr>
-<tr class="odd">
-<td>dcterms:format</td>
-<td>application/pdf</td>
-</tr>
-<tr class="even">
-<td>dcterms:language</td>
-<td>code iso 639-2 (<code>fre</code>, <code>eng</code>, <code>spa</code> …)</td>
-</tr>
-<tr class="odd">
-<td>dcterms:type</td>
-<td>BUT/Licence/Master</td>
-</tr>
-<tr class="even">
-<td>dcterms:educationLevel</td>
-<td>Diplôme année (<code>Master 1</code>, <code>Licence 3</code>)</td>
-</tr>
-<tr class="odd">
-<td>vivo:degreeCandidacy</td>
-<td>Mention du Master</td>
-</tr>
-<tr class="even">
-<td>dcterms:isPartOf</td>
-<td>Nom de la collection du parcours</td>
-</tr>
-<tr class="odd">
-<td>vivo:majorField</td>
-<td>Discipline principale</td>
-</tr>
-<tr class="even">
-<td>fichier</td>
-<td><code>nomExact_dufichier.pdf</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</section>
-<section id="éditer-le-fichier-dans-libreoffice-calc-pas-excel" class="level2">
-<h2 class="anchored" data-anchor-id="éditer-le-fichier-dans-libreoffice-calc-pas-excel">Éditer le fichier dans <em>LibreOffice Calc</em> (pas Excel)</h2>
-<p>Propriétés en colonnes, une ligne par mémoire.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Colonnes multi-valuées (sujets, responsables pédagogiques, tutelles)
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>Séparer les valeurs par un point-virgule <kbd>;</kbd></p>
-</div>
-</div>
-</div>
-</section>
-<section id="ajouter-les-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="ajouter-les-pdf">Ajouter les pdf</h2>
-<p>Dans votre dossier <code>depotCIME_VotreNom</code>, avec votre fichier <code>depotCIME.csv</code> complété.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Noms des fichiers pdf
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
+<section id="choisir-les-colonnes-à-afficher-pour-les-contenus" class="level2">
+<h2 class="anchored" data-anchor-id="choisir-les-colonnes-à-afficher-pour-les-contenus">Choisir les colonnes à afficher pour les <em>Contenus</em></h2>
+<ol type="1">
+<li><p>Dans le <em>Tableu de bord</em> d’Omeka, Cliquer sur <code>Utlisateurs</code> :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="..\img/omeka-s.univ-pau.fr-2025-03-28 09.05.00.png" class="lightbox" data-gallery="utilisateur" data-glightbox="description: .lightbox-desc-1" title="Accéder au panneau de gestion des utilisateurs"><img src="..\img/omeka-s.univ-pau.fr-2025-03-28 09.05.00.png" class="img-fluid figure-img" alt="Accéder au panneau de gestion des utilisateurs"></a></p>
+<figcaption>Accéder au panneau de gestion des utilisateurs</figcaption>
+</figure>
+</div></li>
+<li><p>En face de son adresse adresse mail, cliquer sur le bouton d’édition (crayon)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="..\img/omeka-s.univ-pau.fr-2025-03-28 09.08.48.png" class="lightbox" data-gallery="utilisateur" data-glightbox="description: .lightbox-desc-2" title="Accéder aux paramètres de son profil utilisateur"><img src="..\img/omeka-s.univ-pau.fr-2025-03-28 09.08.48.png" class="img-fluid figure-img" alt="Accéder aux paramètres de son profil utilisateur"></a></p>
+<figcaption>Accéder aux paramètres de son profil utilisateur</figcaption>
+</figure>
+</div></li>
+<li><p>Dans l’onglet <code>Paramètres utilisateur</code>, vous pouvez modifier les colonnes affichées lorsque vous parcourez les <code>Contenus</code> :</p>
 <ul>
-<li>Ne doivent pas contenir d’espace ou de caractères de ponctuations (<code>.</code> <code>,</code> <code>:</code> <code>;</code> <code>!</code>…)</li>
-<li>Peuvent contenir des tirets <code>-</code> ou des underscores <code>_</code></li>
-</ul>
-</div>
-</div>
+<li><p>Par exemple supprimer la colonne <code>Classe de ressource</code> qui sera toujours <code>Texte</code> pour les dépôts de mémoire.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="..\img/omeka-s.univ-pau.fr-2025-03-28 09.23.41.png" class="lightbox" data-gallery="utilisateur" data-glightbox="description: .lightbox-desc-3" title="Supprimer la colonne Classe de ressource"><img src="..\img/omeka-s.univ-pau.fr-2025-03-28 09.23.41.png" class="img-fluid figure-img" alt="Supprimer la colonne Classe de ressource"></a></p>
+<figcaption>Supprimer la colonne <code>Classe de ressource</code></figcaption>
+</figure>
+</div></li>
+<li><p>Et ajouter des colonnes basée sur les propriétés de vos dépôts :</p>
+<ol type="1">
+<li><p>Cliquer sur <code>Ajouter une colonne</code> et sélectionner <code>Valeur</code> dans le menu déroulant</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="..\img/omeka-s.univ-pau.fr-2025-03-28 09.47.40.png" class="lightbox" data-gallery="utilisateur" data-glightbox="description: .lightbox-desc-4" title="Ajouter une colonne qui affichera la Valeur d’une Propriété de vos Contenus"><img src="..\img/omeka-s.univ-pau.fr-2025-03-28 09.47.40.png" class="img-fluid figure-img" alt="Ajouter une colonne qui affichera la Valeur d’une Propriété de vos Contenus"></a></p>
+<figcaption>Ajouter une colonne qui affichera la <em>Valeur</em> d’une <em>Propriété</em> de vos <em>Contenus</em></figcaption>
+</figure>
+</div></li>
+</ol></li>
+</ul></li>
+<li><p>Quand vous avez modifiez vos Paramètres utilisateur, cliquez sur <code>Enregistrer</code> en haut à droite de la page</p></li>
+</ol>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Accéder au panneau de gestion des utilisateurs</span>
+<span class="glightbox-desc lightbox-desc-2">Accéder aux paramètres de son profil utilisateur</span>
+<span class="glightbox-desc lightbox-desc-3">Supprimer la colonne <code>Classe de ressource</code></span>
+<span class="glightbox-desc lightbox-desc-4">Ajouter une colonne qui affichera la <em>Valeur</em> d’une <em>Propriété</em> de vos <em>Contenus</em></span>
 </div>
 </section>
-<section id="créer-une-archive-.zip-du-dossier" class="level2">
-<h2 class="anchored" data-anchor-id="créer-une-archive-.zip-du-dossier">Créer une archive <code>.zip</code> du dossier</h2>
-<p>Me l’envoyer par mail ou via <a href="https://filesender.renater.fr">FileSender</a> si trop volumineuse.</p>
 
-
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -631,12 +514,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copié");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copié");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -986,20 +869,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../qui/BibRef.html" class="pagination-link  aria-label=" les="" bibliothécaires="" référent·e·s"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Les bibliothécaires référent·e·s</span>
+      <a href="../comment/ProcédureIndiv.html" class="pagination-link  aria-label=" comment="" déposer="" un="" mémoire="" dans="" cime"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Comment déposer un mémoire dans CIME</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../comment/ProcédureIndiv.html" class="pagination-link" aria-label="Comment déposer un mémoire dans CIME">
-        <span class="nav-page-text">Comment déposer un mémoire dans CIME</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

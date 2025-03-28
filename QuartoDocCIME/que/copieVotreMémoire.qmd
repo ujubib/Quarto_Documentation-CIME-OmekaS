@@ -12,9 +12,7 @@ format:
   docx: default
 ---
 
-
 > [Source](https://bibliotheques.univ-pau.fr/fr/appui-a-la-recherche/votre-memoire-de-master.html)
-
 
 ## Dépôt obligatoire et diffusion sous conditions
 
@@ -28,35 +26,35 @@ Voici un document utile sur le droit des auteurs et la protection des données p
 
 #### Comment déposer mon mémoire ?
 
-- Envoyez votre mémoire par courriel à votre bibliothécaire référent : [liste des bibliothécaires référents au format pdf](https://bibliotheques.univ-pau.fr/_resource/01%20Fichiers%20pdf/Appui%20%C3%A0%20la%20recherche/Liste%20r%C3%A9f%C3%A9rents%20m%C3%A9moires%20sept%202023.pdf?download=true "liste des bibliothécaires référents au format pdf")
-- Le dépôt du mémoire doit se faire au format pdf uniquement.
+-   Envoyez votre mémoire par courriel à votre bibliothécaire référent : [liste des bibliothécaires référents au format pdf](https://bibliotheques.univ-pau.fr/_resource/01%20Fichiers%20pdf/Appui%20%C3%A0%20la%20recherche/Liste%20r%C3%A9f%C3%A9rents%20m%C3%A9moires%20sept%202023.pdf?download=true "liste des bibliothécaires référents au format pdf")
+-   Le dépôt du mémoire doit se faire au format pdf uniquement.
 
 Votre fichier de mémoire est-il volumineux ? Utilisez [https://filesender.renater.fr](https://filesender.renater.fr/ "https://filesender.renater.fr") pour l’héberger et générer un lien temporaire. Ce lien est à reporter dans votre courriel adressé à votre bibliothécaire référent pour valider votre dépôt.
 
-- L'engagement anti-plagiat est à remettre à votre directeur.trice de recherche.
-- Après le dépôt, votre mémoire est archivé sur CIME
+-   L'engagement anti-plagiat est à remettre à votre directeur.trice de recherche.
+-   Après le dépôt, votre mémoire est archivé sur [CIME](https://kumbuka.univ-pau.fr/s/cime).
 
-[![](/img/cime.png)](https://cime.univ-pau.fr/ "accès à CIME,  plate-forme des mémoires étudiants de l’UPPA")
+[![](/img/logo-color.png){fig-align="center" width="100"}](https://kumbuka.univ-pau.fr/s/cime)
 
 ### Diffusion sous conditions
 
 Contrairement au dépôt, la diffusion du mémoire n’est pas systématique, mais soumise à conditions :
 
-1) L'étudiant doit donner son autorisation et le jury de soutenance son avis favorable au travers du [contrat de diffusion](https://bibliotheques.univ-pau.fr/_attachment/votre-memoire-de-master-article/contrat_diffusion_memoire_2021.pdf?download=true "Contrat de diffusion (PDF - 160 Ko)").
+1)  L'étudiant doit donner son autorisation et le jury de soutenance son avis favorable au travers du [contrat de diffusion](https://bibliotheques.univ-pau.fr/_attachment/votre-memoire-de-master-article/contrat_diffusion_memoire_2021.pdf?download=true "Contrat de diffusion (PDF - 160 Ko)").
 
-2) L’étudiant doit impérativement venir à la soutenance avec deux exemplaires du [contrat de diffusion](https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/contrat_diffusion_memoire_2021.pdf?download=true) préalablement lu et signé, même s’il n’autorise pas la diffusion de son travail. Une fois la soutenance passée, il doit adresser le contrat de diffusion au format papier, rempli et signé en deux exemplaires originaux, à son bibliothécaire référent.
+2)  L’étudiant doit impérativement venir à la soutenance avec deux exemplaires du [contrat de diffusion](https://bibliotheques.univ-pau.fr/_resource/Images/Services/Votre%20th%C3%A8se/contrat_diffusion_memoire_2021.pdf?download=true) préalablement lu et signé, même s’il n’autorise pas la diffusion de son travail. Une fois la soutenance passée, il doit adresser le contrat de diffusion au format papier, rempli et signé en deux exemplaires originaux, à son bibliothécaire référent.
 
-3) Il doit respecter le droit d’auteur et les données à caractère personnel. Cela suppose d’obtenir des autorisations, notamment en cas de reproduction et de diffusion de leur image ou de leur voix via un [formulaire d'autorisation](https://bibliotheques.univ-pau.fr/_resource/01%20Fichiers%20pdf/Appui%20%C3%A0%20la%20recherche/formulaire-droit-image-voix.docx?download=true).
+3)  Il doit respecter le droit d’auteur et les données à caractère personnel. Cela suppose d’obtenir des autorisations, notamment en cas de reproduction et de diffusion de leur image ou de leur voix via un [formulaire d'autorisation](https://bibliotheques.univ-pau.fr/_resource/01%20Fichiers%20pdf/Appui%20%C3%A0%20la%20recherche/formulaire-droit-image-voix.docx?download=true).
 
 Si ces conditions ne sont pas remplies, le mémoire sera simplement archivé sur la plateforme locale CIME. Il ne sera pas consultable en ligne.
 
-Si la diffusion est validée, votre mémoire sera accessible en plein texte sur [cime.univ-pau.f](https://cime.univ-pau.fr/ "accès à CIME,  plate-forme des mémoires étudiants de l’UPPA")r. L’accès à ce service est restreint à la communauté universitaire de l’UPPA.
+Si la diffusion est validée, votre mémoire sera accessible en plein texte sur [cime.univ-pau.f](https://cime.univ-pau.fr/ "accès à CIME, plate-forme des mémoires étudiants de l’UPPA")r. L’accès à ce service est restreint à la communauté universitaire de l’UPPA.
 
-[![](/img/dumas.png)](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU "accès à Dumas")
+[![](/img/dumas.png)](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU)
 
 ### Valorisation des meilleurs mémoires
 
 Par ailleurs, les meilleurs mémoires peuvent être diffusés sur le portail national [DUMAS](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU "Accès à DUMAS (Dépôt Universitaire de Mémoires Après Soutenance)") (collection de l’Université de Pau et des Pays de l'Adour).
 
-Cette diffusion est soumise aux mêmes conditions que pour CIME.  
+Cette diffusion est soumise aux mêmes conditions que pour CIME.\
 Les mémoires présents sur DUMAS sont accessibles à tous et en plein texte.

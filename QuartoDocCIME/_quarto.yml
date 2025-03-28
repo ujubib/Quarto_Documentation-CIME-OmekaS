@@ -38,6 +38,8 @@ website:
         contents: "qui/*"
       - section: "Comment déposer ?"
         contents: "comment/*"
+      - section: "Omeka S"
+        contents: "omeka/*"
 #    tools:
 #      - icon: box-arrow-up-right
 #        href: https://kumbuka.univ-pau.fr
