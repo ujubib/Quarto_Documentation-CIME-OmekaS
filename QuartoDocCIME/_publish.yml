@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: f836c5bf-e8ae-4c8a-ba09-296a3c9325e2
+      url: 'https://uju.quarto.pub/cime'

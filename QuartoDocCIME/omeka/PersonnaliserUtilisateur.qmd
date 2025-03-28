@@ -7,24 +7,72 @@ lang: fr
 
 ## Choisir les colonnes à afficher pour les *Contenus*
 
-1. Dans le *Tableu de bord* d'Omeka, Cliquer sur `Utlisateurs` :
+1.  Dans le *Tableu de bord* d'Omeka, Cliquer sur `Utlisateurs` :
 
     ![Accéder au panneau de gestion des utilisateurs](/img/omeka-s.univ-pau.fr-2025-03-28%2009.05.00.png){group="utilisateur"}
 
-1. En face de son adresse adresse mail, cliquer sur le bouton d'édition (crayon)
+2.  En face de son adresse adresse mail, cliquer sur le bouton d'édition (crayon)
 
     ![Accéder aux paramètres de son profil utilisateur](/img/omeka-s.univ-pau.fr-2025-03-28%2009.08.48.png){group="utilisateur"}
 
-1. Dans l'onglet `Paramètres utilisateur`, vous pouvez modifier les colonnes affichées lorsque vous parcourez les `Contenus` :
+3.  Dans l'onglet `Paramètres utilisateur`, vous pouvez modifier les colonnes affichées lorsque vous parcourez les `Contenus` :
 
-    - Par exemple supprimer la colonne `Classe de ressource` qui sera toujours `Texte` pour les dépôts de mémoire.
+    - Par exemple, supprimer la colonne `Classe de ressource` qui sera toujours `Texte` pour les dépôts de mémoire.
 
         ![Supprimer la colonne `Classe de ressource`](/img/omeka-s.univ-pau.fr-2025-03-28%2009.23.41.png){group="utilisateur"}
 
-    - Et ajouter des colonnes basée sur les propriétés de vos dépôts : 
-        1. Cliquer sur `Ajouter une colonne` et sélectionner `Valeur` dans le menu déroulant
-  
+    - Et ajouter des colonnes basée sur les propriétés de vos dépôts :
+
+        1.  Cliquer sur `Ajouter une colonne` et sélectionner `Valeur` dans le menu déroulant puis cliquer sur le bouton <kbd>+</kbd> à la fin de la ligne.
+
             ![Ajouter une colonne qui affichera la *Valeur* d'une *Propriété* de vos *Contenus*](/img/omeka-s.univ-pau.fr-2025-03-28%2009.47.40.png){group="utilisateur"}
 
-2. Quand vous avez modifiez vos Paramètres utilisateur, cliquez sur `Enregistrer` en haut à droite de la page
-  
+        2.  Un volet de saisie s'ouvre à droite de l'écran où vous pouvez :
+            
+            a. Sélectionner la propriété dont les valeurs seront affichées en colonne
+                
+                :::: {.callout-warning}
+                Toutes les propriétés de tous les schémas de description installés dans *Omeka S* sont disponibles. Celles utilisées par CIME sont dans **Dublin Core** (début de liste) et dans **Vivo** (après Dublin Core).
+                ::::
+                
+                ::: {.callout-tip}
+                Quand vous avez cliqué sur `Choisir une propriété...` pour ouvrir le menu déroulant, vous pouvez saisir au clavier le début du nom de la propriété pour faire défiler le menu.
+                :::
+                
+                | Propriété              | Nom (*à chercher dans le menu déroulant*) | étiquette pour CIME           |
+                |----------------------------|---------------------------------|-----------------------------------|
+                | dcterms:title        | Titre                                              |  -                            |
+                | dcterms:creator      | Créateur                                           | Auteur                        |
+                | dcterms:description  | Description                                        | Résumé (fr)                   |
+                | dcterms:abstract     | Résumé                                             | Abstract                      |
+                | dcterms:subject      | Sujet                                              | Mot(s)-Clé(s)                 |
+                | dcterms:hasVersion     | A une version                                      | DUMAS                         |
+                | dcterms:publisher      | Editeur                                            | Tutelles                      |
+                | dcterms:date           | Date                                               | Année de soutenance           |
+                | dcterms:contributor    | Contributeur                                       | Responsable(s) pédagogique(s) |
+                | dcterms:license        | Licence                                            |  -                            |
+                | dcterms:format         | Format                                             |  -                            |
+                | dcterms:language       | Langue                                             |  -                            |
+                | dcterms:type           | Type                                               |  -                            |
+                | dcterms:educationLevel | Niveau d'éducation du public                       | Diplôme + année               |
+                | vivo:degreeCandidacy   | *degree candidacy (vivo)*                          | Mention                       |
+                | dcterms:isPartOf       | Est une partie de                                  | Parcours                      |
+                | vivo:majorField        | *major field (vivo)*                               | Discipline principale         |
+                
+                : Nom des propriétés utilisées dans le modèle `CIME_dépôt` {#tbl-propriétés .striped}
+
+            a. Dans le champ `Entête` vous pouvez renseigner l'étiquette CIME (voir @tbl-propriétés) (facultatif)
+            
+            a. N'oubliez pas de cliquer sur `Choisir la colonne` (tout en bas du volet et mal placé, voir image)
+
+                ![Choisir une propriété](/img/omeka-s.univ-pau.fr-2025-03-28%2013.26.48.png){group="utilisateur"}
+
+            a. Recommencez l'opération pour ajouter d'autres colonnes.
+
+                ::: {.callout-tip}
+                Des propriétés pertinentes à ajouter peuvent être : `Créateur` et `Est une partie de`, par exemple. 
+                ::: 
+
+4. Quand vous avez modifiez vos `Paramètres utilisateur`, cliquez sur `Enregistrer` en haut à droite de la page.
+    
+    ![Cliquer sur enregister](/img/omeka-s.univ-pau.fr-2025-03-28%2014.39.30.png){group="utilisateur"}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Julien Rabaud">
-<meta name="dcterms.date" content="2025-03-28">
 
 <title>Documentation de CIME - Personnaliser son profil utilisateur</title>
 <style>
@@ -64,17 +63,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -105,8 +104,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Documentation de CIME</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -118,8 +117,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Basculer en mode lecteur">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -129,10 +128,10 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
           <h1 class="quarto-secondary-nav-title">Personnaliser son profil utilisateur</h1>
         </a>     
     </div>
@@ -148,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
  <span class="menu-text">Que déposer ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -165,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
  <span class="menu-text">Qui dépose ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -182,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Comment déposer ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -205,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Omeka S</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -230,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#choisir-les-colonnes-à-afficher-pour-les-contenus" id="toc-choisir-les-colonnes-à-afficher-pour-les-contenus" class="nav-link active" data-scroll-target="#choisir-les-colonnes-à-afficher-pour-les-contenus">Choisir les colonnes à afficher pour les <em>Contenus</em></a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="PersonnaliserUtilisateur.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="PersonnaliserUtilisateur.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="PersonnaliserUtilisateur.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="PersonnaliserUtilisateur.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -245,16 +244,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Auteur·rice</div>
     <div class="quarto-title-meta-contents">
              <p>Julien Rabaud </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 28, 2025</p>
+      <p class="date">28 mars 2025</p>
     </div>
   </div>
   
@@ -285,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
 </div></li>
 <li><p>Dans l’onglet <code>Paramètres utilisateur</code>, vous pouvez modifier les colonnes affichées lorsque vous parcourez les <code>Contenus</code> :</p>
 <ul>
-<li><p>Par exemple supprimer la colonne <code>Classe de ressource</code> qui sera toujours <code>Texte</code> pour les dépôts de mémoire.</p>
+<li><p>Par exemple, supprimer la colonne <code>Classe de ressource</code> qui sera toujours <code>Texte</code> pour les dépôts de mémoire.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="..\img/omeka-s.univ-pau.fr-2025-03-28 09.23.41.png" class="lightbox" data-gallery="utilisateur" data-glightbox="description: .lightbox-desc-3" title="Supprimer la colonne Classe de ressource"><img src="..\img/omeka-s.univ-pau.fr-2025-03-28 09.23.41.png" class="img-fluid figure-img" alt="Supprimer la colonne Classe de ressource"></a></p>
@@ -294,16 +293,189 @@ ul.task-list li input[type="checkbox"] {
 </div></li>
 <li><p>Et ajouter des colonnes basée sur les propriétés de vos dépôts :</p>
 <ol type="1">
-<li><p>Cliquer sur <code>Ajouter une colonne</code> et sélectionner <code>Valeur</code> dans le menu déroulant</p>
+<li><p>Cliquer sur <code>Ajouter une colonne</code> et sélectionner <code>Valeur</code> dans le menu déroulant puis cliquer sur le bouton <kbd>+</kbd> à la fin de la ligne.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="..\img/omeka-s.univ-pau.fr-2025-03-28 09.47.40.png" class="lightbox" data-gallery="utilisateur" data-glightbox="description: .lightbox-desc-4" title="Ajouter une colonne qui affichera la Valeur d’une Propriété de vos Contenus"><img src="..\img/omeka-s.univ-pau.fr-2025-03-28 09.47.40.png" class="img-fluid figure-img" alt="Ajouter une colonne qui affichera la Valeur d’une Propriété de vos Contenus"></a></p>
 <figcaption>Ajouter une colonne qui affichera la <em>Valeur</em> d’une <em>Propriété</em> de vos <em>Contenus</em></figcaption>
 </figure>
 </div></li>
+<li><p>Un volet de saisie s’ouvre à droite de l’écran où vous pouvez :</p>
+<ol type="1">
+<li><p>Sélectionner la propriété dont les valeurs seront affichées en colonne</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avertissement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Toutes les propriétés de tous les schémas de description installés dans <em>Omeka S</em> sont disponibles. Celles utilisées par CIME sont dans <strong>Dublin Core</strong> (début de liste) et dans <strong>Vivo</strong> (après Dublin Core).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Astuce
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Quand vous avez cliqué sur <code>Choisir une propriété...</code> pour ouvrir le menu déroulant, vous pouvez saisir au clavier le début du nom de la propriété pour faire défiler le menu.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Les noms des propriétés utilisées dans le modèle <code>CIME_Dépôt</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="tbl-propriétés" class="striped quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-propriétés-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Tableau des propriétés
+</figcaption>
+<div aria-describedby="tbl-propriétés-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 34%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Propriété</th>
+<th>Nom (<em>à chercher dans le menu déroulant</em>)</th>
+<th>étiquette pour CIME</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>dcterms:title</td>
+<td>Titre</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>dcterms:creator</td>
+<td>Créateur</td>
+<td>Auteur</td>
+</tr>
+<tr class="odd">
+<td>dcterms:description</td>
+<td>Description</td>
+<td>Résumé (fr)</td>
+</tr>
+<tr class="even">
+<td>dcterms:abstract</td>
+<td>Résumé</td>
+<td>Abstract</td>
+</tr>
+<tr class="odd">
+<td>dcterms:subject</td>
+<td>Sujet</td>
+<td>Mot(s)-Clé(s)</td>
+</tr>
+<tr class="even">
+<td>dcterms:hasVersion</td>
+<td>A une version</td>
+<td>DUMAS</td>
+</tr>
+<tr class="odd">
+<td>dcterms:publisher</td>
+<td>Editeur</td>
+<td>Tutelles</td>
+</tr>
+<tr class="even">
+<td>dcterms:date</td>
+<td>Date</td>
+<td>Année de soutenance</td>
+</tr>
+<tr class="odd">
+<td>dcterms:contributor</td>
+<td>Contributeur</td>
+<td>Responsable(s) pédagogique(s)</td>
+</tr>
+<tr class="even">
+<td>dcterms:license</td>
+<td>Licence</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>dcterms:format</td>
+<td>Format</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>dcterms:language</td>
+<td>Langue</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>dcterms:type</td>
+<td>Type</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>dcterms:educationLevel</td>
+<td>Niveau d’éducation du public</td>
+<td>Diplôme + année</td>
+</tr>
+<tr class="odd">
+<td>vivo:degreeCandidacy</td>
+<td><em>degree candidacy (vivo)</em></td>
+<td>Mention</td>
+</tr>
+<tr class="even">
+<td>dcterms:isPartOf</td>
+<td>Est une partie de</td>
+<td>Parcours</td>
+</tr>
+<tr class="odd">
+<td>vivo:majorField</td>
+<td><em>major field (vivo)</em></td>
+<td>Discipline principale</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div></li>
+<li><p>Dans le champ <code>Entête</code> vous pouvez renseigner l’étiquette CIME (voir <a href="#tbl-propriétés" class="quarto-xref">Table&nbsp;1</a>) (facultatif)</p></li>
+<li><p>N’oubliez pas de cliquer sur <code>Choisir la colonne</code> (tout en bas du volet et mal placé, voir image)</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="..\img/omeka-s.univ-pau.fr-2025-03-28 13.26.48.png" class="lightbox" data-gallery="utilisateur" data-glightbox="description: .lightbox-desc-5" title="Choisir une propriété"><img src="..\img/omeka-s.univ-pau.fr-2025-03-28 13.26.48.png" class="img-fluid figure-img" alt="Choisir une propriété"></a></p>
+<figcaption>Choisir une propriété</figcaption>
+</figure>
+</div>
+<ol start="4" type="1">
+<li><p>Recommencez l’opération pour ajouter d’autres colonnes.</p>
+<p>Des propriétés pertinentes à ajouter peuvent être : <code>Créateur</code> et <code>Est une partie de</code>, par exemple.</p></li>
+</ol></li>
 </ol></li>
 </ul></li>
-<li><p>Quand vous avez modifiez vos Paramètres utilisateur, cliquez sur <code>Enregistrer</code> en haut à droite de la page</p></li>
+<li><p>Quand vous avez modifiez vos <code>Paramètres utilisateur</code>, cliquez sur <code>Enregistrer</code> en haut à droite de la page.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="..\img/omeka-s.univ-pau.fr-2025-03-28 14.39.30.png" class="lightbox" data-gallery="utilisateur" data-glightbox="description: .lightbox-desc-6" title="Cliquer sur enregister"><img src="..\img/omeka-s.univ-pau.fr-2025-03-28 14.39.30.png" class="img-fluid figure-img" alt="Cliquer sur enregister"></a></p>
+<figcaption>Cliquer sur enregister</figcaption>
+</figure>
+</div></li>
 </ol>
 
 
@@ -312,10 +484,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="glightbox-desc lightbox-desc-2">Accéder aux paramètres de son profil utilisateur</span>
 <span class="glightbox-desc lightbox-desc-3">Supprimer la colonne <code>Classe de ressource</code></span>
 <span class="glightbox-desc lightbox-desc-4">Ajouter une colonne qui affichera la <em>Valeur</em> d’une <em>Propriété</em> de vos <em>Contenus</em></span>
+<span class="glightbox-desc lightbox-desc-5">Choisir une propriété</span>
+<span class="glightbox-desc lightbox-desc-6">Cliquer sur enregister</span>
 </div>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -514,12 +688,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copié");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copié");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -877,7 +1051,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
