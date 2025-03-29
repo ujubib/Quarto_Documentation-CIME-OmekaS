@@ -20,6 +20,16 @@ button>a {
     color:darkblue
 }
 
+figcaption {
+    text-align: center;
+}
+
+.gslide-desc {
+    font-size: 1.4em !important;
+    font-weight: 600;
+    text-align: center;
+}
+
 #title-block-header .quarto-title-block>div>button {
     position: absolute;
     right: -8rem;
@@ -27,7 +37,7 @@ button>a {
 }
 
 h1 {
-    color:teal;
+    color:#981b3e;
     font-variant: small-caps;
 }
 
@@ -38,7 +48,7 @@ h1 {
 }
 
 .quarto-title-meta-contents {
-    color: darkcyan;
+    color: #981b3e;
     
 }
 
@@ -53,7 +63,7 @@ li.sidebar-item-section  > .sidebar-item-container > .sidebar-item-text > .menu-
 li.sidebar-item-section:has(ul) > .sidebar-item-container > .sidebar-item-text > .menu-text {
     font-weight: bold;
 
-    color:#008CBA;
+    color:#981b3e;
 }
 
 li.sidebar-item-section:has(ul) > .sidebar-item-container > .sidebar-item-text > .menu-text::before {
@@ -95,8 +105,6 @@ header.quarto-title-block {
     margin-right: auto;
     text-align: center;
 }
-
-
 
 .quarto-title-meta-heading {
     margin-top: 1.6em !important;

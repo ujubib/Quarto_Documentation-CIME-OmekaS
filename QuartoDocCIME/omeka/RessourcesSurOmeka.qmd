@@ -1,0 +1,41 @@
+---
+title: "Ressources sur Omeka S"
+author: Julien Rabaud
+date: 2025-03-28
+lang: fr
+---
+
+![](/img/omeka-s-badge.png){fig-alt="Logo Omeka S" fig-align="center" width="120"}
+
+## Digital Scholarship
+
+-   [Site Officiel Omeka S](https://omeka.org/s/)
+    -   [Manuel Utilisateur](https://omeka.org/s/docs/user-manual/)
+-   [Forum](https://forum.omeka.org/c/omeka-s/8)
+-   [Github](https://github.com/omeka/omeka-s)
+
+## <acronym title="Association des Usagers Francophones d'Omeka">AUFO</acronym>
+
+[![](/img/logo-aufo.png){width="138" height="60"}](https://omeka.fr/)
+
+-   [Sites réalisés avec Omeka](https://omeka.fr/fr/csv/annuaire-sites/) (*S* ou *Classic*)
+-   [Site des Journées Omeka](https://omeka.sciencesconf.org) (Annuelles)
+-   [Groupe Zotero](https://www.zotero.org/groups/2382399/omeka_biblio_francophone/)
+-   [Liste de diffusion](https://groupes.renater.fr/sympa/info/omekafr-asso)
+
+## Modules
+
+### Listes
+
+-   [Sur le site officiel](https://omeka.org/s/modules/)
+-   [Sur le site de l'AUFO](https://omeka.fr/fr/csv/annuaire-modules/)
+-   [Par Daniel Berthereau](https://daniel-km.github.io/UpgradeToOmekaS/fr/omeka_s_modules.html)
+
+### CSV Import
+
+-   [Guide d’import des fichiers dans OmekaS via le module CSV Import](https://uju-export.netlify.app/html/guide%20import%20fichier%20sorbonne)\
+    Émeline Juillard (Université Sorbonne Nouvelle) - Octobre 2021
+
+## Formation
+
+-   [Formation doctorale Omeka S](https://hal.science/hal-04221115). *Doctorat. Mettre en valeur sa bibliothèque numérique avec Omeka S* - Maximilien Petit, Michel de Moura, Karine Pellerin. 2022, 15p. ⟨hal-04221115⟩

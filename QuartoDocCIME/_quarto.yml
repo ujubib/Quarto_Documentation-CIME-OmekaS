@@ -38,7 +38,7 @@ website:
         contents: "qui/*"
       - section: "Comment déposer ?"
         contents: "comment/*"
-      - section: "Omeka S"
+      - section: "Utiliser Omeka S"
         contents: "omeka/*"
 #    tools:
 #      - icon: box-arrow-up-right
@@ -48,7 +48,8 @@ format:
   html:
     code-tools: false
     code-fold: true
-    tbl-cap-location: top
+    tbl-cap-location: bottom
+    fig-cap-location: bottom
     mainfont: calibri
     backgroundcolor: FloralWhite
     grid:
@@ -56,9 +57,7 @@ format:
       body-width: 900px
       margin-width: 400px
       gutter-width: 1.5rem
-    theme:
-      light: flatly
-      dark: solar
+    theme: flatly
     filters:
      - nutshell
     css: styles.css
@@ -73,7 +72,8 @@ format:
     comments:
       hypothesis: true
   pdf:
-    tbl-cap-location: top
+    tbl-cap-location: bottom
+    fig-cap-location: bottom
     documentclass: scrartcl
     toc: true
     toc-depth: 5
