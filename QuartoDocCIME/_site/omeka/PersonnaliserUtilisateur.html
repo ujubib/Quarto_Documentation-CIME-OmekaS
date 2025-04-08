@@ -110,8 +110,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">À propos</span></a>
+    <a class="nav-link" href="https://omeka-s.univ-pau.fr/admin" target="_blank"> <i class="bi bi-gear" role="img" aria-label="CIME - Admin">
+</i> 
+<span class="menu-text">CIME - Admin ↗</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://omeka-s.univ-pau.fr/s/cime/page/welcome" target="_blank"> <i class="bi bi-people" role="img" aria-label="CIME - Public">
+</i> 
+<span class="menu-text">CIME - Public ↗</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> <i class="bi bi-file-earmark-code" role="img" aria-label="À propos de Quarto">
+</i> 
+<span class="menu-text">À propos de <em>Quarto</em></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -219,6 +230,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Ressources sur Omeka S</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../omeka/RetrouverSesMémoires.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Retrouver ses mémoires</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -307,34 +324,28 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Un volet de saisie s’ouvre à droite de l’écran où vous pouvez :</p>
 <ol type="1">
 <li><p>Sélectionner la propriété dont les valeurs seront affichées en colonne</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Avertissement
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Toutes les propriétés de tous les schémas de description installés dans <em>Omeka S</em> sont disponibles. Celles utilisées par CIME sont dans <strong>Dublin Core</strong> (début de liste) et dans <strong>Vivo</strong> (après Dublin Core).</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Astuce
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Quand vous avez cliqué sur <code>Choisir une propriété...</code> pour ouvrir le menu déroulant, vous pouvez saisir au clavier le début du nom de la propriété pour faire défiler le menu.</p>
 </div>
 </div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -343,7 +354,7 @@ Propriétés utilisées dans le modèle <code>CIME_dépôt</code>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <table class="table-striped table">
 <caption>Nom des propriétés utilisées dans le modèle <code>CIME_dépôt</code></caption>
@@ -459,17 +470,14 @@ Propriétés utilisées dans le modèle <code>CIME_dépôt</code>
 </figure>
 </div></li>
 <li><p>Recommencez l’opération pour ajouter d’autres colonnes.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Astuce
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Des propriétés pertinentes à ajouter peuvent être : <code>Créateur</code> et <code>Est une partie de</code>, par exemple.</p>
+</div>
 </div>
 </div></li>
 </ol></li>
@@ -924,7 +932,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":false});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/omeka/PersonnaliserUtilisateur.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

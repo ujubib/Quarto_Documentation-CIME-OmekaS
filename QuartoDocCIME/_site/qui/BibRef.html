@@ -145,8 +145,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">À propos</span></a>
+    <a class="nav-link" href="https://omeka-s.univ-pau.fr/admin" target="_blank"> <i class="bi bi-gear" role="img" aria-label="CIME - Admin">
+</i> 
+<span class="menu-text">CIME - Admin ↗</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://omeka-s.univ-pau.fr/s/cime/page/welcome" target="_blank"> <i class="bi bi-people" role="img" aria-label="CIME - Public">
+</i> 
+<span class="menu-text">CIME - Public ↗</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> <i class="bi bi-file-earmark-code" role="img" aria-label="À propos de Quarto">
+</i> 
+<span class="menu-text">À propos de <em>Quarto</em></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -254,6 +265,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Ressources sur Omeka S</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../omeka/RetrouverSesMémoires.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Retrouver ses mémoires</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -268,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#par-collège" id="toc-par-collège" class="nav-link active" data-scroll-target="#par-collège">Par Collège</a></li>
   <li><a href="#par-référente" id="toc-par-référente" class="nav-link" data-scroll-target="#par-référente">Par Référent·e</a></li>
-  <li><a href="#tableau" id="toc-tableau" class="nav-link" data-scroll-target="#tableau">Tableau</a></li>
+  <li><a href="#tableau-général" id="toc-tableau-général" class="nav-link" data-scroll-target="#tableau-général">Tableau général</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/qui/BibRef.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/qui/BibRef.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></nav>
     </div>
@@ -359,7 +376,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span>)<span class="sc">}</span></span>
 <span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tbody&gt;</span></span>
 <span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/table&gt;</span></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span> <span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;p&gt;Sélectionnez un collège pour afficher le tableau.&lt;/p&gt;`</span><span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span> <span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;p class="selectionnez"&gt;Sélectionnez un collège pour afficher le tableau.&lt;/p&gt;`</span><span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -432,7 +449,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span>)<span class="sc">}</span></span>
 <span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tbody&gt;</span></span>
 <span id="cb3-106"><a href="#cb3-106" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/table&gt;</span></span>
-<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span> <span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;p&gt;Sélectionnez un·e référent·e pour afficher le tableau.&lt;/p&gt;`</span><span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span> <span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;p class="selectionnez"&gt;Sélectionnez un·e référent·e pour afficher le tableau.&lt;/p&gt;`</span><span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -464,15 +481,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="tableau" class="level2">
-<h2 class="anchored" data-anchor-id="tableau">Tableau</h2>
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="tableau-général" class="level2">
+<h2 class="anchored" data-anchor-id="tableau-général">Tableau général</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Afficher le tableau">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Afficher le tableau
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -501,6 +518,11 @@ Note
 </div>
 </div>
 </div>
+</div>
+<div id="boutonTemplate" style="text-align:center">
+<button>
+<a href="../Masters.csv" download="Masters.csv" target="_blank">Télécharger <code>Masters.csv</code></a>
+</button>
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -557,7 +579,7 @@ th.desc::after {
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxyXG5kYXRhID0gZDMuZHN2KFwiO1wiLCBhd2FpdCBGaWxlQXR0YWNobWVudChcIi4uL01hc3RlcnMuY3N2XCIpLnVybCgpKTtcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXHJcbi8vIEV4dHJhaXJlIGxlcyB2YWxldXJzIHVuaXF1ZXMgZGUgbGEgY29sb25uZSBcIkNvbGzDqGdlXCJcclxudW5pcXVlQ29sbGVnZXMgPSBBcnJheS5mcm9tKG5ldyBTZXQoZGF0YS5tYXAocm93ID0+IHJvdy5Db2xsw6hnZSkpKS5zb3J0KCk7XHJcblxyXG4vLyBBam91dGVyIHVuZSBvcHRpb24gXCJBdWN1blwiIHBvdXIgZm9yY2VyIHVuZSBzw6lsZWN0aW9uIGV4cGxpY2l0ZVxyXG51bmlxdWVDb2xsZWdlc1dpdGhOb25lID0gW1wiQXVjdW5cIiwgLi4udW5pcXVlQ29sbGVnZXNdO1xyXG5cclxudmlld29mIHNlbGVjdGVkQ29sbGVnZSA9IElucHV0cy5zZWxlY3QodW5pcXVlQ29sbGVnZXNXaXRoTm9uZSwgeyBsYWJlbDogXCJDaG9pc2lzc2V6IDpcIiwgdmFsdWU6IFwiQXVjdW5cIiB9KTtcclxuXHJcbi8vIEfDqW7DqXJlciBsZSB0YWJsZWF1IHVuaXF1ZW1lbnQgc2kgdW5lIHZhbGV1ciBlc3Qgc8OpbGVjdGlvbm7DqWVcclxuc2VsZWN0ZWRDb2xsZWdlICE9PSBcIkF1Y3VuXCIgPyBodG1sYFxyXG48dGFibGUgY2xhc3M9XCJ0YWJsZS1zdHJpcGVkIHRhYmxlLWhvdmVyIHRhYmxlXCI+XHJcbiAgPGNhcHRpb24+UGFyY291cnMgcG91ciBsZSBjb2xsw6hnZSAke3NlbGVjdGVkQ29sbGVnZX08L2NhcHRpb24+XHJcbiAgPGNvbGdyb3VwPlxyXG4gICAgPGNvbCBzdHlsZT1cIndpZHRoOiA1NSVcIj5cclxuICAgIDxjb2wgc3R5bGU9XCJ3aWR0aDogMjAlXCI+XHJcbiAgICA8Y29sIHN0eWxlPVwid2lkdGg6IDI1JVwiPlxyXG4gIDwvY29sZ3JvdXA+XHJcbiAgPHRoZWFkPlxyXG4gICAgPHRyIGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgIDx0aCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+UGFyY291cnM8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBjZW50ZXI7XCI+Q2FtcHVzPC90aD5cclxuICAgICAgPHRoIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPlLDqWbDqXJlbnTCt2U8L3RoPlxyXG4gICAgPC90cj5cclxuICA8L3RoZWFkPlxyXG4gIDx0Ym9keT5cclxuICAgICR7ZGF0YS5maWx0ZXIocm93ID0+IHJvdy5Db2xsw6hnZSA9PT0gc2VsZWN0ZWRDb2xsZWdlKS5tYXAocm93ID0+IGh0bWxgXHJcbiAgICAgIDx0cj5cclxuICAgICAgICA8dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPiR7cm93LlBhcmNvdXJzfTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPiR7cm93LkNhbXB1c308L3RkPlxyXG4gICAgICAgIDx0ZCBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjtcIj4ke3Jvdy5Db250YWN0fTwvdGQ+XHJcbiAgICAgIDwvdHI+XHJcbiAgICBgKX1cclxuICA8L3Rib2R5PlxyXG48L3RhYmxlPlxyXG5gIDogaHRtbGA8cD5Tw6lsZWN0aW9ubmV6IHVuIGNvbGzDqGdlIHBvdXIgYWZmaWNoZXIgbGUgdGFibGVhdS48L3A+YDtcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXHJcbi8vIEV4dHJhaXJlIGxlcyB2YWxldXJzIHVuaXF1ZXMgZGUgbGEgY29sb25uZSBcIkNvbnRhY3RcIlxyXG51bmlxdWVDb250YWN0cyA9IEFycmF5LmZyb20obmV3IFNldChkYXRhLm1hcChyb3cgPT4gcm93LkNvbnRhY3QpKSkuc29ydCgpO1xyXG5cclxuLy8gQWpvdXRlciB1bmUgb3B0aW9uIFwiQXVjdW5cIiBwb3VyIGZvcmNlciB1bmUgc8OpbGVjdGlvbiBleHBsaWNpdGVcclxudW5pcXVlQ29udGFjdHNXaXRoTm9uZSA9IFtcIkF1Y3VuXCIsIC4uLnVuaXF1ZUNvbnRhY3RzXTtcclxuXHJcbnZpZXdvZiBzZWxlY3RlZENvbnRhY3QgPSBJbnB1dHMuc2VsZWN0KHVuaXF1ZUNvbnRhY3RzV2l0aE5vbmUsIHsgbGFiZWw6IFwiQ2hvaXNpc3NleiA6XCIsIHZhbHVlOiBcIkF1Y3VuXCIgfSk7XHJcblxyXG4vLyBHw6luw6lyZXIgbGUgdGFibGVhdSB1bmlxdWVtZW50IHNpIHVuZSB2YWxldXIgZXN0IHPDqWxlY3Rpb25uw6llXHJcbnNlbGVjdGVkQ29udGFjdCAhPT0gXCJBdWN1blwiID8gaHRtbGBcclxuPHRhYmxlIGNsYXNzPVwidGFibGUtc3RyaXBlZCB0YWJsZS1ob3ZlciB0YWJsZVwiPlxyXG4gIDxjYXB0aW9uPlBhcmNvdXJzIHBvdXIgJHtzZWxlY3RlZENvbnRhY3R9PC9jYXB0aW9uPlxyXG4gIDxjb2xncm91cD5cclxuICAgIDxjb2wgc3R5bGU9XCJ3aWR0aDogMjAlXCI+XHJcbiAgICA8Y29sIHN0eWxlPVwid2lkdGg6IDQwJVwiPlxyXG4gICAgPGNvbCBzdHlsZT1cIndpZHRoOiA0MCVcIj5cclxuICA8L2NvbGdyb3VwPlxyXG4gIDx0aGVhZD5cclxuICAgIDx0ciBjbGFzcz1cImhlYWRlclwiPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPkNvbGzDqGdlPC90aD5cclxuICAgICAgPHRoIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj5NZW50aW9uPC90aD5cclxuICAgICAgPHRoIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj5QYXJjb3VyczwvdGg+XHJcbiAgICA8L3RyPlxyXG4gIDwvdGhlYWQ+XHJcbiAgPHRib2R5PlxyXG4gICAgJHtkYXRhLmZpbHRlcihyb3cgPT4gcm93LkNvbnRhY3QgPT09IHNlbGVjdGVkQ29udGFjdCkubWFwKHJvdyA9PiBodG1sYFxyXG4gICAgICA8dHI+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj4ke3Jvdy5Db2xsw6hnZX08L3RkPlxyXG4gICAgICAgIDx0ZCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+JHtyb3cuTWVudGlvbn08L3RkPlxyXG4gICAgICAgIDx0ZCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+JHtyb3cuUGFyY291cnN9PC90ZD5cclxuICAgICAgPC90cj5cclxuICAgIGApfVxyXG4gIDwvdGJvZHk+XHJcbjwvdGFibGU+XHJcbmAgOiBodG1sYDxwPlPDqWxlY3Rpb25uZXogdW7Ct2UgcsOpZsOpcmVudMK3ZSBwb3VyIGFmZmljaGVyIGxlIHRhYmxlYXUuPC9wPmA7XHJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxyXG5kdCA9IGFxLmZyb20oZGF0YSlcclxuSW5wdXRzLnRhYmxlKGR0Lm9iamVjdHMoKSwgeyByb3dzOiAyMCwgbGF5b3V0OiBcImZpeGVkXCJ9KVxyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkQ29sbGVnZScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZENvbnRhY3QnKSJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxyXG5kYXRhID0gZDMuZHN2KFwiO1wiLCBhd2FpdCBGaWxlQXR0YWNobWVudChcIi4uL01hc3RlcnMuY3N2XCIpLnVybCgpKTtcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXHJcbi8vIEV4dHJhaXJlIGxlcyB2YWxldXJzIHVuaXF1ZXMgZGUgbGEgY29sb25uZSBcIkNvbGzDqGdlXCJcclxudW5pcXVlQ29sbGVnZXMgPSBBcnJheS5mcm9tKG5ldyBTZXQoZGF0YS5tYXAocm93ID0+IHJvdy5Db2xsw6hnZSkpKS5zb3J0KCk7XHJcblxyXG4vLyBBam91dGVyIHVuZSBvcHRpb24gXCJBdWN1blwiIHBvdXIgZm9yY2VyIHVuZSBzw6lsZWN0aW9uIGV4cGxpY2l0ZVxyXG51bmlxdWVDb2xsZWdlc1dpdGhOb25lID0gW1wiQXVjdW5cIiwgLi4udW5pcXVlQ29sbGVnZXNdO1xyXG5cclxudmlld29mIHNlbGVjdGVkQ29sbGVnZSA9IElucHV0cy5zZWxlY3QodW5pcXVlQ29sbGVnZXNXaXRoTm9uZSwgeyBsYWJlbDogXCJDaG9pc2lzc2V6IDpcIiwgdmFsdWU6IFwiQXVjdW5cIiB9KTtcclxuXHJcbi8vIEfDqW7DqXJlciBsZSB0YWJsZWF1IHVuaXF1ZW1lbnQgc2kgdW5lIHZhbGV1ciBlc3Qgc8OpbGVjdGlvbm7DqWVcclxuc2VsZWN0ZWRDb2xsZWdlICE9PSBcIkF1Y3VuXCIgPyBodG1sYFxyXG48dGFibGUgY2xhc3M9XCJ0YWJsZS1zdHJpcGVkIHRhYmxlLWhvdmVyIHRhYmxlXCI+XHJcbiAgPGNhcHRpb24+UGFyY291cnMgcG91ciBsZSBjb2xsw6hnZSAke3NlbGVjdGVkQ29sbGVnZX08L2NhcHRpb24+XHJcbiAgPGNvbGdyb3VwPlxyXG4gICAgPGNvbCBzdHlsZT1cIndpZHRoOiA1NSVcIj5cclxuICAgIDxjb2wgc3R5bGU9XCJ3aWR0aDogMjAlXCI+XHJcbiAgICA8Y29sIHN0eWxlPVwid2lkdGg6IDI1JVwiPlxyXG4gIDwvY29sZ3JvdXA+XHJcbiAgPHRoZWFkPlxyXG4gICAgPHRyIGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgIDx0aCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+UGFyY291cnM8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBjZW50ZXI7XCI+Q2FtcHVzPC90aD5cclxuICAgICAgPHRoIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPlLDqWbDqXJlbnTCt2U8L3RoPlxyXG4gICAgPC90cj5cclxuICA8L3RoZWFkPlxyXG4gIDx0Ym9keT5cclxuICAgICR7ZGF0YS5maWx0ZXIocm93ID0+IHJvdy5Db2xsw6hnZSA9PT0gc2VsZWN0ZWRDb2xsZWdlKS5tYXAocm93ID0+IGh0bWxgXHJcbiAgICAgIDx0cj5cclxuICAgICAgICA8dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPiR7cm93LlBhcmNvdXJzfTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPiR7cm93LkNhbXB1c308L3RkPlxyXG4gICAgICAgIDx0ZCBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjtcIj4ke3Jvdy5Db250YWN0fTwvdGQ+XHJcbiAgICAgIDwvdHI+XHJcbiAgICBgKX1cclxuICA8L3Rib2R5PlxyXG48L3RhYmxlPlxyXG5gIDogaHRtbGA8cCBjbGFzcz1cInNlbGVjdGlvbm5lelwiPlPDqWxlY3Rpb25uZXogdW4gY29sbMOoZ2UgcG91ciBhZmZpY2hlciBsZSB0YWJsZWF1LjwvcD5gO1xyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcclxuLy8gRXh0cmFpcmUgbGVzIHZhbGV1cnMgdW5pcXVlcyBkZSBsYSBjb2xvbm5lIFwiQ29udGFjdFwiXHJcbnVuaXF1ZUNvbnRhY3RzID0gQXJyYXkuZnJvbShuZXcgU2V0KGRhdGEubWFwKHJvdyA9PiByb3cuQ29udGFjdCkpKS5zb3J0KCk7XHJcblxyXG4vLyBBam91dGVyIHVuZSBvcHRpb24gXCJBdWN1blwiIHBvdXIgZm9yY2VyIHVuZSBzw6lsZWN0aW9uIGV4cGxpY2l0ZVxyXG51bmlxdWVDb250YWN0c1dpdGhOb25lID0gW1wiQXVjdW5cIiwgLi4udW5pcXVlQ29udGFjdHNdO1xyXG5cclxudmlld29mIHNlbGVjdGVkQ29udGFjdCA9IElucHV0cy5zZWxlY3QodW5pcXVlQ29udGFjdHNXaXRoTm9uZSwgeyBsYWJlbDogXCJDaG9pc2lzc2V6IDpcIiwgdmFsdWU6IFwiQXVjdW5cIiB9KTtcclxuXHJcbi8vIEfDqW7DqXJlciBsZSB0YWJsZWF1IHVuaXF1ZW1lbnQgc2kgdW5lIHZhbGV1ciBlc3Qgc8OpbGVjdGlvbm7DqWVcclxuc2VsZWN0ZWRDb250YWN0ICE9PSBcIkF1Y3VuXCIgPyBodG1sYFxyXG48dGFibGUgY2xhc3M9XCJ0YWJsZS1zdHJpcGVkIHRhYmxlLWhvdmVyIHRhYmxlXCI+XHJcbiAgPGNhcHRpb24+UGFyY291cnMgcG91ciAke3NlbGVjdGVkQ29udGFjdH08L2NhcHRpb24+XHJcbiAgPGNvbGdyb3VwPlxyXG4gICAgPGNvbCBzdHlsZT1cIndpZHRoOiAyMCVcIj5cclxuICAgIDxjb2wgc3R5bGU9XCJ3aWR0aDogNDAlXCI+XHJcbiAgICA8Y29sIHN0eWxlPVwid2lkdGg6IDQwJVwiPlxyXG4gIDwvY29sZ3JvdXA+XHJcbiAgPHRoZWFkPlxyXG4gICAgPHRyIGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgIDx0aCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+Q29sbMOoZ2U8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPk1lbnRpb248L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPlBhcmNvdXJzPC90aD5cclxuICAgIDwvdHI+XHJcbiAgPC90aGVhZD5cclxuICA8dGJvZHk+XHJcbiAgICAke2RhdGEuZmlsdGVyKHJvdyA9PiByb3cuQ29udGFjdCA9PT0gc2VsZWN0ZWRDb250YWN0KS5tYXAocm93ID0+IGh0bWxgXHJcbiAgICAgIDx0cj5cclxuICAgICAgICA8dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPiR7cm93LkNvbGzDqGdlfTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj4ke3Jvdy5NZW50aW9ufTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj4ke3Jvdy5QYXJjb3Vyc308L3RkPlxyXG4gICAgICA8L3RyPlxyXG4gICAgYCl9XHJcbiAgPC90Ym9keT5cclxuPC90YWJsZT5cclxuYCA6IGh0bWxgPHAgY2xhc3M9XCJzZWxlY3Rpb25uZXpcIj5Tw6lsZWN0aW9ubmV6IHVuwrdlIHLDqWbDqXJlbnTCt2UgcG91ciBhZmZpY2hlciBsZSB0YWJsZWF1LjwvcD5gO1xyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcclxuZHQgPSBhcS5mcm9tKGRhdGEpXHJcbklucHV0cy50YWJsZShkdC5vYmplY3RzKCksIHsgcm93czogMjAsIGxheW91dDogXCJmaXhlZFwifSlcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZENvbGxlZ2UnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRDb250YWN0JykifV19
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

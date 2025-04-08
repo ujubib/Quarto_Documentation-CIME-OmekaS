@@ -1,0 +1,32 @@
+---
+title: Retrouver ses mémoires
+author:
+  - Viviane Babeix
+  - Julien Rabaud
+date: 2025-04-07
+lang: fr
+---
+
+## 1^ère^ méthode : par collection
+
+1. Aller dans `Collections` (*Panneau de gauche*).
+
+2. Puis sélectionner la collection.
+
+    ![1. Afficher les `Collections`<br>2. Cliquer sur le titre de la collection](/img/omeka-s.univ-pau.fr-2025-04-08%2009.38.42.png){group="collections"}
+
+3. Enfin, `Afficher les contenus` en haut, à droite de l'écran.
+
+    ![3. Cliquer sur `Afficher les contenus` ou sur le nombre de contenus](/img/omeka-s.univ-pau.fr-2025-04-08%2009.49.26.png){group="collections"}
+
+## 2^ème^ méthode : par propriétaire
+
+1. Aller dans `Contenus` (*Panneau de gauche*).
+
+2. Puis `Recherche avancée`.
+
+    ![1. Cliquer sur `Contenus`<br>2. Cliquer sur `Recherche avancée`](/img/omeka-s.univ-pau.fr-2025-04-08%2009.56.02.png){group="propriétaire"}
+
+3. Enfin `Rechercher par propriétaire` et lancer la `Recherche`
+
+    ![3. `Choisir un utlisateur...`<br>4. Cliquer sur `Recherche`](/img/omeka-s.univ-pau.fr-2025-04-08%2010.00.43.png){group="propriétaire"}

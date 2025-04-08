@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: _site
   resources: 
-    - ".csv"
+    - "*.csv"
 
 execute:
   freeze: auto
@@ -25,8 +25,20 @@ website:
     search: true
     pinned: false
     left:
-      - href: about.qmd
-        text: À propos
+      - icon: gear
+        href: https://omeka-s.univ-pau.fr/admin
+        target: _blank
+        text: "CIME - Admin ↗"
+        aria-label: "CIME - Admin"
+      - icon: people
+        href: https://omeka-s.univ-pau.fr/s/cime/page/welcome
+        target: _blank
+        text: "CIME - Public ↗"
+        aria-label: "CIME - Public"
+      - icon: file-earmark-code
+        href: about.qmd
+        text: "À propos de *Quarto*"
+        aria-label: "À propos de Quarto"
   sidebar:
     style: "floating"
     background: FloralWhite

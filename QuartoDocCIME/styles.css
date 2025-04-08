@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
+ul.navbar-nav > li.nav-item:has(a[target="_blank"]) {
+    border: 2px solid #e6007e;
+    border-radius: 12px;
+    margin-right: 1em;
+}
+
 button {
     border: 3px solid #ffc34d;
     border-radius: 6px;
@@ -125,5 +131,15 @@ header.quarto-title-block {
 
 .callout-body {
     background-color: linen; 
+}
+
+.callout-style-simple > .callout-body {
+    background-color: FloralWhite;
+}
+
+.selectionnez{
+    font-style: italic;
+    color:gray;
+    margin-left: 1em;
 }
 

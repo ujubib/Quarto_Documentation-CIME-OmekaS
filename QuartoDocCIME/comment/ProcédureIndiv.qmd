@@ -127,20 +127,4 @@ Il est possible de `Modifier ce contenu`, puis d'`Enregistrer` les modifications
 
 ![](/img/media/image19.png)
 
-## Pour retrouver ses mémoires
-
-### 1^ère^ méthode
-
-- Aller dans `Collections` (*Panneau de gauche*).
-
-- Puis sélectionner sa collection.
-
-- Enfin, `Afficher les contenus` en haut, à droite de l'écran.
-
-### 2^ème^ méthode
-
-- Aller dans `Contenus` (*Panneau de gauche*).
-
-- Puis `Recherche avancée`.
-
-- Enfin `Rechercher par propriétaire`.
+## Pour [retrouver ses mémoires](/omeka/RetrouverSesM%C3%A9moires.qmd)

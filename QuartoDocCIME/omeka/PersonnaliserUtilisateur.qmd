@@ -31,11 +31,11 @@ C.  Dans l'onglet `Paramètres utilisateur`, vous pouvez modifier les colonnes a
 
             1.  Sélectionner la propriété dont les valeurs seront affichées en colonne
 
-                ::: callout-warning
+                ::: {.callout-warning appearance="simple"}
                 Toutes les propriétés de tous les schémas de description installés dans *Omeka S* sont disponibles. Celles utilisées par CIME sont dans **Dublin Core** (début de liste) et dans **Vivo** (après Dublin Core).
                 :::
 
-                ::: callout-tip
+                ::: {.callout-tip appearance="simple"}
                 Quand vous avez cliqué sur `Choisir une propriété...` pour ouvrir le menu déroulant, vous pouvez saisir au clavier le début du nom de la propriété pour faire défiler le menu.
                 :::
 
@@ -73,7 +73,7 @@ C.  Dans l'onglet `Paramètres utilisateur`, vous pouvez modifier les colonnes a
 
             4.  Recommencez l'opération pour ajouter d'autres colonnes.
 
-                ::: callout-tip
+                ::: {.callout-tip appearance="simple"}
                 Des propriétés pertinentes à ajouter peuvent être : `Créateur` et `Est une partie de`, par exemple.
                 :::
 

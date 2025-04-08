@@ -40,6 +40,7 @@ Collecte Informatique des Mémoires Étudiants
 ## Utiliser Omeka S
 
 - [Personnaliser son profil utilisateur](/omeka/PersonnaliserUtilisateur.qmd)
+- [Pour retrouver ses mémoires](/omeka/RetrouverSesM%C3%A9moires.qmd)
 - [Ressources sur Omeka S](/omeka/RessourcesSurOmeka.qmd)
 
 ![](img/tapisserie.gif){fig-align="center" style="border-radius:18px;margin-top:2em;"}

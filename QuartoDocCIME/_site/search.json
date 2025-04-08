@@ -4,9 +4,9 @@
     "href": "qui/BibRef.html#par-collège",
     "title": "Les bibliothécaires référent·e·s",
     "section": "Par Collège",
-    "text": "Par Collège\n\n\nCode\ndata = d3.dsv(\";\", await FileAttachment(\"../Masters.csv\").url());\n\n\n\n\n\n\n\n\n\nCode\nuniqueColleges = Array.from(new Set(data.map(row =&gt; row.Collège))).sort();\n\n// Ajouter une option \"Aucun\" pour forcer une sélection explicite\nuniqueCollegesWithNone = [\"Aucun\", ...uniqueColleges];\n\nviewof selectedCollege = Inputs.select(uniqueCollegesWithNone, { label: \"Choisissez :\", value: \"Aucun\" });\n\n// Générer le tableau uniquement si une valeur est sélectionnée\nselectedCollege !== \"Aucun\" ? html`\n&lt;table class=\"table-striped table-hover table\"&gt;\n  &lt;caption&gt;Parcours pour le collège ${selectedCollege}&lt;/caption&gt;\n  &lt;colgroup&gt;\n    &lt;col style=\"width: 55%\"&gt;\n    &lt;col style=\"width: 20%\"&gt;\n    &lt;col style=\"width: 25%\"&gt;\n  &lt;/colgroup&gt;\n  &lt;thead&gt;\n    &lt;tr class=\"header\"&gt;\n      &lt;th style=\"text-align: left;\"&gt;Parcours&lt;/th&gt;\n      &lt;th style=\"text-align: center;\"&gt;Campus&lt;/th&gt;\n      &lt;th style=\"text-align: center;\"&gt;Référent·e&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    ${data.filter(row =&gt; row.Collège === selectedCollege).map(row =&gt; html`\n      &lt;tr&gt;\n        &lt;td style=\"text-align: left;\"&gt;${row.Parcours}&lt;/td&gt;\n        &lt;td style=\"text-align: center;\"&gt;${row.Campus}&lt;/td&gt;\n        &lt;td style=\"text-align: center;\"&gt;${row.Contact}&lt;/td&gt;\n      &lt;/tr&gt;\n    `)}\n  &lt;/tbody&gt;\n&lt;/table&gt;\n` : html`&lt;p&gt;Sélectionnez un collège pour afficher le tableau.&lt;/p&gt;`;",
+    "text": "Par Collège\n\n\nCode\ndata = d3.dsv(\";\", await FileAttachment(\"../Masters.csv\").url());\n\n\n\n\n\n\n\n\n\nCode\nuniqueColleges = Array.from(new Set(data.map(row =&gt; row.Collège))).sort();\n\n// Ajouter une option \"Aucun\" pour forcer une sélection explicite\nuniqueCollegesWithNone = [\"Aucun\", ...uniqueColleges];\n\nviewof selectedCollege = Inputs.select(uniqueCollegesWithNone, { label: \"Choisissez :\", value: \"Aucun\" });\n\n// Générer le tableau uniquement si une valeur est sélectionnée\nselectedCollege !== \"Aucun\" ? html`\n&lt;table class=\"table-striped table-hover table\"&gt;\n  &lt;caption&gt;Parcours pour le collège ${selectedCollege}&lt;/caption&gt;\n  &lt;colgroup&gt;\n    &lt;col style=\"width: 55%\"&gt;\n    &lt;col style=\"width: 20%\"&gt;\n    &lt;col style=\"width: 25%\"&gt;\n  &lt;/colgroup&gt;\n  &lt;thead&gt;\n    &lt;tr class=\"header\"&gt;\n      &lt;th style=\"text-align: left;\"&gt;Parcours&lt;/th&gt;\n      &lt;th style=\"text-align: center;\"&gt;Campus&lt;/th&gt;\n      &lt;th style=\"text-align: center;\"&gt;Référent·e&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    ${data.filter(row =&gt; row.Collège === selectedCollege).map(row =&gt; html`\n      &lt;tr&gt;\n        &lt;td style=\"text-align: left;\"&gt;${row.Parcours}&lt;/td&gt;\n        &lt;td style=\"text-align: center;\"&gt;${row.Campus}&lt;/td&gt;\n        &lt;td style=\"text-align: center;\"&gt;${row.Contact}&lt;/td&gt;\n      &lt;/tr&gt;\n    `)}\n  &lt;/tbody&gt;\n&lt;/table&gt;\n` : html`&lt;p class=\"selectionnez\"&gt;Sélectionnez un collège pour afficher le tableau.&lt;/p&gt;`;",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Qui dépose ?",
       "Les bibliothécaires référent·e·s"
     ]
@@ -16,135 +16,155 @@
     "href": "qui/BibRef.html#par-référente",
     "title": "Les bibliothécaires référent·e·s",
     "section": "Par Référent·e",
-    "text": "Par Référent·e\n\n\nCode\nuniqueContacts = Array.from(new Set(data.map(row =&gt; row.Contact))).sort();\n\n// Ajouter une option \"Aucun\" pour forcer une sélection explicite\nuniqueContactsWithNone = [\"Aucun\", ...uniqueContacts];\n\nviewof selectedContact = Inputs.select(uniqueContactsWithNone, { label: \"Choisissez :\", value: \"Aucun\" });\n\n// Générer le tableau uniquement si une valeur est sélectionnée\nselectedContact !== \"Aucun\" ? html`\n&lt;table class=\"table-striped table-hover table\"&gt;\n  &lt;caption&gt;Parcours pour ${selectedContact}&lt;/caption&gt;\n  &lt;colgroup&gt;\n    &lt;col style=\"width: 20%\"&gt;\n    &lt;col style=\"width: 40%\"&gt;\n    &lt;col style=\"width: 40%\"&gt;\n  &lt;/colgroup&gt;\n  &lt;thead&gt;\n    &lt;tr class=\"header\"&gt;\n      &lt;th style=\"text-align: left;\"&gt;Collège&lt;/th&gt;\n      &lt;th style=\"text-align: left;\"&gt;Mention&lt;/th&gt;\n      &lt;th style=\"text-align: left;\"&gt;Parcours&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    ${data.filter(row =&gt; row.Contact === selectedContact).map(row =&gt; html`\n      &lt;tr&gt;\n        &lt;td style=\"text-align: left;\"&gt;${row.Collège}&lt;/td&gt;\n        &lt;td style=\"text-align: left;\"&gt;${row.Mention}&lt;/td&gt;\n        &lt;td style=\"text-align: left;\"&gt;${row.Parcours}&lt;/td&gt;\n      &lt;/tr&gt;\n    `)}\n  &lt;/tbody&gt;\n&lt;/table&gt;\n` : html`&lt;p&gt;Sélectionnez un·e référent·e pour afficher le tableau.&lt;/p&gt;`;",
+    "text": "Par Référent·e\n\n\nCode\nuniqueContacts = Array.from(new Set(data.map(row =&gt; row.Contact))).sort();\n\n// Ajouter une option \"Aucun\" pour forcer une sélection explicite\nuniqueContactsWithNone = [\"Aucun\", ...uniqueContacts];\n\nviewof selectedContact = Inputs.select(uniqueContactsWithNone, { label: \"Choisissez :\", value: \"Aucun\" });\n\n// Générer le tableau uniquement si une valeur est sélectionnée\nselectedContact !== \"Aucun\" ? html`\n&lt;table class=\"table-striped table-hover table\"&gt;\n  &lt;caption&gt;Parcours pour ${selectedContact}&lt;/caption&gt;\n  &lt;colgroup&gt;\n    &lt;col style=\"width: 20%\"&gt;\n    &lt;col style=\"width: 40%\"&gt;\n    &lt;col style=\"width: 40%\"&gt;\n  &lt;/colgroup&gt;\n  &lt;thead&gt;\n    &lt;tr class=\"header\"&gt;\n      &lt;th style=\"text-align: left;\"&gt;Collège&lt;/th&gt;\n      &lt;th style=\"text-align: left;\"&gt;Mention&lt;/th&gt;\n      &lt;th style=\"text-align: left;\"&gt;Parcours&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    ${data.filter(row =&gt; row.Contact === selectedContact).map(row =&gt; html`\n      &lt;tr&gt;\n        &lt;td style=\"text-align: left;\"&gt;${row.Collège}&lt;/td&gt;\n        &lt;td style=\"text-align: left;\"&gt;${row.Mention}&lt;/td&gt;\n        &lt;td style=\"text-align: left;\"&gt;${row.Parcours}&lt;/td&gt;\n      &lt;/tr&gt;\n    `)}\n  &lt;/tbody&gt;\n&lt;/table&gt;\n` : html`&lt;p class=\"selectionnez\"&gt;Sélectionnez un·e référent·e pour afficher le tableau.&lt;/p&gt;`;",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Qui dépose ?",
       "Les bibliothécaires référent·e·s"
     ]
   },
   {
-    "objectID": "qui/BibRef.html#tableau",
-    "href": "qui/BibRef.html#tableau",
+    "objectID": "qui/BibRef.html#tableau-général",
+    "href": "qui/BibRef.html#tableau-général",
     "title": "Les bibliothécaires référent·e·s",
-    "section": "Tableau",
-    "text": "Tableau\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\nCode\ndt = aq.from(data)\nInputs.table(dt.objects(), { rows: 20, layout: \"fixed\"})",
+    "section": "Tableau général",
+    "text": "Tableau général\n\n\n\n\n\n\nAfficher le tableau\n\n\n\n\n\n\n\nCode\ndt = aq.from(data)\nInputs.table(dt.objects(), { rows: 20, layout: \"fixed\"})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTélécharger Masters.csv",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Qui dépose ?",
       "Les bibliothécaires référent·e·s"
     ]
   },
   {
-    "objectID": "omeka/RessourcesSurOmeka.html#digital-scholarship",
-    "href": "omeka/RessourcesSurOmeka.html#digital-scholarship",
-    "title": "Ressources sur Omeka S",
-    "section": "Digital Scholarship",
-    "text": "Digital Scholarship\n\nSite Officiel Omeka S\n\nManuel Utilisateur\n\nForum\nGithub",
-    "crumbs": [
-      "À propos",
-      "Utiliser Omeka S",
-      "Ressources sur Omeka S"
-    ]
-  },
-  {
-    "objectID": "omeka/RessourcesSurOmeka.html#aufo",
-    "href": "omeka/RessourcesSurOmeka.html#aufo",
-    "title": "Ressources sur Omeka S",
-    "section": "AUFO",
-    "text": "AUFO\n\n\nSites réalisés avec Omeka (S ou Classic)\nSite des Journées Omeka (Annuelles)\nGroupe Zotero\nListe de diffusion",
-    "crumbs": [
-      "À propos",
-      "Utiliser Omeka S",
-      "Ressources sur Omeka S"
-    ]
-  },
-  {
-    "objectID": "omeka/RessourcesSurOmeka.html#modules",
-    "href": "omeka/RessourcesSurOmeka.html#modules",
-    "title": "Ressources sur Omeka S",
-    "section": "Modules",
-    "text": "Modules\n\nListes\n\nSur le site officiel\nSur le site de l’AUFO\nPar Daniel Berthereau\n\n\n\nCSV Import\n\nGuide d’import des fichiers dans OmekaS via le module CSV Import\nÉmeline Juillard (Université Sorbonne Nouvelle) - Octobre 2021",
-    "crumbs": [
-      "À propos",
-      "Utiliser Omeka S",
-      "Ressources sur Omeka S"
-    ]
-  },
-  {
-    "objectID": "omeka/RessourcesSurOmeka.html#formation",
-    "href": "omeka/RessourcesSurOmeka.html#formation",
-    "title": "Ressources sur Omeka S",
-    "section": "Formation",
-    "text": "Formation\n\nFormation doctorale Omeka S. Doctorat. Mettre en valeur sa bibliothèque numérique avec Omeka S - Maximilien Petit, Michel de Moura, Karine Pellerin. 2022, 15p. ⟨hal-04221115⟩",
-    "crumbs": [
-      "À propos",
-      "Utiliser Omeka S",
-      "Ressources sur Omeka S"
-    ]
-  },
-  {
-    "objectID": "index.html#que-déposer-dans-cime",
-    "href": "index.html#que-déposer-dans-cime",
-    "title": "Documentation de CIME",
-    "section": "Que déposer dans CIME ?",
-    "text": "Que déposer dans CIME ?\n\nCopie de la page Votre Mémoire de Master du site web des bibliothèques (Source)"
-  },
-  {
-    "objectID": "index.html#qui-dépose-dans-cime",
-    "href": "index.html#qui-dépose-dans-cime",
-    "title": "Documentation de CIME",
-    "section": "Qui dépose dans CIME ?",
-    "text": "Qui dépose dans CIME ?\n\nLes bibliothécaires référent·e·s"
-  },
-  {
-    "objectID": "index.html#comment-déposer-dans-cime",
-    "href": "index.html#comment-déposer-dans-cime",
-    "title": "Documentation de CIME",
-    "section": "Comment déposer dans CIME ?",
-    "text": "Comment déposer dans CIME ?\n\nPréparer un dépôt en lot sur CIME\nComment déposer un mémoire dans CIME"
-  },
-  {
-    "objectID": "index.html#utiliser-omeka-s",
-    "href": "index.html#utiliser-omeka-s",
-    "title": "Documentation de CIME",
-    "section": "Utiliser Omeka S",
-    "text": "Utiliser Omeka S\n\nPersonnaliser son profil utilisateur\nRessources sur Omeka S"
-  },
-  {
-    "objectID": "comment/ProcédureIndiv.html",
-    "href": "comment/ProcédureIndiv.html",
-    "title": "Comment déposer un mémoire dans CIME",
+    "objectID": "omeka/RetrouverSesMémoires.html",
+    "href": "omeka/RetrouverSesMémoires.html",
+    "title": "Retrouver ses mémoires",
     "section": "",
-    "text": "Présentation\n\n\n\n\n\nCe tutoriel permet de voir comment déposer un mémoire à l’unité, un par un.\nIl est possible de déposer par lot (à partir de 4 ou 5 mémoires par exemple) : voir la page dédiée.\nSe connecter sur https://kumbuka.univ-pau.fr/login avec ses identifiants.",
+    "text": "Aller dans Collections (Panneau de gauche).\nPuis sélectionner la collection.\n\n\n\n1. Afficher les Collections2. Cliquer sur le titre de la collection\n\n\nEnfin, Afficher les contenus en haut, à droite de l’écran.\n\n\n\n3. Cliquer sur Afficher les contenus ou sur le nombre de contenus",
     "crumbs": [
-      "À propos",
-      "Comment déposer ?",
-      "Comment déposer un mémoire dans CIME"
+      "CIME - Admin ↗",
+      "Utiliser Omeka S",
+      "Retrouver ses mémoires"
     ]
   },
   {
-    "objectID": "comment/ProcédureIndiv.html#pour-ajouter-un-mémoire",
-    "href": "comment/ProcédureIndiv.html#pour-ajouter-un-mémoire",
-    "title": "Comment déposer un mémoire dans CIME",
-    "section": "Pour ajouter un mémoire",
-    "text": "Pour ajouter un mémoire\nCliquer sur Contenus, puis sur Ajouter un nouveau contenu.\n\n\n1) Dans l’onglet Valeurs\n\nRemplir les champs suivants :\n\n\n\n\n\n\n\n\n\n\nSaisie des Noms\n\n\n\n\n\nLes noms de l’auteur et du responsable pédagogique doivent s’écrire dans l’ordre Nom, Prénom avec une majuscule en début de nom et en début de prénom. Ne mettre qu’un nom par champ, et cliquer sur ajouter une valeur pour chaque nouveau nom.\n\n\n\n\n\n\n\n\n\nChamp Dumas\n\n\n\n\n\nmettre l’url brute de la notice Dumas :\n\n\n\n\n\n\n\n\n\n\nChamp Tutelles\n\n\n\n\n\nIndiquer UPPA-SSH ou UPPA-STEE ou UPPA-E2I, puis cliquer sur ajouter une valeur si nécessaire pour un laboratoire (ALTER, TREE …).\n\n\n\n\n\n\n\n\n\nChamp Langue\n\n\n\n\n\nLe codage de la langue est le même que pour WinIbw (iso 639-2) : eng = anglais, fre = français, etc.\n\n\n\n\n\n\n\n\n\nChamp Mention\n\n\n\n\n\nL’intitulé de la mention doit être formulé comme dans la hiérarchie - cf. par exemple les Masters du Collège SSH :\n\n\n\n\n\n\n\n\n\n\nChamp Parcours\n\n\n\n\n\nIl faut ajouter le lien vers la collection du parcours.\nCliquer sur le bouton Collection : il ouvre un volet à droite avec la liste de toutes les collections. Sélectionner la collection souhaitée, puis cliquer en bas de page sur choisir une ressource.\n\n\n\n\n\n\n\n\n2) Dans l’onglet Médias\nInsérer le fichier PDF du mémoire.\n\nÀ droite de l’écran, cliquer sur Charger afin de sélectionner le fichier du mémoire :\n\n\n\n\n3) Dans l’onglet Collections\nInsérer la collection du parcours concerné :\n\n\n1ère possibilité : dans le champ Filtrer les collections, indiquer le nom de la collection, puis choisir le parcours.\n2ème possibilité : cliquer sur son nom puis sur la mention souhaitée.\n\n\n\n\n4) Finalisation du dépôt\nEnfin, cliquer sur « ajouter » en haut à droite de l’écran.\n\n\n\n5) Modification du contenu\nIl est possible de Modifier ce contenu, puis d’Enregistrer les modifications, en haut, à droite de l’écran.",
+    "objectID": "omeka/RetrouverSesMémoires.html#ère-méthode-par-collection",
+    "href": "omeka/RetrouverSesMémoires.html#ère-méthode-par-collection",
+    "title": "Retrouver ses mémoires",
+    "section": "",
+    "text": "Aller dans Collections (Panneau de gauche).\nPuis sélectionner la collection.\n\n\n\n1. Afficher les Collections2. Cliquer sur le titre de la collection\n\n\nEnfin, Afficher les contenus en haut, à droite de l’écran.\n\n\n\n3. Cliquer sur Afficher les contenus ou sur le nombre de contenus",
     "crumbs": [
-      "À propos",
-      "Comment déposer ?",
-      "Comment déposer un mémoire dans CIME"
+      "CIME - Admin ↗",
+      "Utiliser Omeka S",
+      "Retrouver ses mémoires"
     ]
   },
   {
-    "objectID": "comment/ProcédureIndiv.html#pour-retrouver-ses-mémoires",
-    "href": "comment/ProcédureIndiv.html#pour-retrouver-ses-mémoires",
-    "title": "Comment déposer un mémoire dans CIME",
-    "section": "Pour retrouver ses mémoires",
-    "text": "Pour retrouver ses mémoires\n\n1ère méthode\n\nAller dans Collections (Panneau de gauche).\nPuis sélectionner sa collection.\nEnfin, Afficher les contenus en haut, à droite de l’écran.\n\n\n\n2ème méthode\n\nAller dans Contenus (Panneau de gauche).\nPuis Recherche avancée.\nEnfin Rechercher par propriétaire.",
+    "objectID": "omeka/RetrouverSesMémoires.html#ème-méthode-par-propriétaire",
+    "href": "omeka/RetrouverSesMémoires.html#ème-méthode-par-propriétaire",
+    "title": "Retrouver ses mémoires",
+    "section": "2ème méthode : par propriétaire",
+    "text": "2ème méthode : par propriétaire\n\nAller dans Contenus (Panneau de gauche).\nPuis Recherche avancée.\n\n\n\n1. Cliquer sur Contenus2. Cliquer sur Recherche avancée\n\n\nEnfin Rechercher par propriétaire et lancer la Recherche\n\n\n\n3. Choisir un utlisateur...4. Cliquer sur Recherche\n\n\n\n\n\n\n1. Afficher les Collections2. Cliquer sur le titre de la collection\n3. Cliquer sur Afficher les contenus ou sur le nombre de contenus\n1. Cliquer sur Contenus2. Cliquer sur Recherche avancée\n3. Choisir un utlisateur...4. Cliquer sur Recherche",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
+      "Utiliser Omeka S",
+      "Retrouver ses mémoires"
+    ]
+  },
+  {
+    "objectID": "omeka/PersonnaliserUtilisateur.html",
+    "href": "omeka/PersonnaliserUtilisateur.html",
+    "title": "Personnaliser son profil utilisateur",
+    "section": "",
+    "text": "Dans le Tableu de bord d’Omeka, Cliquer sur Utlisateurs :\n\n\n\nAccéder au panneau de gestion des utilisateurs\n\n\nEn face de son adresse adresse mail, cliquer sur le bouton d’édition (crayon)\n\n\n\nAccéder aux paramètres de son profil utilisateur\n\n\nDans l’onglet Paramètres utilisateur, vous pouvez modifier les colonnes affichées lorsque vous parcourez les Contenus :\n\nPar exemple, supprimer la colonne Classe de ressource qui sera toujours Texte pour les dépôts de mémoire.\n\n\n\nSupprimer la colonne Classe de ressource\n\n\nEt ajouter des colonnes basée sur les propriétés de vos dépôts :\n\nCliquer sur Ajouter une colonne et sélectionner Valeur dans le menu déroulant puis cliquer sur le bouton + à la fin de la ligne.\n\n\n\nAjouter une colonne qui affichera les Valeurs d’une Propriété de vos Contenus\n\n\nUn volet de saisie s’ouvre à droite de l’écran où vous pouvez :\n\nSélectionner la propriété dont les valeurs seront affichées en colonne\n\n\n\n\n\n\nToutes les propriétés de tous les schémas de description installés dans Omeka S sont disponibles. Celles utilisées par CIME sont dans Dublin Core (début de liste) et dans Vivo (après Dublin Core).\n\n\n\n\n\n\n\n\n\nQuand vous avez cliqué sur Choisir une propriété... pour ouvrir le menu déroulant, vous pouvez saisir au clavier le début du nom de la propriété pour faire défiler le menu.\n\n\n\n\n\n\n\n\n\nPropriétés utilisées dans le modèle CIME_dépôt\n\n\n\n\n\n\nNom des propriétés utilisées dans le modèle CIME_dépôt\n\n\n\n\n\n\n\nPropriété\nNom (à chercher dans le menu déroulant)\nétiquette pour CIME\n\n\n\n\ndcterms:title\nTitre\n-\n\n\ndcterms:creator\nCréateur\nAuteur\n\n\ndcterms:description\nDescription\nRésumé (fr)\n\n\ndcterms:abstract\nRésumé\nAbstract\n\n\ndcterms:subject\nSujet\nMot(s)-Clé(s)\n\n\ndcterms:hasVersion\nA une version\nDUMAS\n\n\ndcterms:publisher\nEditeur\nTutelles\n\n\ndcterms:date\nDate\nAnnée de soutenance\n\n\ndcterms:contributor\nContributeur\nResponsable(s) pédagogique(s)\n\n\ndcterms:license\nLicence\n-\n\n\ndcterms:format\nFormat\n-\n\n\ndcterms:language\nLangue\n-\n\n\ndcterms:type\nType\n-\n\n\ndcterms:educationLevel\nNiveau d’éducation du public\nDiplôme + année\n\n\nvivo:degreeCandidacy\ndegree candidacy (vivo)\nMention\n\n\ndcterms:isPartOf\nEst une partie de\nParcours\n\n\nvivo:majorField\nmajor field (vivo)\nDiscipline principale\n\n\n\n\n\n\nDans le champ Entête vous pouvez renseigner l’étiquette CIME (voir les correspondances dans le tableau du bloc info ci-dessus) ou ce que vous voulez pour renommer la colonne (facultatif)\nN’oubliez pas de cliquer sur Choisir la colonne (tout en bas du volet et mal placé)\n\n\n\nChoisir une propriété\n\n\nRecommencez l’opération pour ajouter d’autres colonnes.\n\n\n\n\n\n\nDes propriétés pertinentes à ajouter peuvent être : Créateur et Est une partie de, par exemple.\n\n\n\n\n\n\nQuand vous avez modifiez vos Paramètres utilisateur, cliquez sur Enregistrer en haut à droite de la page.\n\n\n\nCliquer sur enregister\n\n\nOn peut constater le résultat en retournant consulter les Contenus (Panneau de gauche)\n\n\n\nConsultation des contenus avec les colonnes paramettrées\n\n\n\n\n\n\nAccéder au panneau de gestion des utilisateurs\nAccéder aux paramètres de son profil utilisateur\nSupprimer la colonne Classe de ressource\nAjouter une colonne qui affichera les Valeurs d’une Propriété de vos Contenus\nChoisir une propriété\nCliquer sur enregister\nConsultation des contenus avec les colonnes paramettrées",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Utiliser Omeka S",
+      "Personnaliser son profil utilisateur"
+    ]
+  },
+  {
+    "objectID": "omeka/PersonnaliserUtilisateur.html#choisir-les-colonnes-à-afficher-pour-les-contenus",
+    "href": "omeka/PersonnaliserUtilisateur.html#choisir-les-colonnes-à-afficher-pour-les-contenus",
+    "title": "Personnaliser son profil utilisateur",
+    "section": "",
+    "text": "Dans le Tableu de bord d’Omeka, Cliquer sur Utlisateurs :\n\n\n\nAccéder au panneau de gestion des utilisateurs\n\n\nEn face de son adresse adresse mail, cliquer sur le bouton d’édition (crayon)\n\n\n\nAccéder aux paramètres de son profil utilisateur\n\n\nDans l’onglet Paramètres utilisateur, vous pouvez modifier les colonnes affichées lorsque vous parcourez les Contenus :\n\nPar exemple, supprimer la colonne Classe de ressource qui sera toujours Texte pour les dépôts de mémoire.\n\n\n\nSupprimer la colonne Classe de ressource\n\n\nEt ajouter des colonnes basée sur les propriétés de vos dépôts :\n\nCliquer sur Ajouter une colonne et sélectionner Valeur dans le menu déroulant puis cliquer sur le bouton + à la fin de la ligne.\n\n\n\nAjouter une colonne qui affichera les Valeurs d’une Propriété de vos Contenus\n\n\nUn volet de saisie s’ouvre à droite de l’écran où vous pouvez :\n\nSélectionner la propriété dont les valeurs seront affichées en colonne\n\n\n\n\n\n\nToutes les propriétés de tous les schémas de description installés dans Omeka S sont disponibles. Celles utilisées par CIME sont dans Dublin Core (début de liste) et dans Vivo (après Dublin Core).\n\n\n\n\n\n\n\n\n\nQuand vous avez cliqué sur Choisir une propriété... pour ouvrir le menu déroulant, vous pouvez saisir au clavier le début du nom de la propriété pour faire défiler le menu.\n\n\n\n\n\n\n\n\n\nPropriétés utilisées dans le modèle CIME_dépôt\n\n\n\n\n\n\nNom des propriétés utilisées dans le modèle CIME_dépôt\n\n\n\n\n\n\n\nPropriété\nNom (à chercher dans le menu déroulant)\nétiquette pour CIME\n\n\n\n\ndcterms:title\nTitre\n-\n\n\ndcterms:creator\nCréateur\nAuteur\n\n\ndcterms:description\nDescription\nRésumé (fr)\n\n\ndcterms:abstract\nRésumé\nAbstract\n\n\ndcterms:subject\nSujet\nMot(s)-Clé(s)\n\n\ndcterms:hasVersion\nA une version\nDUMAS\n\n\ndcterms:publisher\nEditeur\nTutelles\n\n\ndcterms:date\nDate\nAnnée de soutenance\n\n\ndcterms:contributor\nContributeur\nResponsable(s) pédagogique(s)\n\n\ndcterms:license\nLicence\n-\n\n\ndcterms:format\nFormat\n-\n\n\ndcterms:language\nLangue\n-\n\n\ndcterms:type\nType\n-\n\n\ndcterms:educationLevel\nNiveau d’éducation du public\nDiplôme + année\n\n\nvivo:degreeCandidacy\ndegree candidacy (vivo)\nMention\n\n\ndcterms:isPartOf\nEst une partie de\nParcours\n\n\nvivo:majorField\nmajor field (vivo)\nDiscipline principale\n\n\n\n\n\n\nDans le champ Entête vous pouvez renseigner l’étiquette CIME (voir les correspondances dans le tableau du bloc info ci-dessus) ou ce que vous voulez pour renommer la colonne (facultatif)\nN’oubliez pas de cliquer sur Choisir la colonne (tout en bas du volet et mal placé)\n\n\n\nChoisir une propriété\n\n\nRecommencez l’opération pour ajouter d’autres colonnes.\n\n\n\n\n\n\nDes propriétés pertinentes à ajouter peuvent être : Créateur et Est une partie de, par exemple.\n\n\n\n\n\n\nQuand vous avez modifiez vos Paramètres utilisateur, cliquez sur Enregistrer en haut à droite de la page.\n\n\n\nCliquer sur enregister\n\n\nOn peut constater le résultat en retournant consulter les Contenus (Panneau de gauche)\n\n\n\nConsultation des contenus avec les colonnes paramettrées\n\n\n\n\n\n\nAccéder au panneau de gestion des utilisateurs\nAccéder aux paramètres de son profil utilisateur\nSupprimer la colonne Classe de ressource\nAjouter une colonne qui affichera les Valeurs d’une Propriété de vos Contenus\nChoisir une propriété\nCliquer sur enregister\nConsultation des contenus avec les colonnes paramettrées",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Utiliser Omeka S",
+      "Personnaliser son profil utilisateur"
+    ]
+  },
+  {
+    "objectID": "comment/préparerDépôtCime.html",
+    "href": "comment/préparerDépôtCime.html",
+    "title": "Préparer un dépôt en lot sur CIME",
+    "section": "",
+    "text": "Sur son ordinateur créer un dossier de type depotCIME_VotreNom",
+    "crumbs": [
+      "CIME - Admin ↗",
       "Comment déposer ?",
-      "Comment déposer un mémoire dans CIME"
+      "Préparer un dépôt en lot sur CIME"
+    ]
+  },
+  {
+    "objectID": "comment/préparerDépôtCime.html#créer-un-dossier-de-dépôt",
+    "href": "comment/préparerDépôtCime.html#créer-un-dossier-de-dépôt",
+    "title": "Préparer un dépôt en lot sur CIME",
+    "section": "",
+    "text": "Sur son ordinateur créer un dossier de type depotCIME_VotreNom",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Comment déposer ?",
+      "Préparer un dépôt en lot sur CIME"
+    ]
+  },
+  {
+    "objectID": "comment/préparerDépôtCime.html#dans-ce-dossier-copier-le-fichier-depotcime.csv",
+    "href": "comment/préparerDépôtCime.html#dans-ce-dossier-copier-le-fichier-depotcime.csv",
+    "title": "Préparer un dépôt en lot sur CIME",
+    "section": "Dans ce dossier, copier le fichier depotCIME.csv",
+    "text": "Dans ce dossier, copier le fichier depotCIME.csv\n\n\nTélécharger depotCIME.csv\n\n\n\n\n\n\n\n\nModèle de saisie\n\n\n\n\n\n\nmodèles de ressource Omeka S pour les dépôts CIME\n\n\n\n\n\n\nPropriétés/Colonnes\nCommentaires\n\n\n\n\ndcterms:title\ntitre du mémoire\n\n\ndcterms:creator\nauteur du mémoire\n\n\ndcterms:description\nrésumé en français\n\n\ndcterms:abstract\nrésumé en anglais\n\n\ndcterms:subject\nmot-clés (Mot 1;Mot 2)\n\n\ndcterms:hasVersion\nurl dumas (https://dumas.ccsd.cnrs.fr/dumas-00498321)\n\n\ndcterms:publisher\nTutelles (UPPA;Labo;INSPE;...)\n\n\ndcterms:date\nAnnée de soutenance\n\n\ndcterms:contributor\nResponsables pédagogiques (Nom, Prénom;Nom, Prénom)\n\n\ndcterms:rights\nà déterminer\n\n\ndcterms:format\napplication/pdf\n\n\ndcterms:language\ncode iso 639-2 (fre, eng, spa …)\n\n\ndcterms:type\nBUT/Licence/Master\n\n\ndcterms:educationLevel\nDiplôme année (Master 1, Licence 3)\n\n\nvivo:degreeCandidacy\nMention du Master\n\n\ndcterms:isPartOf\nNom de la collection du parcours\n\n\nvivo:majorField\nDiscipline principale\n\n\nfichier\nnomExact_dufichier.pdf",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Comment déposer ?",
+      "Préparer un dépôt en lot sur CIME"
+    ]
+  },
+  {
+    "objectID": "comment/préparerDépôtCime.html#éditer-le-fichier-dans-libreoffice-calc-pas-excel",
+    "href": "comment/préparerDépôtCime.html#éditer-le-fichier-dans-libreoffice-calc-pas-excel",
+    "title": "Préparer un dépôt en lot sur CIME",
+    "section": "Éditer le fichier dans LibreOffice Calc (pas Excel)",
+    "text": "Éditer le fichier dans LibreOffice Calc (pas Excel)\nPropriétés en colonnes, une ligne par mémoire.\n\n\n\n\n\n\nColonnes multi-valuées (sujets, responsables pédagogiques, tutelles)\n\n\n\n\n\nSéparer les valeurs par un point-virgule ;",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Comment déposer ?",
+      "Préparer un dépôt en lot sur CIME"
+    ]
+  },
+  {
+    "objectID": "comment/préparerDépôtCime.html#ajouter-les-pdf",
+    "href": "comment/préparerDépôtCime.html#ajouter-les-pdf",
+    "title": "Préparer un dépôt en lot sur CIME",
+    "section": "Ajouter les pdf",
+    "text": "Ajouter les pdf\nDans votre dossier depotCIME_VotreNom, avec votre fichier depotCIME.csv complété.\n\n\n\n\n\n\nNoms des fichiers pdf\n\n\n\n\n\n\nNe doivent pas contenir d’espace ou de caractères de ponctuations (. , : ; !…)\nPeuvent contenir des tirets - ou des underscores _",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Comment déposer ?",
+      "Préparer un dépôt en lot sur CIME"
+    ]
+  },
+  {
+    "objectID": "comment/préparerDépôtCime.html#créer-une-archive-.zip-du-dossier",
+    "href": "comment/préparerDépôtCime.html#créer-une-archive-.zip-du-dossier",
+    "title": "Préparer un dépôt en lot sur CIME",
+    "section": "Créer une archive .zip du dossier",
+    "text": "Créer une archive .zip du dossier\nMe l’envoyer par mail ou via FileSender si trop volumineuse.",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Comment déposer ?",
+      "Préparer un dépôt en lot sur CIME"
     ]
   },
   {
@@ -180,102 +200,118 @@
     "href": "about.html#exemple-de-code-d3-ojs",
     "title": "À propos",
     "section": "Exemple de code D3 (OJS)",
-    "text": "Exemple de code D3 (OJS)\n\n\n\n\n\n\nInteractions\n\n\n\n\n\n\n\nCode\nchart = { \n  const k = width / 120;\n  const r = d3.randomUniform(k, k * 4);\n  const n = 4;\n  const data = Array.from({length: 100}, (_, i) =&gt; ({r: r(), group: i && (i % n + 1)}));\n  const height = width / 3;\n  const color = d3.scaleOrdinal(d3.schemeTableau10);\n  const context = DOM.context2d(width, height);\n  const nodes = data.map(Object.create);\n\n  const simulation = d3.forceSimulation(nodes)\n    .alphaTarget(0.3)\n    .velocityDecay(0.1)\n    .force(\"x\", d3.forceX().strength(0.01))\n    .force(\"y\", d3.forceY().strength(0.01))\n    .force(\"collide\", d3.forceCollide().radius(d =&gt; d.r + 1).iterations(3))\n    .force(\"charge\", d3.forceManyBody().strength((d, i) =&gt; i ? 0 : -width * 2 / 3))\n    .on(\"tick\", ticked);\n\n  d3.select(context.canvas)\n    .on(\"touchmove\", event =&gt; event.preventDefault())\n    .on(\"pointermove\", pointermoved);\n\n  invalidation.then(() =&gt; simulation.stop());\n\n  function pointermoved(event) {\n    const [x, y] = d3.pointer(event);\n    nodes[0].fx = x - width / 2;\n    nodes[0].fy = y - height / 2;\n  }\n\n  function ticked() {\n    context.clearRect(0, 0, width, height);\n    context.save();\n    context.translate(width / 2, height / 2);\n    for (let i = 1; i &lt; nodes.length; ++i) {\n      const d = nodes[i];\n      context.beginPath();\n      context.moveTo(d.x + d.r, d.y);\n      context.arc(d.x, d.y, d.r, 0, 2 * Math.PI);\n      context.fillStyle = color(d.group);\n      context.fill();\n    }\n    context.restore();\n  }\n\n  return context.canvas;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+    "text": "Exemple de code D3 (OJS)\n\n\n\n\n\n\nInteractions\n\n\n\n\n\n\n\nCode\nchart = { \n  const k = width / 120;\n  const r = d3.randomUniform(k, k * 4);\n  const n = 4;\n  const data = Array.from({length: 100}, (_, i) =&gt; ({r: r(), group: i && (i % n + 1)}));\n  const height = width / 2;\n  const color = d3.scaleOrdinal(d3.schemeTableau10);\n  const context = DOM.context2d(width, height);\n  const nodes = data.map(Object.create);\n\n  const simulation = d3.forceSimulation(nodes)\n    .alphaTarget(0.3)\n    .velocityDecay(0.1)\n    .force(\"x\", d3.forceX().strength(0.01))\n    .force(\"y\", d3.forceY().strength(0.01))\n    .force(\"collide\", d3.forceCollide().radius(d =&gt; d.r + 1).iterations(3))\n    .force(\"charge\", d3.forceManyBody().strength((d, i) =&gt; i ? 0 : -width * 2 / 3))\n    .on(\"tick\", ticked);\n\n  d3.select(context.canvas)\n    .on(\"touchmove\", event =&gt; event.preventDefault())\n    .on(\"pointermove\", pointermoved);\n\n  invalidation.then(() =&gt; simulation.stop());\n\n  function pointermoved(event) {\n    const [x, y] = d3.pointer(event);\n    nodes[0].fx = x - width / 2;\n    nodes[0].fy = y - height / 2;\n  }\n\n  function ticked() {\n    context.clearRect(0, 0, width, height);\n    context.save();\n    context.translate(width / 2, height / 2);\n    for (let i = 1; i &lt; nodes.length; ++i) {\n      const d = nodes[i];\n      context.beginPath();\n      context.moveTo(d.x + d.r, d.y);\n      context.arc(d.x, d.y, d.r, 0, 2 * Math.PI);\n      context.fillStyle = color(d.group);\n      context.fill();\n    }\n    context.restore();\n  }\n\n  return context.canvas;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
   },
   {
-    "objectID": "comment/préparerDépôtCime.html",
-    "href": "comment/préparerDépôtCime.html",
-    "title": "Préparer un dépôt en lot sur CIME",
+    "objectID": "comment/ProcédureIndiv.html",
+    "href": "comment/ProcédureIndiv.html",
+    "title": "Comment déposer un mémoire dans CIME",
     "section": "",
-    "text": "Sur son ordinateur créer un dossier de type depotCIME_VotreNom",
+    "text": "Présentation\n\n\n\n\n\nCe tutoriel permet de voir comment déposer un mémoire à l’unité, un par un.\nIl est possible de déposer par lot (à partir de 4 ou 5 mémoires par exemple) : voir la page dédiée.\nSe connecter sur https://kumbuka.univ-pau.fr/login avec ses identifiants.",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Comment déposer ?",
-      "Préparer un dépôt en lot sur CIME"
+      "Comment déposer un mémoire dans CIME"
     ]
   },
   {
-    "objectID": "comment/préparerDépôtCime.html#créer-un-dossier-de-dépôt",
-    "href": "comment/préparerDépôtCime.html#créer-un-dossier-de-dépôt",
-    "title": "Préparer un dépôt en lot sur CIME",
-    "section": "",
-    "text": "Sur son ordinateur créer un dossier de type depotCIME_VotreNom",
+    "objectID": "comment/ProcédureIndiv.html#pour-ajouter-un-mémoire",
+    "href": "comment/ProcédureIndiv.html#pour-ajouter-un-mémoire",
+    "title": "Comment déposer un mémoire dans CIME",
+    "section": "Pour ajouter un mémoire",
+    "text": "Pour ajouter un mémoire\nCliquer sur Contenus, puis sur Ajouter un nouveau contenu.\n\n\n1) Dans l’onglet Valeurs\n\nRemplir les champs suivants :\n\n\n\n\n\n\n\n\n\n\nSaisie des Noms\n\n\n\n\n\nLes noms de l’auteur et du responsable pédagogique doivent s’écrire dans l’ordre Nom, Prénom avec une majuscule en début de nom et en début de prénom. Ne mettre qu’un nom par champ, et cliquer sur ajouter une valeur pour chaque nouveau nom.\n\n\n\n\n\n\n\n\n\nChamp Dumas\n\n\n\n\n\nmettre l’url brute de la notice Dumas :\n\n\n\n\n\n\n\n\n\n\nChamp Tutelles\n\n\n\n\n\nIndiquer UPPA-SSH ou UPPA-STEE ou UPPA-E2I, puis cliquer sur ajouter une valeur si nécessaire pour un laboratoire (ALTER, TREE …).\n\n\n\n\n\n\n\n\n\nChamp Langue\n\n\n\n\n\nLe codage de la langue est le même que pour WinIbw (iso 639-2) : eng = anglais, fre = français, etc.\n\n\n\n\n\n\n\n\n\nChamp Mention\n\n\n\n\n\nL’intitulé de la mention doit être formulé comme dans la hiérarchie - cf. par exemple les Masters du Collège SSH :\n\n\n\n\n\n\n\n\n\n\nChamp Parcours\n\n\n\n\n\nIl faut ajouter le lien vers la collection du parcours.\nCliquer sur le bouton Collection : il ouvre un volet à droite avec la liste de toutes les collections. Sélectionner la collection souhaitée, puis cliquer en bas de page sur choisir une ressource.\n\n\n\n\n\n\n\n\n2) Dans l’onglet Médias\nInsérer le fichier PDF du mémoire.\n\nÀ droite de l’écran, cliquer sur Charger afin de sélectionner le fichier du mémoire :\n\n\n\n\n3) Dans l’onglet Collections\nInsérer la collection du parcours concerné :\n\n\n1ère possibilité : dans le champ Filtrer les collections, indiquer le nom de la collection, puis choisir le parcours.\n2ème possibilité : cliquer sur son nom puis sur la mention souhaitée.\n\n\n\n\n4) Finalisation du dépôt\nEnfin, cliquer sur « ajouter » en haut à droite de l’écran.\n\n\n\n5) Modification du contenu\nIl est possible de Modifier ce contenu, puis d’Enregistrer les modifications, en haut, à droite de l’écran.",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Comment déposer ?",
-      "Préparer un dépôt en lot sur CIME"
+      "Comment déposer un mémoire dans CIME"
     ]
   },
   {
-    "objectID": "comment/préparerDépôtCime.html#dans-ce-dossier-copier-le-fichier-depotcime.csv",
-    "href": "comment/préparerDépôtCime.html#dans-ce-dossier-copier-le-fichier-depotcime.csv",
-    "title": "Préparer un dépôt en lot sur CIME",
-    "section": "Dans ce dossier, copier le fichier depotCIME.csv",
-    "text": "Dans ce dossier, copier le fichier depotCIME.csv\n\n\nTélécharger depotCIME.csv\n\n\n\n\n\n\n\n\nModèle de saisie\n\n\n\n\n\n\nmodèles de ressource Omeka S pour les dépôts CIME\n\n\n\n\n\n\nPropriétés/Colonnes\nCommentaires\n\n\n\n\ndcterms:title\ntitre du mémoire\n\n\ndcterms:creator\nauteur du mémoire\n\n\ndcterms:description\nrésumé en français\n\n\ndcterms:abstract\nrésumé en anglais\n\n\ndcterms:subject\nmot-clés (Mot 1;Mot 2)\n\n\ndcterms:hasVersion\nurl dumas (https://dumas.ccsd.cnrs.fr/dumas-00498321)\n\n\ndcterms:publisher\nTutelles (UPPA;Labo;INSPE;...)\n\n\ndcterms:date\nAnnée de soutenance\n\n\ndcterms:contributor\nResponsables pédagogiques (Nom, Prénom;Nom, Prénom)\n\n\ndcterms:rights\nà déterminer\n\n\ndcterms:format\napplication/pdf\n\n\ndcterms:language\ncode iso 639-2 (fre, eng, spa …)\n\n\ndcterms:type\nBUT/Licence/Master\n\n\ndcterms:educationLevel\nDiplôme année (Master 1, Licence 3)\n\n\nvivo:degreeCandidacy\nMention du Master\n\n\ndcterms:isPartOf\nNom de la collection du parcours\n\n\nvivo:majorField\nDiscipline principale\n\n\nfichier\nnomExact_dufichier.pdf",
+    "objectID": "comment/ProcédureIndiv.html#pour-retrouver-ses-mémoires",
+    "href": "comment/ProcédureIndiv.html#pour-retrouver-ses-mémoires",
+    "title": "Comment déposer un mémoire dans CIME",
+    "section": "Pour retrouver ses mémoires",
+    "text": "Pour retrouver ses mémoires",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Comment déposer ?",
-      "Préparer un dépôt en lot sur CIME"
+      "Comment déposer un mémoire dans CIME"
     ]
   },
   {
-    "objectID": "comment/préparerDépôtCime.html#éditer-le-fichier-dans-libreoffice-calc-pas-excel",
-    "href": "comment/préparerDépôtCime.html#éditer-le-fichier-dans-libreoffice-calc-pas-excel",
-    "title": "Préparer un dépôt en lot sur CIME",
-    "section": "Éditer le fichier dans LibreOffice Calc (pas Excel)",
-    "text": "Éditer le fichier dans LibreOffice Calc (pas Excel)\nPropriétés en colonnes, une ligne par mémoire.\n\n\n\n\n\n\nColonnes multi-valuées (sujets, responsables pédagogiques, tutelles)\n\n\n\n\n\nSéparer les valeurs par un point-virgule ;",
-    "crumbs": [
-      "À propos",
-      "Comment déposer ?",
-      "Préparer un dépôt en lot sur CIME"
-    ]
+    "objectID": "index.html#que-déposer-dans-cime",
+    "href": "index.html#que-déposer-dans-cime",
+    "title": "Documentation de CIME",
+    "section": "Que déposer dans CIME ?",
+    "text": "Que déposer dans CIME ?\n\nCopie de la page Votre Mémoire de Master du site web des bibliothèques (Source)"
   },
   {
-    "objectID": "comment/préparerDépôtCime.html#ajouter-les-pdf",
-    "href": "comment/préparerDépôtCime.html#ajouter-les-pdf",
-    "title": "Préparer un dépôt en lot sur CIME",
-    "section": "Ajouter les pdf",
-    "text": "Ajouter les pdf\nDans votre dossier depotCIME_VotreNom, avec votre fichier depotCIME.csv complété.\n\n\n\n\n\n\nNoms des fichiers pdf\n\n\n\n\n\n\nNe doivent pas contenir d’espace ou de caractères de ponctuations (. , : ; !…)\nPeuvent contenir des tirets - ou des underscores _",
-    "crumbs": [
-      "À propos",
-      "Comment déposer ?",
-      "Préparer un dépôt en lot sur CIME"
-    ]
+    "objectID": "index.html#qui-dépose-dans-cime",
+    "href": "index.html#qui-dépose-dans-cime",
+    "title": "Documentation de CIME",
+    "section": "Qui dépose dans CIME ?",
+    "text": "Qui dépose dans CIME ?\n\nLes bibliothécaires référent·e·s"
   },
   {
-    "objectID": "comment/préparerDépôtCime.html#créer-une-archive-.zip-du-dossier",
-    "href": "comment/préparerDépôtCime.html#créer-une-archive-.zip-du-dossier",
-    "title": "Préparer un dépôt en lot sur CIME",
-    "section": "Créer une archive .zip du dossier",
-    "text": "Créer une archive .zip du dossier\nMe l’envoyer par mail ou via FileSender si trop volumineuse.",
-    "crumbs": [
-      "À propos",
-      "Comment déposer ?",
-      "Préparer un dépôt en lot sur CIME"
-    ]
+    "objectID": "index.html#comment-déposer-dans-cime",
+    "href": "index.html#comment-déposer-dans-cime",
+    "title": "Documentation de CIME",
+    "section": "Comment déposer dans CIME ?",
+    "text": "Comment déposer dans CIME ?\n\nPréparer un dépôt en lot sur CIME\nComment déposer un mémoire dans CIME"
   },
   {
-    "objectID": "omeka/PersonnaliserUtilisateur.html",
-    "href": "omeka/PersonnaliserUtilisateur.html",
-    "title": "Personnaliser son profil utilisateur",
-    "section": "",
-    "text": "Dans le Tableu de bord d’Omeka, Cliquer sur Utlisateurs :\n\n\n\nAccéder au panneau de gestion des utilisateurs\n\n\nEn face de son adresse adresse mail, cliquer sur le bouton d’édition (crayon)\n\n\n\nAccéder aux paramètres de son profil utilisateur\n\n\nDans l’onglet Paramètres utilisateur, vous pouvez modifier les colonnes affichées lorsque vous parcourez les Contenus :\n\nPar exemple, supprimer la colonne Classe de ressource qui sera toujours Texte pour les dépôts de mémoire.\n\n\n\nSupprimer la colonne Classe de ressource\n\n\nEt ajouter des colonnes basée sur les propriétés de vos dépôts :\n\nCliquer sur Ajouter une colonne et sélectionner Valeur dans le menu déroulant puis cliquer sur le bouton + à la fin de la ligne.\n\n\n\nAjouter une colonne qui affichera les Valeurs d’une Propriété de vos Contenus\n\n\nUn volet de saisie s’ouvre à droite de l’écran où vous pouvez :\n\nSélectionner la propriété dont les valeurs seront affichées en colonne\n\n\n\n\n\n\nAvertissement\n\n\n\nToutes les propriétés de tous les schémas de description installés dans Omeka S sont disponibles. Celles utilisées par CIME sont dans Dublin Core (début de liste) et dans Vivo (après Dublin Core).\n\n\n\n\n\n\n\n\nAstuce\n\n\n\nQuand vous avez cliqué sur Choisir une propriété... pour ouvrir le menu déroulant, vous pouvez saisir au clavier le début du nom de la propriété pour faire défiler le menu.\n\n\n\n\n\n\n\n\nPropriétés utilisées dans le modèle CIME_dépôt\n\n\n\n\n\n\nNom des propriétés utilisées dans le modèle CIME_dépôt\n\n\n\n\n\n\n\nPropriété\nNom (à chercher dans le menu déroulant)\nétiquette pour CIME\n\n\n\n\ndcterms:title\nTitre\n-\n\n\ndcterms:creator\nCréateur\nAuteur\n\n\ndcterms:description\nDescription\nRésumé (fr)\n\n\ndcterms:abstract\nRésumé\nAbstract\n\n\ndcterms:subject\nSujet\nMot(s)-Clé(s)\n\n\ndcterms:hasVersion\nA une version\nDUMAS\n\n\ndcterms:publisher\nEditeur\nTutelles\n\n\ndcterms:date\nDate\nAnnée de soutenance\n\n\ndcterms:contributor\nContributeur\nResponsable(s) pédagogique(s)\n\n\ndcterms:license\nLicence\n-\n\n\ndcterms:format\nFormat\n-\n\n\ndcterms:language\nLangue\n-\n\n\ndcterms:type\nType\n-\n\n\ndcterms:educationLevel\nNiveau d’éducation du public\nDiplôme + année\n\n\nvivo:degreeCandidacy\ndegree candidacy (vivo)\nMention\n\n\ndcterms:isPartOf\nEst une partie de\nParcours\n\n\nvivo:majorField\nmajor field (vivo)\nDiscipline principale\n\n\n\n\n\n\nDans le champ Entête vous pouvez renseigner l’étiquette CIME (voir les correspondances dans le tableau du bloc info ci-dessus) ou ce que vous voulez pour renommer la colonne (facultatif)\nN’oubliez pas de cliquer sur Choisir la colonne (tout en bas du volet et mal placé)\n\n\n\nChoisir une propriété\n\n\nRecommencez l’opération pour ajouter d’autres colonnes.\n\n\n\n\n\n\nAstuce\n\n\n\nDes propriétés pertinentes à ajouter peuvent être : Créateur et Est une partie de, par exemple.\n\n\n\n\n\nQuand vous avez modifiez vos Paramètres utilisateur, cliquez sur Enregistrer en haut à droite de la page.\n\n\n\nCliquer sur enregister\n\n\nOn peut constater le résultat en retournant consulter les Contenus (Panneau de gauche)\n\n\n\nConsultation des contenus avec les colonnes paramettrées\n\n\n\n\n\n\nAccéder au panneau de gestion des utilisateurs\nAccéder aux paramètres de son profil utilisateur\nSupprimer la colonne Classe de ressource\nAjouter une colonne qui affichera les Valeurs d’une Propriété de vos Contenus\nChoisir une propriété\nCliquer sur enregister\nConsultation des contenus avec les colonnes paramettrées",
+    "objectID": "index.html#utiliser-omeka-s",
+    "href": "index.html#utiliser-omeka-s",
+    "title": "Documentation de CIME",
+    "section": "Utiliser Omeka S",
+    "text": "Utiliser Omeka S\n\nPersonnaliser son profil utilisateur\nPour retrouver ses mémoires\nRessources sur Omeka S"
+  },
+  {
+    "objectID": "omeka/RessourcesSurOmeka.html#digital-scholarship",
+    "href": "omeka/RessourcesSurOmeka.html#digital-scholarship",
+    "title": "Ressources sur Omeka S",
+    "section": "Digital Scholarship",
+    "text": "Digital Scholarship\n\nSite Officiel Omeka S\n\nManuel Utilisateur\n\nForum\nGithub",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Utiliser Omeka S",
-      "Personnaliser son profil utilisateur"
+      "Ressources sur Omeka S"
     ]
   },
   {
-    "objectID": "omeka/PersonnaliserUtilisateur.html#choisir-les-colonnes-à-afficher-pour-les-contenus",
-    "href": "omeka/PersonnaliserUtilisateur.html#choisir-les-colonnes-à-afficher-pour-les-contenus",
-    "title": "Personnaliser son profil utilisateur",
-    "section": "",
-    "text": "Dans le Tableu de bord d’Omeka, Cliquer sur Utlisateurs :\n\n\n\nAccéder au panneau de gestion des utilisateurs\n\n\nEn face de son adresse adresse mail, cliquer sur le bouton d’édition (crayon)\n\n\n\nAccéder aux paramètres de son profil utilisateur\n\n\nDans l’onglet Paramètres utilisateur, vous pouvez modifier les colonnes affichées lorsque vous parcourez les Contenus :\n\nPar exemple, supprimer la colonne Classe de ressource qui sera toujours Texte pour les dépôts de mémoire.\n\n\n\nSupprimer la colonne Classe de ressource\n\n\nEt ajouter des colonnes basée sur les propriétés de vos dépôts :\n\nCliquer sur Ajouter une colonne et sélectionner Valeur dans le menu déroulant puis cliquer sur le bouton + à la fin de la ligne.\n\n\n\nAjouter une colonne qui affichera les Valeurs d’une Propriété de vos Contenus\n\n\nUn volet de saisie s’ouvre à droite de l’écran où vous pouvez :\n\nSélectionner la propriété dont les valeurs seront affichées en colonne\n\n\n\n\n\n\nAvertissement\n\n\n\nToutes les propriétés de tous les schémas de description installés dans Omeka S sont disponibles. Celles utilisées par CIME sont dans Dublin Core (début de liste) et dans Vivo (après Dublin Core).\n\n\n\n\n\n\n\n\nAstuce\n\n\n\nQuand vous avez cliqué sur Choisir une propriété... pour ouvrir le menu déroulant, vous pouvez saisir au clavier le début du nom de la propriété pour faire défiler le menu.\n\n\n\n\n\n\n\n\nPropriétés utilisées dans le modèle CIME_dépôt\n\n\n\n\n\n\nNom des propriétés utilisées dans le modèle CIME_dépôt\n\n\n\n\n\n\n\nPropriété\nNom (à chercher dans le menu déroulant)\nétiquette pour CIME\n\n\n\n\ndcterms:title\nTitre\n-\n\n\ndcterms:creator\nCréateur\nAuteur\n\n\ndcterms:description\nDescription\nRésumé (fr)\n\n\ndcterms:abstract\nRésumé\nAbstract\n\n\ndcterms:subject\nSujet\nMot(s)-Clé(s)\n\n\ndcterms:hasVersion\nA une version\nDUMAS\n\n\ndcterms:publisher\nEditeur\nTutelles\n\n\ndcterms:date\nDate\nAnnée de soutenance\n\n\ndcterms:contributor\nContributeur\nResponsable(s) pédagogique(s)\n\n\ndcterms:license\nLicence\n-\n\n\ndcterms:format\nFormat\n-\n\n\ndcterms:language\nLangue\n-\n\n\ndcterms:type\nType\n-\n\n\ndcterms:educationLevel\nNiveau d’éducation du public\nDiplôme + année\n\n\nvivo:degreeCandidacy\ndegree candidacy (vivo)\nMention\n\n\ndcterms:isPartOf\nEst une partie de\nParcours\n\n\nvivo:majorField\nmajor field (vivo)\nDiscipline principale\n\n\n\n\n\n\nDans le champ Entête vous pouvez renseigner l’étiquette CIME (voir les correspondances dans le tableau du bloc info ci-dessus) ou ce que vous voulez pour renommer la colonne (facultatif)\nN’oubliez pas de cliquer sur Choisir la colonne (tout en bas du volet et mal placé)\n\n\n\nChoisir une propriété\n\n\nRecommencez l’opération pour ajouter d’autres colonnes.\n\n\n\n\n\n\nAstuce\n\n\n\nDes propriétés pertinentes à ajouter peuvent être : Créateur et Est une partie de, par exemple.\n\n\n\n\n\nQuand vous avez modifiez vos Paramètres utilisateur, cliquez sur Enregistrer en haut à droite de la page.\n\n\n\nCliquer sur enregister\n\n\nOn peut constater le résultat en retournant consulter les Contenus (Panneau de gauche)\n\n\n\nConsultation des contenus avec les colonnes paramettrées\n\n\n\n\n\n\nAccéder au panneau de gestion des utilisateurs\nAccéder aux paramètres de son profil utilisateur\nSupprimer la colonne Classe de ressource\nAjouter une colonne qui affichera les Valeurs d’une Propriété de vos Contenus\nChoisir une propriété\nCliquer sur enregister\nConsultation des contenus avec les colonnes paramettrées",
+    "objectID": "omeka/RessourcesSurOmeka.html#aufo",
+    "href": "omeka/RessourcesSurOmeka.html#aufo",
+    "title": "Ressources sur Omeka S",
+    "section": "AUFO",
+    "text": "AUFO\n\n\nSites réalisés avec Omeka (S ou Classic)\nSite des Journées Omeka (Annuelles)\nGroupe Zotero\nListe de diffusion",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Utiliser Omeka S",
-      "Personnaliser son profil utilisateur"
+      "Ressources sur Omeka S"
+    ]
+  },
+  {
+    "objectID": "omeka/RessourcesSurOmeka.html#modules",
+    "href": "omeka/RessourcesSurOmeka.html#modules",
+    "title": "Ressources sur Omeka S",
+    "section": "Modules",
+    "text": "Modules\n\nListes\n\nSur le site officiel\nSur le site de l’AUFO\nPar Daniel Berthereau\n\n\n\nCSV Import\n\nGuide d’import des fichiers dans OmekaS via le module CSV Import\nÉmeline Juillard (Université Sorbonne Nouvelle) - Octobre 2021",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Utiliser Omeka S",
+      "Ressources sur Omeka S"
+    ]
+  },
+  {
+    "objectID": "omeka/RessourcesSurOmeka.html#formation",
+    "href": "omeka/RessourcesSurOmeka.html#formation",
+    "title": "Ressources sur Omeka S",
+    "section": "Formation",
+    "text": "Formation\n\nFormation doctorale Omeka S. Doctorat. Mettre en valeur sa bibliothèque numérique avec Omeka S - Maximilien Petit, Michel de Moura, Karine Pellerin. 2022, 15p. ⟨hal-04221115⟩",
+    "crumbs": [
+      "CIME - Admin ↗",
+      "Utiliser Omeka S",
+      "Ressources sur Omeka S"
     ]
   },
   {
@@ -285,7 +321,7 @@
     "section": "",
     "text": "Source",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Que déposer ?",
       "Les mémoires de Master à l'UPPA"
     ]
@@ -295,9 +331,9 @@
     "href": "que/copieVotreMémoire.html#dépôt-obligatoire-et-diffusion-sous-conditions",
     "title": "Les mémoires de Master à l’UPPA",
     "section": "Dépôt obligatoire et diffusion sous conditions",
-    "text": "Dépôt obligatoire et diffusion sous conditions\n\nDépôt obligatoire avant soutenance\nLe dépôt des mémoires de master au SCD avant soutenance est obligatoire. Il concerne les master 1 et 2, recherche ou professionnel.\nUne feuille de style au format Word 2019 et une feuille de style au format LibreOffice 7.0, communes à tous les masters de l’UPPA, sont disponibles, ainsi qu’un engagement anti-plagiat.\nVoici un document utile sur le droit des auteurs et la protection des données personnelles : le Respect du droit des auteurs et protection des données personnelles.\n\nComment déposer mon mémoire ?\n\nEnvoyez votre mémoire par courriel à votre bibliothécaire référent : liste des bibliothécaires référents au format pdf\nLe dépôt du mémoire doit se faire au format pdf uniquement.\n\nVotre fichier de mémoire est-il volumineux ? Utilisez https://filesender.renater.fr pour l’héberger et générer un lien temporaire. Ce lien est à reporter dans votre courriel adressé à votre bibliothécaire référent pour valider votre dépôt.\n\nL’engagement anti-plagiat est à remettre à votre directeur.trice de recherche.\nAprès le dépôt, votre mémoire est archivé sur CIME.\n\n\n\n\n\n\n\n\n\nDiffusion sous conditions\nContrairement au dépôt, la diffusion du mémoire n’est pas systématique, mais soumise à conditions :\n\nL’étudiant doit donner son autorisation et le jury de soutenance son avis favorable au travers du contrat de diffusion.\nL’étudiant doit impérativement venir à la soutenance avec deux exemplaires du contrat de diffusion préalablement lu et signé, même s’il n’autorise pas la diffusion de son travail. Une fois la soutenance passée, il doit adresser le contrat de diffusion au format papier, rempli et signé en deux exemplaires originaux, à son bibliothécaire référent.\nIl doit respecter le droit d’auteur et les données à caractère personnel. Cela suppose d’obtenir des autorisations, notamment en cas de reproduction et de diffusion de leur image ou de leur voix via un formulaire d’autorisation.\n\nSi ces conditions ne sont pas remplies, le mémoire sera simplement archivé sur la plateforme locale CIME. Il ne sera pas consultable en ligne.\nSi la diffusion est validée, votre mémoire sera accessible en plein texte sur cime.univ-pau.fr. L’accès à ce service est restreint à la communauté universitaire de l’UPPA.\n\n\n\nValorisation des meilleurs mémoires\nPar ailleurs, les meilleurs mémoires peuvent être diffusés sur le portail national DUMAS (collection de l’Université de Pau et des Pays de l’Adour).\nCette diffusion est soumise aux mêmes conditions que pour CIME.\nLes mémoires présents sur DUMAS sont accessibles à tous et en plein texte.",
+    "text": "Dépôt obligatoire et diffusion sous conditions\n\nDépôt obligatoire avant soutenance\nLe dépôt des mémoires de master dans les bibliothèques de l’UPPA avant soutenance est obligatoire. Il concerne les master 1 et 2, recherche ou professionnel.\nUne feuille de style au format Word 2019 et une feuille de style au format LibreOffice 7.0, communes à tous les masters de l’UPPA, sont disponibles, ainsi qu’un engagement anti-plagiat.\nVoici un document utile sur le droit des auteurs et la protection des données personnelles : le Respect du droit des auteurs et protection des données personnelles.\n\nComment déposer mon mémoire ?\n\nEnvoyez votre mémoire par courriel à votre bibliothécaire référent : liste des bibliothécaires référents au format pdf\nLe dépôt du mémoire doit se faire au format pdf uniquement.\nL’engagement anti-plagiat est à remettre à votre directeur.trice de recherche.\nAprès le dépôt, votre mémoire est archivé sur CIME.\n\n\n\n\n\n\n\nVotre fichier de mémoire est-il volumineux ? Utilisez https://filesender.renater.fr pour l’héberger et générer un lien temporaire. Ce lien est à reporter dans votre courriel adressé à votre bibliothécaire référent pour valider votre dépôt.\n\n\n\n\n\n\n\n\n\n\n\nDiffusion sous conditions\nContrairement au dépôt, la diffusion du mémoire n’est pas systématique, mais soumise à conditions :\n\nL’étudiant doit donner son autorisation et le jury de soutenance son avis favorable au travers du contrat de diffusion.\nL’étudiant doit impérativement venir à la soutenance avec deux exemplaires du contrat de diffusion préalablement lu et signé, même s’il n’autorise pas la diffusion de son travail. Une fois la soutenance passée, il doit adresser le contrat de diffusion au format papier, rempli et signé en deux exemplaires originaux, à son bibliothécaire référent.\nIl doit respecter le droit d’auteur et les données à caractère personnel. Cela suppose d’obtenir des autorisations, notamment en cas de reproduction et de diffusion de leur image ou de leur voix via un formulaire d’autorisation.\n\nSi ces conditions ne sont pas remplies, le mémoire sera simplement archivé sur la plateforme locale CIME. Il ne sera pas consultable en ligne.\nSi la diffusion est validée, votre mémoire sera accessible en plein texte sur https://kumbuka.univ-pau.fr/s/cimer. L’accès à ce service est restreint à la communauté universitaire de l’UPPA.\n\n\n\nValorisation des meilleurs mémoires\nPar ailleurs, les meilleurs mémoires peuvent être diffusés sur le portail national DUMAS (collection de l’Université de Pau et des Pays de l’Adour).\nCette diffusion est soumise aux mêmes conditions que pour CIME.\nLes mémoires présents sur DUMAS sont accessibles à tous et en plein texte.",
     "crumbs": [
-      "À propos",
+      "CIME - Admin ↗",
       "Que déposer ?",
       "Les mémoires de Master à l'UPPA"
     ]
