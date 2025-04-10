@@ -145,10 +145,10 @@ title = meta.map((d) => [d.indicator, d.shortcode]).find((d) => d[1] == indicato
 
 ::::
 
-## Exemple de code D3 (OJS)
+---
 
 ::: {.callout-tip collapse="true"}
-### Interactions
+### Interactions avec `D3.js`
 ``` {ojs}
 chart = { 
   const k = width / 120;

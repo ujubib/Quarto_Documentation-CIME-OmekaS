@@ -63,13 +63,13 @@ format:
     tbl-cap-location: bottom
     fig-cap-location: bottom
     mainfont: calibri
-    backgroundcolor: FloralWhite
+#    backgroundcolor: FloralWhite
     grid:
       sidebar-width: 400px
       body-width: 900px
       margin-width: 400px
       gutter-width: 1.5rem
-    theme: flatly
+#    theme: flatly
     filters:
      - nutshell
     css: styles.css

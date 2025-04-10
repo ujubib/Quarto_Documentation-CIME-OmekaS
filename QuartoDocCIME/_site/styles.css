@@ -44,7 +44,6 @@ figcaption {
 
 h1 {
     color:#981b3e;
-    font-variant: small-caps;
 }
 
 h2 {
@@ -55,8 +54,12 @@ h3 {
     color: mediumvioletred;
 }
 
+h4 {
+    color: #981b3e;
+}
+
 .subtitle {
-    color: darkolivegreen;
+    color: cornflowerblue;
     font-weight: 600;
     font-style: italic;
 }
@@ -64,6 +67,15 @@ h3 {
 .quarto-title-meta-contents {
     color: #981b3e;
     
+}
+
+img.sidebar-logo {
+    max-width: 60%;
+    display: block !important;
+    margin-left: 10%;
+    margin-right: auto;
+    border-radius: 24px;
+    margin-bottom: 1em;
 }
 
 li.sidebar-item  > .sidebar-item-container > .sidebar-item-text > .menu-text, 

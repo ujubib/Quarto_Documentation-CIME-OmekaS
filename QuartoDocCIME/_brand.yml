@@ -1,0 +1,32 @@
+color:
+  background: FloralWhite
+  foreground: black
+
+logo: 
+  medium: /img/logo-color.png
+  small: /img/UPPA_logo.png
+
+typography:
+  fonts:
+    - family: Amaranth
+      source: bunny
+  headings: Amaranth
+  link: 
+    color: green
+
+defaults: 
+  bootstrap:
+    rules: |
+      .navbar {
+        background-color: #2c3e50;
+      }
+      .nav-link {
+        color: #ccd1d5;
+      }
+      .navbar-brand {
+        color: linen;
+      }
+      .navbar-logo {
+        max-height: 48px;
+        padding-right: .8em;
+      }

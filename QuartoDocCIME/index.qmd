@@ -14,13 +14,11 @@ format:
 </style>
 ```
 
-![](img/icon-color.png){fig-align="center" style="border-radius:18px"}
-
-::: {style="text-align:center;font-size:1.4em;font-family:bellefair;margin-top:-1em;"}
+::: {style="text-align:center;font-size:1.8em;font-family:bellefair;"}
 Collecte Informatique des Mémoires Étudiants
 :::
 
-::: {style="padding-top:.4em;padding-left:1.2em;padding-right:1.2em;margin-top:-1em;margin-bottom:3em;font-family:bellefair;color:slategrey;letter-spacing:3px;border-top:1px solid #e6007e;width:fit-content;margin-left:auto;margin-right:auto"}
+::: {style="padding-top:.4em;padding-left:1.6em;padding-right:1.6em;margin-top:-0.8em;margin-bottom:3em;font-family:bellefair;color:slategrey;letter-spacing:3px;border-top:1px solid #e6007e;width:fit-content;margin-left:auto;margin-right:auto"}
 (sur un serveur Omeka S)
 :::
 
