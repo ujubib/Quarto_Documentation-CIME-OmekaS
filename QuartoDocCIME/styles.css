@@ -47,6 +47,14 @@ h1 {
     font-variant: small-caps;
 }
 
+h2 {
+    color: steelblue
+}
+
+h3 {
+    color: mediumvioletred;
+}
+
 .subtitle {
     color: darkolivegreen;
     font-weight: 600;
@@ -79,7 +87,7 @@ li.sidebar-item-section:has(ul) > .sidebar-item-container > .sidebar-item-text >
 li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .menu-text {
     font-weight: normal;
 
-    color: teal;
+    color: #666666;
 }
 
 li.sidebar-item:not(:has(ul)) > .sidebar-item-container > .sidebar-item-text > .menu-text::before {

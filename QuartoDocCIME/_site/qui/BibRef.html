@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Viviane Babeix">
 <meta name="author" content="Julien Rabaud">
 
-<title>Documentation de CIME - Les bibliothécaires référent·e·s</title>
+<title>Les bibliothécaires référent·e·s – Documentation de CIME</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -74,10 +74,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a2d98c32b051b92fb0eb4dd0d4c15643.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell.js"></script>
 <script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell_options.js"></script>
 <link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Documentation de CIME - Les bibliothécaires référent·e·s">
+<meta property="og:title" content="Les bibliothécaires référent·e·s – Documentation de CIME">
 <meta property="og:site_name" content="Documentation de CIME">
 </head>
 
@@ -139,7 +139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
   </div>
             <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -161,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Basculer en mode lecteur">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -172,10 +172,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
           <h1 class="quarto-secondary-nav-title">Les bibliothécaires référent·e·s</h1>
         </a>     
     </div>
@@ -189,9 +189,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Que déposer ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Basculer la section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -206,9 +206,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Qui dépose ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Basculer la section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -223,9 +223,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Comment déposer ?</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Basculer la section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -246,9 +246,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Utiliser Omeka S</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Basculer la section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -428,9 +428,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;table class="table-striped table-hover table"&gt;</span></span>
 <span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;caption&gt;Parcours pour </span><span class="sc">${</span>selectedContact<span class="sc">}</span><span class="vs">&lt;/caption&gt;</span></span>
 <span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;colgroup&gt;</span></span>
-<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;col style="width: 20%"&gt;</span></span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;col style="width: 15%"&gt;</span></span>
 <span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;col style="width: 40%"&gt;</span></span>
-<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;col style="width: 40%"&gt;</span></span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;col style="width: 45%"&gt;</span></span>
 <span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/colgroup&gt;</span></span>
 <span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;thead&gt;</span></span>
 <span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;tr class="header"&gt;</span></span>
@@ -483,13 +483,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="tableau-général" class="level2">
 <h2 class="anchored" data-anchor-id="tableau-général">Tableau général</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Afficher le tableau">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Afficher le tableau
+Afficher le contenu de <code>Masters.csv</code>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -498,8 +498,10 @@ Afficher le tableau
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Code</summary>
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="116" data-source-offset="-2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 115;"><span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(data)</span>
-<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(dt<span class="op">.</span><span class="fu">objects</span>()<span class="op">,</span> { <span class="dt">rows</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span> <span class="dt">layout</span><span class="op">:</span> <span class="st">"fixed"</span>})</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="119" data-source-offset="-60"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 118;"><span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(data)<span class="op">;</span></span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a><span class="co">// Afficher le tableau sans filtres</span></span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(dt<span class="op">.</span><span class="fu">objects</span>()<span class="op">,</span> { <span class="dt">rows</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span> <span class="dt">layout</span><span class="op">:</span> <span class="st">"auto"</span> })<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -526,15 +528,52 @@ Afficher le tableau
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const applySorting = (table) => {
+  const applySortingAndFiltering = (table) => {
     const headers = table.querySelectorAll("th");
+    const tbody = table.querySelector("tbody");
+
+    // Ajouter des champs de filtre sous chaque en-tête
+    const filterRow = document.createElement("tr");
+    headers.forEach((header, index) => {
+      const filterCell = document.createElement("td");
+      const input = document.createElement("input");
+      input.type = "text";
+      input.placeholder = "Filtrer...";
+      input.style.width = "100%";
+      input.addEventListener("input", () => {
+        const filters = Array.from(filterRow.querySelectorAll("input")).map(input => input.value.toLowerCase());
+        const rows = Array.from(tbody.querySelectorAll("tr"));
+        rows.forEach(row => {
+          const cells = Array.from(row.children);
+          const matches = cells.every((cell, i) => {
+            return filters[i] === "" || cell.textContent.toLowerCase().includes(filters[i]);
+          });
+          row.style.display = matches ? "" : "none";
+        });
+      });
+      filterCell.appendChild(input);
+      filterRow.appendChild(filterCell);
+    });
+    table.querySelector("thead").appendChild(filterRow);
+
+    // Ajouter le tri
     headers.forEach((header, index) => {
       header.style.cursor = "pointer";
       header.addEventListener("click", () => {
-        const rows = Array.from(table.querySelectorAll("tbody tr"));
+        const rows = Array.from(tbody.querySelectorAll("tr"));
+
+        // Supprimer les classes 'asc' et 'desc' des autres colonnes
+        headers.forEach(h => {
+          if (h !== header) {
+            h.classList.remove("asc", "desc");
+          }
+        });
+
+        // Basculer les classes 'asc' et 'desc' pour la colonne cliquée
         const isAscending = header.classList.toggle("asc");
         header.classList.toggle("desc", !isAscending);
 
+        // Trier les lignes
         rows.sort((rowA, rowB) => {
           const cellA = rowA.children[index].textContent.trim();
           const cellB = rowB.children[index].textContent.trim();
@@ -543,7 +582,8 @@ document.addEventListener("DOMContentLoaded", function() {
             : cellB.localeCompare(cellA, undefined, { numeric: true });
         });
 
-        rows.forEach(row => table.querySelector("tbody").appendChild(row));
+        // Réinsérer les lignes triées dans le tableau
+        rows.forEach(row => tbody.appendChild(row));
       });
     });
   };
@@ -552,7 +592,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mutations.forEach((mutation) => {
       mutation.addedNodes.forEach((node) => {
         if (node.tagName === "TABLE" && node.classList.contains("table-striped")) {
-          applySorting(node);
+          applySortingAndFiltering(node);
         }
       });
     });
@@ -561,8 +601,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // Observer les changements dans le DOM
   observer.observe(document.body, { childList: true, subtree: true });
 
-  // Appliquer le tri aux tableaux déjà présents
-  document.querySelectorAll("table.table-striped").forEach(applySorting);
+  // Appliquer le tri et les filtres aux tableaux déjà présents
+  document.querySelectorAll("table.table-striped").forEach(applySortingAndFiltering);
 });
 </script>
 <style>
@@ -572,6 +612,10 @@ th.asc::after {
 th.desc::after {
   content: " ▼";
 }
+input[type="text"] {
+  padding: 5px;
+  box-sizing: border-box;
+}
 </style>
 
 
@@ -579,7 +623,7 @@ th.desc::after {
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxyXG5kYXRhID0gZDMuZHN2KFwiO1wiLCBhd2FpdCBGaWxlQXR0YWNobWVudChcIi4uL01hc3RlcnMuY3N2XCIpLnVybCgpKTtcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXHJcbi8vIEV4dHJhaXJlIGxlcyB2YWxldXJzIHVuaXF1ZXMgZGUgbGEgY29sb25uZSBcIkNvbGzDqGdlXCJcclxudW5pcXVlQ29sbGVnZXMgPSBBcnJheS5mcm9tKG5ldyBTZXQoZGF0YS5tYXAocm93ID0+IHJvdy5Db2xsw6hnZSkpKS5zb3J0KCk7XHJcblxyXG4vLyBBam91dGVyIHVuZSBvcHRpb24gXCJBdWN1blwiIHBvdXIgZm9yY2VyIHVuZSBzw6lsZWN0aW9uIGV4cGxpY2l0ZVxyXG51bmlxdWVDb2xsZWdlc1dpdGhOb25lID0gW1wiQXVjdW5cIiwgLi4udW5pcXVlQ29sbGVnZXNdO1xyXG5cclxudmlld29mIHNlbGVjdGVkQ29sbGVnZSA9IElucHV0cy5zZWxlY3QodW5pcXVlQ29sbGVnZXNXaXRoTm9uZSwgeyBsYWJlbDogXCJDaG9pc2lzc2V6IDpcIiwgdmFsdWU6IFwiQXVjdW5cIiB9KTtcclxuXHJcbi8vIEfDqW7DqXJlciBsZSB0YWJsZWF1IHVuaXF1ZW1lbnQgc2kgdW5lIHZhbGV1ciBlc3Qgc8OpbGVjdGlvbm7DqWVcclxuc2VsZWN0ZWRDb2xsZWdlICE9PSBcIkF1Y3VuXCIgPyBodG1sYFxyXG48dGFibGUgY2xhc3M9XCJ0YWJsZS1zdHJpcGVkIHRhYmxlLWhvdmVyIHRhYmxlXCI+XHJcbiAgPGNhcHRpb24+UGFyY291cnMgcG91ciBsZSBjb2xsw6hnZSAke3NlbGVjdGVkQ29sbGVnZX08L2NhcHRpb24+XHJcbiAgPGNvbGdyb3VwPlxyXG4gICAgPGNvbCBzdHlsZT1cIndpZHRoOiA1NSVcIj5cclxuICAgIDxjb2wgc3R5bGU9XCJ3aWR0aDogMjAlXCI+XHJcbiAgICA8Y29sIHN0eWxlPVwid2lkdGg6IDI1JVwiPlxyXG4gIDwvY29sZ3JvdXA+XHJcbiAgPHRoZWFkPlxyXG4gICAgPHRyIGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgIDx0aCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+UGFyY291cnM8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBjZW50ZXI7XCI+Q2FtcHVzPC90aD5cclxuICAgICAgPHRoIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPlLDqWbDqXJlbnTCt2U8L3RoPlxyXG4gICAgPC90cj5cclxuICA8L3RoZWFkPlxyXG4gIDx0Ym9keT5cclxuICAgICR7ZGF0YS5maWx0ZXIocm93ID0+IHJvdy5Db2xsw6hnZSA9PT0gc2VsZWN0ZWRDb2xsZWdlKS5tYXAocm93ID0+IGh0bWxgXHJcbiAgICAgIDx0cj5cclxuICAgICAgICA8dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPiR7cm93LlBhcmNvdXJzfTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPiR7cm93LkNhbXB1c308L3RkPlxyXG4gICAgICAgIDx0ZCBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjtcIj4ke3Jvdy5Db250YWN0fTwvdGQ+XHJcbiAgICAgIDwvdHI+XHJcbiAgICBgKX1cclxuICA8L3Rib2R5PlxyXG48L3RhYmxlPlxyXG5gIDogaHRtbGA8cCBjbGFzcz1cInNlbGVjdGlvbm5lelwiPlPDqWxlY3Rpb25uZXogdW4gY29sbMOoZ2UgcG91ciBhZmZpY2hlciBsZSB0YWJsZWF1LjwvcD5gO1xyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcclxuLy8gRXh0cmFpcmUgbGVzIHZhbGV1cnMgdW5pcXVlcyBkZSBsYSBjb2xvbm5lIFwiQ29udGFjdFwiXHJcbnVuaXF1ZUNvbnRhY3RzID0gQXJyYXkuZnJvbShuZXcgU2V0KGRhdGEubWFwKHJvdyA9PiByb3cuQ29udGFjdCkpKS5zb3J0KCk7XHJcblxyXG4vLyBBam91dGVyIHVuZSBvcHRpb24gXCJBdWN1blwiIHBvdXIgZm9yY2VyIHVuZSBzw6lsZWN0aW9uIGV4cGxpY2l0ZVxyXG51bmlxdWVDb250YWN0c1dpdGhOb25lID0gW1wiQXVjdW5cIiwgLi4udW5pcXVlQ29udGFjdHNdO1xyXG5cclxudmlld29mIHNlbGVjdGVkQ29udGFjdCA9IElucHV0cy5zZWxlY3QodW5pcXVlQ29udGFjdHNXaXRoTm9uZSwgeyBsYWJlbDogXCJDaG9pc2lzc2V6IDpcIiwgdmFsdWU6IFwiQXVjdW5cIiB9KTtcclxuXHJcbi8vIEfDqW7DqXJlciBsZSB0YWJsZWF1IHVuaXF1ZW1lbnQgc2kgdW5lIHZhbGV1ciBlc3Qgc8OpbGVjdGlvbm7DqWVcclxuc2VsZWN0ZWRDb250YWN0ICE9PSBcIkF1Y3VuXCIgPyBodG1sYFxyXG48dGFibGUgY2xhc3M9XCJ0YWJsZS1zdHJpcGVkIHRhYmxlLWhvdmVyIHRhYmxlXCI+XHJcbiAgPGNhcHRpb24+UGFyY291cnMgcG91ciAke3NlbGVjdGVkQ29udGFjdH08L2NhcHRpb24+XHJcbiAgPGNvbGdyb3VwPlxyXG4gICAgPGNvbCBzdHlsZT1cIndpZHRoOiAyMCVcIj5cclxuICAgIDxjb2wgc3R5bGU9XCJ3aWR0aDogNDAlXCI+XHJcbiAgICA8Y29sIHN0eWxlPVwid2lkdGg6IDQwJVwiPlxyXG4gIDwvY29sZ3JvdXA+XHJcbiAgPHRoZWFkPlxyXG4gICAgPHRyIGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgIDx0aCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+Q29sbMOoZ2U8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPk1lbnRpb248L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPlBhcmNvdXJzPC90aD5cclxuICAgIDwvdHI+XHJcbiAgPC90aGVhZD5cclxuICA8dGJvZHk+XHJcbiAgICAke2RhdGEuZmlsdGVyKHJvdyA9PiByb3cuQ29udGFjdCA9PT0gc2VsZWN0ZWRDb250YWN0KS5tYXAocm93ID0+IGh0bWxgXHJcbiAgICAgIDx0cj5cclxuICAgICAgICA8dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPiR7cm93LkNvbGzDqGdlfTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj4ke3Jvdy5NZW50aW9ufTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj4ke3Jvdy5QYXJjb3Vyc308L3RkPlxyXG4gICAgICA8L3RyPlxyXG4gICAgYCl9XHJcbiAgPC90Ym9keT5cclxuPC90YWJsZT5cclxuYCA6IGh0bWxgPHAgY2xhc3M9XCJzZWxlY3Rpb25uZXpcIj5Tw6lsZWN0aW9ubmV6IHVuwrdlIHLDqWbDqXJlbnTCt2UgcG91ciBhZmZpY2hlciBsZSB0YWJsZWF1LjwvcD5gO1xyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcclxuZHQgPSBhcS5mcm9tKGRhdGEpXHJcbklucHV0cy50YWJsZShkdC5vYmplY3RzKCksIHsgcm93czogMjAsIGxheW91dDogXCJmaXhlZFwifSlcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZENvbGxlZ2UnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRDb250YWN0JykifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxyXG5kYXRhID0gZDMuZHN2KFwiO1wiLCBhd2FpdCBGaWxlQXR0YWNobWVudChcIi4uL01hc3RlcnMuY3N2XCIpLnVybCgpKTtcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXHJcbi8vIEV4dHJhaXJlIGxlcyB2YWxldXJzIHVuaXF1ZXMgZGUgbGEgY29sb25uZSBcIkNvbGzDqGdlXCJcclxudW5pcXVlQ29sbGVnZXMgPSBBcnJheS5mcm9tKG5ldyBTZXQoZGF0YS5tYXAocm93ID0+IHJvdy5Db2xsw6hnZSkpKS5zb3J0KCk7XHJcblxyXG4vLyBBam91dGVyIHVuZSBvcHRpb24gXCJBdWN1blwiIHBvdXIgZm9yY2VyIHVuZSBzw6lsZWN0aW9uIGV4cGxpY2l0ZVxyXG51bmlxdWVDb2xsZWdlc1dpdGhOb25lID0gW1wiQXVjdW5cIiwgLi4udW5pcXVlQ29sbGVnZXNdO1xyXG5cclxudmlld29mIHNlbGVjdGVkQ29sbGVnZSA9IElucHV0cy5zZWxlY3QodW5pcXVlQ29sbGVnZXNXaXRoTm9uZSwgeyBsYWJlbDogXCJDaG9pc2lzc2V6IDpcIiwgdmFsdWU6IFwiQXVjdW5cIiB9KTtcclxuXHJcbi8vIEfDqW7DqXJlciBsZSB0YWJsZWF1IHVuaXF1ZW1lbnQgc2kgdW5lIHZhbGV1ciBlc3Qgc8OpbGVjdGlvbm7DqWVcclxuc2VsZWN0ZWRDb2xsZWdlICE9PSBcIkF1Y3VuXCIgPyBodG1sYFxyXG48dGFibGUgY2xhc3M9XCJ0YWJsZS1zdHJpcGVkIHRhYmxlLWhvdmVyIHRhYmxlXCI+XHJcbiAgPGNhcHRpb24+UGFyY291cnMgcG91ciBsZSBjb2xsw6hnZSAke3NlbGVjdGVkQ29sbGVnZX08L2NhcHRpb24+XHJcbiAgPGNvbGdyb3VwPlxyXG4gICAgPGNvbCBzdHlsZT1cIndpZHRoOiA1NSVcIj5cclxuICAgIDxjb2wgc3R5bGU9XCJ3aWR0aDogMjAlXCI+XHJcbiAgICA8Y29sIHN0eWxlPVwid2lkdGg6IDI1JVwiPlxyXG4gIDwvY29sZ3JvdXA+XHJcbiAgPHRoZWFkPlxyXG4gICAgPHRyIGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgIDx0aCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+UGFyY291cnM8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBjZW50ZXI7XCI+Q2FtcHVzPC90aD5cclxuICAgICAgPHRoIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPlLDqWbDqXJlbnTCt2U8L3RoPlxyXG4gICAgPC90cj5cclxuICA8L3RoZWFkPlxyXG4gIDx0Ym9keT5cclxuICAgICR7ZGF0YS5maWx0ZXIocm93ID0+IHJvdy5Db2xsw6hnZSA9PT0gc2VsZWN0ZWRDb2xsZWdlKS5tYXAocm93ID0+IGh0bWxgXHJcbiAgICAgIDx0cj5cclxuICAgICAgICA8dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPiR7cm93LlBhcmNvdXJzfTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPiR7cm93LkNhbXB1c308L3RkPlxyXG4gICAgICAgIDx0ZCBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjtcIj4ke3Jvdy5Db250YWN0fTwvdGQ+XHJcbiAgICAgIDwvdHI+XHJcbiAgICBgKX1cclxuICA8L3Rib2R5PlxyXG48L3RhYmxlPlxyXG5gIDogaHRtbGA8cCBjbGFzcz1cInNlbGVjdGlvbm5lelwiPlPDqWxlY3Rpb25uZXogdW4gY29sbMOoZ2UgcG91ciBhZmZpY2hlciBsZSB0YWJsZWF1LjwvcD5gO1xyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcclxuLy8gRXh0cmFpcmUgbGVzIHZhbGV1cnMgdW5pcXVlcyBkZSBsYSBjb2xvbm5lIFwiQ29udGFjdFwiXHJcbnVuaXF1ZUNvbnRhY3RzID0gQXJyYXkuZnJvbShuZXcgU2V0KGRhdGEubWFwKHJvdyA9PiByb3cuQ29udGFjdCkpKS5zb3J0KCk7XHJcblxyXG4vLyBBam91dGVyIHVuZSBvcHRpb24gXCJBdWN1blwiIHBvdXIgZm9yY2VyIHVuZSBzw6lsZWN0aW9uIGV4cGxpY2l0ZVxyXG51bmlxdWVDb250YWN0c1dpdGhOb25lID0gW1wiQXVjdW5cIiwgLi4udW5pcXVlQ29udGFjdHNdO1xyXG5cclxudmlld29mIHNlbGVjdGVkQ29udGFjdCA9IElucHV0cy5zZWxlY3QodW5pcXVlQ29udGFjdHNXaXRoTm9uZSwgeyBsYWJlbDogXCJDaG9pc2lzc2V6IDpcIiwgdmFsdWU6IFwiQXVjdW5cIiB9KTtcclxuXHJcbi8vIEfDqW7DqXJlciBsZSB0YWJsZWF1IHVuaXF1ZW1lbnQgc2kgdW5lIHZhbGV1ciBlc3Qgc8OpbGVjdGlvbm7DqWVcclxuc2VsZWN0ZWRDb250YWN0ICE9PSBcIkF1Y3VuXCIgPyBodG1sYFxyXG48dGFibGUgY2xhc3M9XCJ0YWJsZS1zdHJpcGVkIHRhYmxlLWhvdmVyIHRhYmxlXCI+XHJcbiAgPGNhcHRpb24+UGFyY291cnMgcG91ciAke3NlbGVjdGVkQ29udGFjdH08L2NhcHRpb24+XHJcbiAgPGNvbGdyb3VwPlxyXG4gICAgPGNvbCBzdHlsZT1cIndpZHRoOiAxNSVcIj5cclxuICAgIDxjb2wgc3R5bGU9XCJ3aWR0aDogNDAlXCI+XHJcbiAgICA8Y29sIHN0eWxlPVwid2lkdGg6IDQ1JVwiPlxyXG4gIDwvY29sZ3JvdXA+XHJcbiAgPHRoZWFkPlxyXG4gICAgPHRyIGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgIDx0aCBzdHlsZT1cInRleHQtYWxpZ246IGxlZnQ7XCI+Q29sbMOoZ2U8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPk1lbnRpb248L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPlBhcmNvdXJzPC90aD5cclxuICAgIDwvdHI+XHJcbiAgPC90aGVhZD5cclxuICA8dGJvZHk+XHJcbiAgICAke2RhdGEuZmlsdGVyKHJvdyA9PiByb3cuQ29udGFjdCA9PT0gc2VsZWN0ZWRDb250YWN0KS5tYXAocm93ID0+IGh0bWxgXHJcbiAgICAgIDx0cj5cclxuICAgICAgICA8dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOiBsZWZ0O1wiPiR7cm93LkNvbGzDqGdlfTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj4ke3Jvdy5NZW50aW9ufTwvdGQ+XHJcbiAgICAgICAgPHRkIHN0eWxlPVwidGV4dC1hbGlnbjogbGVmdDtcIj4ke3Jvdy5QYXJjb3Vyc308L3RkPlxyXG4gICAgICA8L3RyPlxyXG4gICAgYCl9XHJcbiAgPC90Ym9keT5cclxuPC90YWJsZT5cclxuYCA6IGh0bWxgPHAgY2xhc3M9XCJzZWxlY3Rpb25uZXpcIj5Tw6lsZWN0aW9ubmV6IHVuwrdlIHLDqWbDqXJlbnTCt2UgcG91ciBhZmZpY2hlciBsZSB0YWJsZWF1LjwvcD5gO1xyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcclxuLy8gQ29udmVydGlyIGxlcyBkb25uw6llcyBlbiB1biB0YWJsZWF1IHBvdXIgSW5wdXRzLnRhYmxlXHJcbmR0ID0gYXEuZnJvbShkYXRhKTtcclxuXHJcbi8vIEFmZmljaGVyIGxlIHRhYmxlYXUgc2FucyBmaWx0cmVzXHJcbklucHV0cy50YWJsZShkdC5vYmplY3RzKCksIHsgcm93czogMjAsIGxheW91dDogXCJhdXRvXCIgfSk7XHJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRDb2xsZWdlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkQ29udGFjdCcpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
@@ -624,18 +668,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -667,7 +700,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/uju\.quarto\.pub\/cime");
@@ -675,10 +728,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -722,7 +780,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -770,7 +832,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -998,7 +1059,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../que/copieVotreMémoire.html" class="pagination-link  aria-label=" les="" mémoires="" de="" master="" à="" l&#39;uppa"="">
+      <a href="../que/copieVotreMémoire.html" class="pagination-link" aria-label="Les mémoires de Master à l'UPPA">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Les mémoires de Master à l’UPPA</span>
       </a>          
   </div>
