@@ -7,7 +7,7 @@ lang: fr
 
 ## Choisir les colonnes à afficher pour les *Contenus*
 
-A.  Dans le *Tableu de bord* d'Omeka, Cliquer sur `Utlisateurs` :
+A.  Dans le *Tableau de bord* d'Omeka, Cliquer sur `Utilisateurs` :
 
     ![Accéder au panneau de gestion des utilisateurs](/img/omeka-s.univ-pau.fr-2025-03-28%2009.05.00.png){group="utilisateur"}
 

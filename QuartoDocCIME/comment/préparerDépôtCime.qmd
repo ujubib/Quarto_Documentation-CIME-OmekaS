@@ -10,11 +10,17 @@ format:
   docx: default
 ---
 
-## Créer un dossier de dépôt
+::: {.callout-note appearance="simple"}
+Grâce aux modules `CSV Import` et `File Sideload`, *Omeka S* peut créer des contenus (notices) et charger leurs medias (pdf) à partir d'un tableau (au format CSV, encodé en UTF-8).
 
-Sur son ordinateur créer un dossier de type `depotCIME_VotreNom`
+Ce document présente les étapes à suivre pour bénéficier de cette possibilité.
+:::
 
-## Dans ce dossier, copier le fichier `depotCIME.csv`
+## 1. Créer un dossier de dépôt
+
+Sur son ordinateur, créer un dossier de type `depotCIME_VotreNom`
+
+## 2. Dans ce dossier, copier le tableau `depotCIME.csv`
 
 ::: {#boutonTemplate style="text-align:center"}
 <button>[Télécharger `depotCIME.csv`](../depotCIME.csv){download="depotCIME.csv" target="_blank"}</button>
@@ -47,9 +53,17 @@ Sur son ordinateur créer un dossier de type `depotCIME_VotreNom`
 : modèles de ressource *Omeka S* pour les dépôts CIME {.striped .hover tbl-colwidths="\[30,70\]"}
 :::
 
-## Éditer le fichier dans *LibreOffice Calc* (pas Excel)
+## 3. Remplir le tableau
 
-Propriétés en colonnes, une ligne par mémoire.
+De préférence dans *LibreOffice Calc* qui gère mieux le format CSV et l'encodage UTF-8 que *Microsoft Excel*.
+
+::: {.callout-tip appearance="simple"}
+Ce tableau est encodé en `UTF-8` car c'est le standard d'intéropérabilité des applications web libres et ouvertes (donc pour *Omeka S*). Cet encodage est naturellement lu et écrit par *Libre Office* tandis qu'il faut être très attentif avec les outils de *Microsoft*.
+:::
+
+Si vous préférez utiliser *Microsoft Excel*, ouvrez un nouveau classeur vierge et voyez cette page d'aide : [Ouverture correcte des fichiers CSV UTF-8 dans Excel](https://support.microsoft.com/fr-fr/office/ouverture-correcte-des-fichiers-csv-utf-8-dans-excel-8a935af5-3416-4edd-ba7e-3dfd2bc4a032)
+
+**Propriétés en colonnes, une ligne par mémoire.**
 
 ::: {.callout-caution collapse="false"}
 ### Colonnes multi-valuées (sujets, responsables pédagogiques, tutelles)
@@ -57,7 +71,17 @@ Propriétés en colonnes, une ligne par mémoire.
 Séparer les valeurs par un point-virgule <kbd>;</kbd>
 :::
 
-## Ajouter les pdf
+Après avoir rempli le tableau, veillez à bien l'enregistrer au format `.csv`
+
+::: {.callout-caution collapse="true"}
+## Enregistrer un `.csv` en UTF-8 avec Excel
+
+Après avoir cliqué sur `Enregister sous...`, donnez un nom à votre fichier et sélectionnez `CSV UTF8` dans le menu déroulant `Type`.
+
+![Dans le menu déroulant `Type`, sélectionner `CSV UTF-8`](/img/Excel-CSV-UTF8.png)
+:::
+
+## 4. Ajouter les pdf dans le dossier
 
 Dans votre dossier `depotCIME_VotreNom`, avec votre fichier `depotCIME.csv` complété.
 
@@ -68,6 +92,10 @@ Dans votre dossier `depotCIME_VotreNom`, avec votre fichier `depotCIME.csv` comp
 -   Peuvent contenir des tirets `-` ou des underscores `_`
 :::
 
-## Créer une archive `.zip` du dossier
+## 5. Créer une archive `.zip` du dossier
 
-Me l'envoyer par mail ou via [FileSender](https://filesender.renater.fr) si trop volumineuse.
+## 6. Envoyer l'archive à l'administrateur *Omeka S*
+
+<julien.rabaud@univ-pau.fr>
+
+En pièce jointe d'un mail ou via [FileSender](https://filesender.renater.fr) si trop volumineuse.

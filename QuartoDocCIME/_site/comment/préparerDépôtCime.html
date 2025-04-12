@@ -39,12 +39,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-db7f6342650ab451a57b11ea398297a8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ac641977ea2b2b9cdd4266e729e66a02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-72e85613fa8cbc61cde6574309e043b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell.js"></script>
 <script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell_options.js"></script>
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,7 +87,11 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Préparer un dépôt en lot sur CIME – Documentation de CIME">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://uju.quarto.pub/cime/img/Excel-CSV-UTF8.png">
 <meta property="og:site_name" content="Documentation de CIME">
+<meta property="og:image:alt" content="Dans le menu déroulant Type, sélectionner CSV UTF-8">
+<meta property="og:image:height" content="591">
+<meta property="og:image:width" content="943">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -251,11 +258,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sommaire</h2>
    
   <ul>
-  <li><a href="#créer-un-dossier-de-dépôt" id="toc-créer-un-dossier-de-dépôt" class="nav-link active" data-scroll-target="#créer-un-dossier-de-dépôt">Créer un dossier de dépôt</a></li>
-  <li><a href="#dans-ce-dossier-copier-le-fichier-depotcime.csv" id="toc-dans-ce-dossier-copier-le-fichier-depotcime.csv" class="nav-link" data-scroll-target="#dans-ce-dossier-copier-le-fichier-depotcime.csv">Dans ce dossier, copier le fichier <code>depotCIME.csv</code></a></li>
-  <li><a href="#éditer-le-fichier-dans-libreoffice-calc-pas-excel" id="toc-éditer-le-fichier-dans-libreoffice-calc-pas-excel" class="nav-link" data-scroll-target="#éditer-le-fichier-dans-libreoffice-calc-pas-excel">Éditer le fichier dans <em>LibreOffice Calc</em> (pas Excel)</a></li>
-  <li><a href="#ajouter-les-pdf" id="toc-ajouter-les-pdf" class="nav-link" data-scroll-target="#ajouter-les-pdf">Ajouter les pdf</a></li>
-  <li><a href="#créer-une-archive-.zip-du-dossier" id="toc-créer-une-archive-.zip-du-dossier" class="nav-link" data-scroll-target="#créer-une-archive-.zip-du-dossier">Créer une archive <code>.zip</code> du dossier</a></li>
+  <li><a href="#créer-un-dossier-de-dépôt" id="toc-créer-un-dossier-de-dépôt" class="nav-link active" data-scroll-target="#créer-un-dossier-de-dépôt">1. Créer un dossier de dépôt</a></li>
+  <li><a href="#dans-ce-dossier-copier-le-tableau-depotcime.csv" id="toc-dans-ce-dossier-copier-le-tableau-depotcime.csv" class="nav-link" data-scroll-target="#dans-ce-dossier-copier-le-tableau-depotcime.csv">2. Dans ce dossier, copier le tableau <code>depotCIME.csv</code></a></li>
+  <li><a href="#remplir-le-tableau" id="toc-remplir-le-tableau" class="nav-link" data-scroll-target="#remplir-le-tableau">3. Remplir le tableau</a></li>
+  <li><a href="#ajouter-les-pdf-dans-le-dossier" id="toc-ajouter-les-pdf-dans-le-dossier" class="nav-link" data-scroll-target="#ajouter-les-pdf-dans-le-dossier">4. Ajouter les pdf dans le dossier</a></li>
+  <li><a href="#créer-une-archive-.zip-du-dossier" id="toc-créer-une-archive-.zip-du-dossier" class="nav-link" data-scroll-target="#créer-une-archive-.zip-du-dossier">5. Créer une archive <code>.zip</code> du dossier</a></li>
+  <li><a href="#envoyer-larchive-à-ladministrateur-omeka-s" id="toc-envoyer-larchive-à-ladministrateur-omeka-s" class="nav-link" data-scroll-target="#envoyer-larchive-à-ladministrateur-omeka-s">6. Envoyer l’archive à l’administrateur <em>Omeka S</em></a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="préparerDépôtCime.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="préparerDépôtCime.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -293,12 +301,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Grâce aux modules <code>CSV Import</code> et <code>File Sideload</code>, <em>Omeka S</em> peut créer des contenus (notices) et charger leurs medias (pdf) à partir d’un tableau (au format CSV, encodé en UTF-8).</p>
+<p>Ce document présente les étapes à suivre pour bénéficier de cette possibilité.</p>
+</div>
+</div>
+</div>
 <section id="créer-un-dossier-de-dépôt" class="level2">
-<h2 class="anchored" data-anchor-id="créer-un-dossier-de-dépôt">Créer un dossier de dépôt</h2>
-<p>Sur son ordinateur créer un dossier de type <code>depotCIME_VotreNom</code></p>
+<h2 class="anchored" data-anchor-id="créer-un-dossier-de-dépôt">1. Créer un dossier de dépôt</h2>
+<p>Sur son ordinateur, créer un dossier de type <code>depotCIME_VotreNom</code></p>
 </section>
-<section id="dans-ce-dossier-copier-le-fichier-depotcime.csv" class="level2">
-<h2 class="anchored" data-anchor-id="dans-ce-dossier-copier-le-fichier-depotcime.csv">Dans ce dossier, copier le fichier <code>depotCIME.csv</code></h2>
+<section id="dans-ce-dossier-copier-le-tableau-depotcime.csv" class="level2">
+<h2 class="anchored" data-anchor-id="dans-ce-dossier-copier-le-tableau-depotcime.csv">2. Dans ce dossier, copier le tableau <code>depotCIME.csv</code></h2>
 <div id="boutonTemplate" style="text-align:center">
 <button>
 <a href="../depotCIME.csv" download="depotCIME.csv" target="_blank">Télécharger <code>depotCIME.csv</code></a>
@@ -407,9 +426,21 @@ Modèle de saisie
 </div>
 </div>
 </section>
-<section id="éditer-le-fichier-dans-libreoffice-calc-pas-excel" class="level2">
-<h2 class="anchored" data-anchor-id="éditer-le-fichier-dans-libreoffice-calc-pas-excel">Éditer le fichier dans <em>LibreOffice Calc</em> (pas Excel)</h2>
-<p>Propriétés en colonnes, une ligne par mémoire.</p>
+<section id="remplir-le-tableau" class="level2">
+<h2 class="anchored" data-anchor-id="remplir-le-tableau">3. Remplir le tableau</h2>
+<p>De préférence dans <em>LibreOffice Calc</em> qui gère mieux le format CSV et l’encodage UTF-8 que <em>Microsoft Excel</em>.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Ce tableau est encodé en <code>UTF-8</code> car c’est le standard d’intéropérabilité des applications web libres et ouvertes (donc pour <em>Omeka S</em>). Cet encodage est naturellement lu et écrit par <em>Libre Office</em> tandis qu’il faut être très attentif avec les outils de <em>Microsoft</em>.</p>
+</div>
+</div>
+</div>
+<p>Si vous préférez utiliser <em>Microsoft Excel</em>, ouvrez un nouveau classeur vierge et voyez cette page d’aide : <a href="https://support.microsoft.com/fr-fr/office/ouverture-correcte-des-fichiers-csv-utf-8-dans-excel-8a935af5-3416-4edd-ba7e-3dfd2bc4a032">Ouverture correcte des fichiers CSV UTF-8 dans Excel</a></p>
+<p><strong>Propriétés en colonnes, une ligne par mémoire.</strong></p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -426,12 +457,35 @@ Colonnes multi-valuées (sujets, responsables pédagogiques, tutelles)
 </div>
 </div>
 </div>
+<p>Après avoir rempli le tableau, veillez à bien l’enregistrer au format <code>.csv</code></p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Enregistrer un <code>.csv</code> en UTF-8 avec Excel
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Après avoir cliqué sur <code>Enregister sous...</code>, donnez un nom à votre fichier et sélectionnez <code>CSV UTF8</code> dans le menu déroulant <code>Type</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="..\img/Excel-CSV-UTF8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Dans le menu déroulant Type, sélectionner CSV UTF-8"><img src="..\img/Excel-CSV-UTF8.png" class="img-fluid figure-img" alt="Dans le menu déroulant Type, sélectionner CSV UTF-8"></a></p>
+<figcaption>Dans le menu déroulant <code>Type</code>, sélectionner <code>CSV UTF-8</code></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="ajouter-les-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="ajouter-les-pdf">Ajouter les pdf</h2>
+<section id="ajouter-les-pdf-dans-le-dossier" class="level2">
+<h2 class="anchored" data-anchor-id="ajouter-les-pdf-dans-le-dossier">4. Ajouter les pdf dans le dossier</h2>
 <p>Dans votre dossier <code>depotCIME_VotreNom</code>, avec votre fichier <code>depotCIME.csv</code> complété.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -440,7 +494,7 @@ Noms des fichiers pdf
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Ne doivent pas contenir d’espace ou de caractères de ponctuations (<code>.</code> <code>,</code> <code>:</code> <code>;</code> <code>!</code>…)</li>
@@ -451,8 +505,12 @@ Noms des fichiers pdf
 </div>
 </section>
 <section id="créer-une-archive-.zip-du-dossier" class="level2">
-<h2 class="anchored" data-anchor-id="créer-une-archive-.zip-du-dossier">Créer une archive <code>.zip</code> du dossier</h2>
-<p>Me l’envoyer par mail ou via <a href="https://filesender.renater.fr">FileSender</a> si trop volumineuse.</p>
+<h2 class="anchored" data-anchor-id="créer-une-archive-.zip-du-dossier">5. Créer une archive <code>.zip</code> du dossier</h2>
+</section>
+<section id="envoyer-larchive-à-ladministrateur-omeka-s" class="level2">
+<h2 class="anchored" data-anchor-id="envoyer-larchive-à-ladministrateur-omeka-s">6. Envoyer l’archive à l’administrateur <em>Omeka S</em></h2>
+<p><a href="mailto:julien.rabaud@univ-pau.fr" class="email">julien.rabaud@univ-pau.fr</a></p>
+<p>En pièce jointe d’un mail ou via <a href="https://filesender.renater.fr">FileSender</a> si trop volumineuse.</p>
 
 
 </section>
@@ -895,9 +953,41 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/blob/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/edit/main//QuartoDocCIME/comment/préparerDépôtCime.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li><li><a href="https://github.com/ujubib/Quarto_Documentation-CIME-OmekaS/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer><script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

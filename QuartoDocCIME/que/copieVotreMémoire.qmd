@@ -52,9 +52,9 @@ Si ces conditions ne sont pas remplies, le mémoire sera simplement archivé sur
 
 Si la diffusion est validée, votre mémoire sera accessible en plein texte sur [https://kumbuka.univ-pau.fr/s/cime](https://kumbuka.univ-pau.fr/s/cime "accès à CIME, plate-forme des mémoires étudiants de l’UPPA")r. L’accès à ce service est restreint à la communauté universitaire de l’UPPA.
 
-[![](/img/dumas.png)](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU)
-
 ### Valorisation des meilleurs mémoires
+
+[![](/img/dumas.png)](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU)
 
 Par ailleurs, les meilleurs mémoires peuvent être diffusés sur le portail national [DUMAS](https://dumas.ccsd.cnrs.fr/MEM-UNIV-PAU "Accès à DUMAS (Dépôt Universitaire de Mémoires Après Soutenance)") (collection de l’Université de Pau et des Pays de l'Adour).
 

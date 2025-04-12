@@ -62,7 +62,7 @@ format:
     code-fold: true
     tbl-cap-location: bottom
     fig-cap-location: bottom
-    mainfont: calibri
+#    mainfont: calibri
 #    backgroundcolor: FloralWhite
     grid:
       sidebar-width: 400px

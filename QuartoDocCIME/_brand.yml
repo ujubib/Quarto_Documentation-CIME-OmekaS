@@ -10,7 +10,13 @@ typography:
   fonts:
     - family: Amaranth
       source: bunny
+    - family: Arsenal # Alegreya Sans, B612
+      source: bunny
+    - family: B612 Mono
+      source: bunny
+  base: Arsenal
   headings: Amaranth
+  monospace: B612 Mono
   link: 
     color: green
 
