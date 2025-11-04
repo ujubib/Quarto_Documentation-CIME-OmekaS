@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.23">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,14 +36,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="../img/icon-color.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b9f7decd055bcf846a98df441bef7af6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-10d6bfaa2f8bcb121088c7d3a1816829.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7bc5d518d705a825abc54c1a67b1ce5e.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-10d6bfaa2f8bcb121088c7d3a1816829.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-de5a352eab47a61a5fa19556ec7c6a0b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1579d96924a7c4e292954b317bd5627e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1579d96924a7c4e292954b317bd5627e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1579d96924a7c4e292954b317bd5627e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell.js"></script>
 <script src="../site_libs/quarto-contrib/nutshell-1.0.7/nutshell_options.js"></script>
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -88,11 +93,9 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Préparer un dépôt en lot sur CIME – Documentation de CIME">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://uju.quarto.pub/cime/img/Excel-CSV-UTF8.png">
+<meta property="og:image" content="..\img/Excel-CSV-UTF8.png">
 <meta property="og:site_name" content="Documentation de CIME">
 <meta property="og:image:alt" content="Dans le menu déroulant Type, sélectionner CSV UTF-8">
-<meta property="og:image:height" content="591">
-<meta property="og:image:width" content="943">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -103,7 +106,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/UPPA_logo.png" alt="" class="navbar-logo">
+    <img src="../img/UPPA_logo.png" alt="" class="navbar-logo light-content">
+    <img src="../img/UPPA_logo.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Documentation de CIME</span>
@@ -158,7 +162,8 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo-color.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../\img\logo-color.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../\img\logo-color.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
     <div class="sidebar-menu-container"> 
@@ -325,12 +330,12 @@ ul.task-list li input[type="checkbox"] {
 </button>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Modèle de saisie
+<span class="screen-reader-only">Astuce</span>Modèle de saisie
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -448,7 +453,7 @@ Modèle de saisie
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Colonnes multi-valuées (sujets, responsables pédagogiques, tutelles)
+<span class="screen-reader-only">Mise en garde</span>Colonnes multi-valuées (sujets, responsables pédagogiques, tutelles)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -460,12 +465,12 @@ Colonnes multi-valuées (sujets, responsables pédagogiques, tutelles)
 </div>
 <p>Après avoir rempli le tableau, veillez à bien l’enregistrer au format <code>.csv</code></p>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Enregistrer un <code>.csv</code> en UTF-8 avec Excel
+<span class="screen-reader-only">Mise en garde</span>Enregistrer un <code>.csv</code> en UTF-8 avec Excel
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -491,7 +496,7 @@ Enregistrer un <code>.csv</code> en UTF-8 avec Excel
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Noms des fichiers pdf
+<span class="screen-reader-only">Mise en garde</span>Noms des fichiers pdf
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -568,13 +573,14 @@ Noms des fichiers pdf
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -589,7 +595,7 @@ Noms des fichiers pdf
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/uju\.quarto\.pub\/cime");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
