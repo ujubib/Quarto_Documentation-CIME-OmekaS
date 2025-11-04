@@ -93,6 +93,9 @@ format:
     lot: false
     lof: false
     links-as-notes: true
+  # typst:
+  #   toc: true
+  #   toc-depth: 5
   docx:
     toc: true
     toc-depth: 5
